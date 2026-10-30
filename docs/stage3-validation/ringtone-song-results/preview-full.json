@@ -1,0 +1,6850 @@
+{
+  "checks": 21,
+  "reports": [
+    {
+      "source": "reference",
+      "errors": [],
+      "result": {
+        "preview": {
+          "state": "ended",
+          "source": "reference",
+          "position": 120,
+          "duration": 120,
+          "fragment": "NO ANSWER",
+          "graph": false,
+          "timer": false,
+          "scheduled": [],
+          "media": null
+        },
+        "native": {
+          "synth": [],
+          "pads": [],
+          "inputs": []
+        },
+        "app": {
+          "bpm": 104,
+          "inputLocked": false,
+          "mode": "performance",
+          "audioTime": 119.80266666666667,
+          "transportStartAt": 0,
+          "running": false,
+          "starting": false,
+          "selected": 0,
+          "active": -1,
+          "grid": "off",
+          "lengthMode": "auto",
+          "signal": 0,
+          "tick": 0,
+          "held": 0,
+          "liveNotes": [],
+          "schedulerCount": 1,
+          "dropped": 0,
+          "audio": {
+            "disposed": false,
+            "loopSynths": 0,
+            "loopSamplers": 4,
+            "fixedNodes": 11
+          },
+          "limitNotice": "",
+          "audioReady": true,
+          "savedAvailable": false,
+          "storageOK": true,
+          "helpOpen": false,
+          "editPending": [
+            null,
+            null
+          ],
+          "editRevisions": [
+            0,
+            0
+          ],
+          "undoCounts": [
+            0,
+            0
+          ],
+          "tracks": [
+            {
+              "state": "empty",
+              "muted": false,
+              "bars": 1,
+              "origin": 0,
+              "events": [],
+              "take": null
+            },
+            {
+              "state": "empty",
+              "muted": false,
+              "bars": 1,
+              "origin": 0,
+              "events": [],
+              "take": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "instrument",
+      "errors": [],
+      "result": {
+        "preview": {
+          "state": "ended",
+          "source": "instrument",
+          "position": 120.00366666666667,
+          "duration": 120,
+          "fragment": "NO ANSWER",
+          "graph": false,
+          "timer": false,
+          "scheduled": [
+            {
+              "target": 0.199,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 0,
+              "time": 0.199,
+              "duration": 0.41538461538461535
+            },
+            {
+              "target": 0.199,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 0,
+              "time": 0.199,
+              "duration": null
+            },
+            {
+              "target": 0.7759230769230769,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 1,
+              "time": 0.7759230769230769,
+              "duration": 0.20769230769230768
+            },
+            {
+              "target": 1.3528461538461538,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 2,
+              "time": 1.3528461538461538,
+              "duration": 0.3576923076923077
+            },
+            {
+              "target": 1.3528461538461538,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 2,
+              "time": 1.3528461538461538,
+              "duration": null
+            },
+            {
+              "target": 1.929769230769231,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 3,
+              "time": 1.929769230769231,
+              "duration": 0.3807692307692308
+            },
+            {
+              "target": 1.929769230769231,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 3,
+              "time": 1.929769230769231,
+              "duration": null
+            },
+            {
+              "target": 2.5066923076923073,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 4,
+              "time": 2.5066923076923073,
+              "duration": 0.40384615384615385
+            },
+            {
+              "target": 2.5066923076923073,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 4,
+              "time": 2.5066923076923073,
+              "duration": null
+            },
+            {
+              "target": 3.0836153846153844,
+              "lateMs": 0,
+              "key": "F",
+              "voice": 0,
+              "beat": 5,
+              "time": 3.0836153846153844,
+              "duration": 0.375
+            },
+            {
+              "target": 3.6605384615384615,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 6,
+              "time": 3.6605384615384615,
+              "duration": 0.6173076923076923
+            },
+            {
+              "target": 3.6605384615384615,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 6,
+              "time": 3.6605384615384615,
+              "duration": null
+            },
+            {
+              "target": 4.237461538461538,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 7,
+              "time": 4.237461538461538,
+              "duration": null
+            },
+            {
+              "target": 4.814384615384615,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 8,
+              "time": 4.814384615384615,
+              "duration": 0.41538461538461535
+            },
+            {
+              "target": 4.814384615384615,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 8,
+              "time": 4.814384615384615,
+              "duration": null
+            },
+            {
+              "target": 5.391307692307692,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 9,
+              "time": 5.391307692307692,
+              "duration": 0.20769230769230768
+            },
+            {
+              "target": 5.968230769230769,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 10,
+              "time": 5.968230769230769,
+              "duration": 0.3576923076923077
+            },
+            {
+              "target": 5.968230769230769,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 10,
+              "time": 5.968230769230769,
+              "duration": null
+            },
+            {
+              "target": 6.545153846153846,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 11,
+              "time": 6.545153846153846,
+              "duration": 0.3807692307692308
+            },
+            {
+              "target": 6.545153846153846,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 11,
+              "time": 6.545153846153846,
+              "duration": null
+            },
+            {
+              "target": 7.122076923076923,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 12,
+              "time": 7.122076923076923,
+              "duration": 0.40384615384615385
+            },
+            {
+              "target": 7.122076923076923,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 12,
+              "time": 7.122076923076923,
+              "duration": null
+            },
+            {
+              "target": 7.699,
+              "lateMs": 0,
+              "key": "F",
+              "voice": 0,
+              "beat": 13,
+              "time": 7.699,
+              "duration": 0.375
+            },
+            {
+              "target": 8.275923076923076,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 14,
+              "time": 8.275923076923076,
+              "duration": 0.6173076923076923
+            },
+            {
+              "target": 8.275923076923076,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 14,
+              "time": 8.275923076923076,
+              "duration": null
+            },
+            {
+              "target": 8.852846153846153,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 15,
+              "time": 8.852846153846153,
+              "duration": null
+            },
+            {
+              "target": 9.42976923076923,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 16,
+              "time": 9.42976923076923,
+              "duration": 0.41538461538461535
+            },
+            {
+              "target": 9.42976923076923,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 16,
+              "time": 9.42976923076923,
+              "duration": null
+            },
+            {
+              "target": 10.006692307692308,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 17,
+              "time": 10.006692307692308,
+              "duration": 0.20769230769230768
+            },
+            {
+              "target": 10.006692307692308,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 17,
+              "time": 10.006692307692308,
+              "duration": null
+            },
+            {
+              "target": 10.583615384615385,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 18,
+              "time": 10.583615384615385,
+              "duration": 0.3576923076923077
+            },
+            {
+              "target": 10.583615384615385,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 18,
+              "time": 10.583615384615385,
+              "duration": null
+            },
+            {
+              "target": 11.160538461538462,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 19,
+              "time": 11.160538461538462,
+              "duration": 0.3807692307692308
+            },
+            {
+              "target": 11.160538461538462,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 19,
+              "time": 11.160538461538462,
+              "duration": null
+            },
+            {
+              "target": 11.737461538461538,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 20,
+              "time": 11.737461538461538,
+              "duration": 0.40384615384615385
+            },
+            {
+              "target": 11.737461538461538,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 20,
+              "time": 11.737461538461538,
+              "duration": null
+            },
+            {
+              "target": 12.314384615384615,
+              "lateMs": 0,
+              "key": "F",
+              "voice": 0,
+              "beat": 21,
+              "time": 12.314384615384615,
+              "duration": 0.375
+            },
+            {
+              "target": 12.314384615384615,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 21,
+              "time": 12.314384615384615,
+              "duration": null
+            },
+            {
+              "target": 12.891307692307691,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 22,
+              "time": 12.891307692307691,
+              "duration": 0.6173076923076923
+            },
+            {
+              "target": 12.891307692307691,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 22,
+              "time": 12.891307692307691,
+              "duration": null
+            },
+            {
+              "target": 13.46823076923077,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 23,
+              "time": 13.46823076923077,
+              "duration": null
+            },
+            {
+              "target": 14.045153846153847,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 24,
+              "time": 14.045153846153847,
+              "duration": 0.41538461538461535
+            },
+            {
+              "target": 14.045153846153847,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 24,
+              "time": 14.045153846153847,
+              "duration": null
+            },
+            {
+              "target": 14.622076923076923,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 25,
+              "time": 14.622076923076923,
+              "duration": 0.20769230769230768
+            },
+            {
+              "target": 14.622076923076923,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 25,
+              "time": 14.622076923076923,
+              "duration": null
+            },
+            {
+              "target": 15.199,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 26,
+              "time": 15.199,
+              "duration": 0.3576923076923077
+            },
+            {
+              "target": 15.199,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 26,
+              "time": 15.199,
+              "duration": null
+            },
+            {
+              "target": 15.775923076923076,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 27,
+              "time": 15.775923076923076,
+              "duration": 0.3807692307692308
+            },
+            {
+              "target": 15.775923076923076,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 27,
+              "time": 15.775923076923076,
+              "duration": null
+            },
+            {
+              "target": 16.352846153846155,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 28,
+              "time": 16.352846153846155,
+              "duration": 0.40384615384615385
+            },
+            {
+              "target": 16.352846153846155,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 28,
+              "time": 16.352846153846155,
+              "duration": null
+            },
+            {
+              "target": 16.92976923076923,
+              "lateMs": 0,
+              "key": "F",
+              "voice": 0,
+              "beat": 29,
+              "time": 16.92976923076923,
+              "duration": 0.375
+            },
+            {
+              "target": 16.92976923076923,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 29,
+              "time": 16.92976923076923,
+              "duration": null
+            },
+            {
+              "target": 17.506692307692308,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 30,
+              "time": 17.506692307692308,
+              "duration": 0.6173076923076923
+            },
+            {
+              "target": 17.506692307692308,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 30,
+              "time": 17.506692307692308,
+              "duration": null
+            },
+            {
+              "target": 18.083615384615385,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 31,
+              "time": 18.083615384615385,
+              "duration": null
+            },
+            {
+              "target": 18.66053846153846,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 32,
+              "time": 18.66053846153846,
+              "duration": 0.41538461538461535
+            },
+            {
+              "target": 18.66053846153846,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 32,
+              "time": 18.66053846153846,
+              "duration": null
+            },
+            {
+              "target": 18.949,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 32.5,
+              "time": 18.949,
+              "duration": null
+            },
+            {
+              "target": 19.23746153846154,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 33,
+              "time": 19.23746153846154,
+              "duration": 0.20769230769230768
+            },
+            {
+              "target": 19.23746153846154,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 33,
+              "time": 19.23746153846154,
+              "duration": null
+            },
+            {
+              "target": 19.52592307692308,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 33.5,
+              "time": 19.52592307692308,
+              "duration": null
+            },
+            {
+              "target": 19.81438461538462,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 34,
+              "time": 19.81438461538462,
+              "duration": 0.3576923076923077
+            },
+            {
+              "target": 19.81438461538462,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 34,
+              "time": 19.81438461538462,
+              "duration": null
+            },
+            {
+              "target": 20.102846153846155,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 34.5,
+              "time": 20.102846153846155,
+              "duration": null
+            },
+            {
+              "target": 20.391307692307695,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 35,
+              "time": 20.391307692307695,
+              "duration": 0.3807692307692308
+            },
+            {
+              "target": 20.391307692307695,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 35,
+              "time": 20.391307692307695,
+              "duration": null
+            },
+            {
+              "target": 20.67976923076923,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 35.5,
+              "time": 20.67976923076923,
+              "duration": null
+            },
+            {
+              "target": 20.96823076923077,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 36,
+              "time": 20.96823076923077,
+              "duration": 0.40384615384615385
+            },
+            {
+              "target": 20.96823076923077,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 36,
+              "time": 20.96823076923077,
+              "duration": null
+            },
+            {
+              "target": 21.256692307692308,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 36.5,
+              "time": 21.256692307692308,
+              "duration": null
+            },
+            {
+              "target": 21.54515384615385,
+              "lateMs": 0,
+              "key": "F",
+              "voice": 0,
+              "beat": 37,
+              "time": 21.54515384615385,
+              "duration": 0.375
+            },
+            {
+              "target": 21.54515384615385,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 37,
+              "time": 21.54515384615385,
+              "duration": null
+            },
+            {
+              "target": 21.833615384615385,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 37.5,
+              "time": 21.833615384615385,
+              "duration": null
+            },
+            {
+              "target": 22.122076923076925,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 38,
+              "time": 22.122076923076925,
+              "duration": 0.6173076923076923
+            },
+            {
+              "target": 22.122076923076925,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 38,
+              "time": 22.122076923076925,
+              "duration": null
+            },
+            {
+              "target": 22.41053846153846,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 38.5,
+              "time": 22.41053846153846,
+              "duration": null
+            },
+            {
+              "target": 22.699,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 39,
+              "time": 22.699,
+              "duration": null
+            },
+            {
+              "target": 22.98746153846154,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 39.5,
+              "time": 22.98746153846154,
+              "duration": null
+            },
+            {
+              "target": 23.27592307692308,
+              "lateMs": 0,
+              "key": "D",
+              "voice": 0,
+              "beat": 40,
+              "time": 23.27592307692308,
+              "duration": 0.46153846153846156
+            },
+            {
+              "target": 23.27592307692308,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 40,
+              "time": 23.27592307692308,
+              "duration": null
+            },
+            {
+              "target": 23.56438461538462,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 40.5,
+              "time": 23.56438461538462,
+              "duration": null
+            },
+            {
+              "target": 23.852846153846155,
+              "lateMs": 0,
+              "key": "F",
+              "voice": 0,
+              "beat": 41,
+              "time": 23.852846153846155,
+              "duration": 0.34615384615384615
+            },
+            {
+              "target": 23.852846153846155,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 41,
+              "time": 23.852846153846155,
+              "duration": null
+            },
+            {
+              "target": 24.141307692307695,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 41.5,
+              "time": 24.141307692307695,
+              "duration": null
+            },
+            {
+              "target": 24.42976923076923,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 42,
+              "time": 24.42976923076923,
+              "duration": 0.46153846153846156
+            },
+            {
+              "target": 24.42976923076923,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 42,
+              "time": 24.42976923076923,
+              "duration": null
+            },
+            {
+              "target": 24.71823076923077,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 42.5,
+              "time": 24.71823076923077,
+              "duration": null
+            },
+            {
+              "target": 25.006692307692308,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 43,
+              "time": 25.006692307692308,
+              "duration": 0.5769230769230769
+            },
+            {
+              "target": 25.006692307692308,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 43,
+              "time": 25.006692307692308,
+              "duration": null
+            },
+            {
+              "target": 25.29515384615385,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 43.5,
+              "time": 25.29515384615385,
+              "duration": null
+            },
+            {
+              "target": 25.583615384615385,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 44,
+              "time": 25.583615384615385,
+              "duration": null
+            },
+            {
+              "target": 25.872076923076925,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 44.5,
+              "time": 25.872076923076925,
+              "duration": 0.3173076923076923
+            },
+            {
+              "target": 25.872076923076925,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 44.5,
+              "time": 25.872076923076925,
+              "duration": null
+            },
+            {
+              "target": 26.16053846153846,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 45,
+              "time": 26.16053846153846,
+              "duration": null
+            },
+            {
+              "target": 26.449,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 45.5,
+              "time": 26.449,
+              "duration": 0.34615384615384615
+            },
+            {
+              "target": 26.449,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 45.5,
+              "time": 26.449,
+              "duration": null
+            },
+            {
+              "target": 26.73746153846154,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 46,
+              "time": 26.73746153846154,
+              "duration": null
+            },
+            {
+              "target": 27.02592307692308,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 46.5,
+              "time": 27.02592307692308,
+              "duration": 0.40384615384615385
+            },
+            {
+              "target": 27.02592307692308,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 46.5,
+              "time": 27.02592307692308,
+              "duration": null
+            },
+            {
+              "target": 27.31438461538462,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 47,
+              "time": 27.31438461538462,
+              "duration": null
+            },
+            {
+              "target": 27.602846153846155,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 47.5,
+              "time": 27.602846153846155,
+              "duration": null
+            },
+            {
+              "target": 27.891307692307695,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 48,
+              "time": 27.891307692307695,
+              "duration": 0.41538461538461535
+            },
+            {
+              "target": 27.891307692307695,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 48,
+              "time": 27.891307692307695,
+              "duration": null
+            },
+            {
+              "target": 28.17976923076923,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 48.5,
+              "time": 28.17976923076923,
+              "duration": null
+            },
+            {
+              "target": 28.46823076923077,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 49,
+              "time": 28.46823076923077,
+              "duration": 0.20769230769230768
+            },
+            {
+              "target": 28.46823076923077,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 49,
+              "time": 28.46823076923077,
+              "duration": null
+            },
+            {
+              "target": 28.756692307692308,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 49.5,
+              "time": 28.756692307692308,
+              "duration": null
+            },
+            {
+              "target": 29.04515384615385,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 50,
+              "time": 29.04515384615385,
+              "duration": 0.3576923076923077
+            },
+            {
+              "target": 29.04515384615385,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 50,
+              "time": 29.04515384615385,
+              "duration": null
+            },
+            {
+              "target": 29.333615384615385,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 50.5,
+              "time": 29.333615384615385,
+              "duration": null
+            },
+            {
+              "target": 29.622076923076925,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 51,
+              "time": 29.622076923076925,
+              "duration": 0.3807692307692308
+            },
+            {
+              "target": 29.622076923076925,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 51,
+              "time": 29.622076923076925,
+              "duration": null
+            },
+            {
+              "target": 29.91053846153846,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 51.5,
+              "time": 29.91053846153846,
+              "duration": null
+            },
+            {
+              "target": 30.199,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 52,
+              "time": 30.199,
+              "duration": 0.40384615384615385
+            },
+            {
+              "target": 30.199,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 52,
+              "time": 30.199,
+              "duration": null
+            },
+            {
+              "target": 30.48746153846154,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 52.5,
+              "time": 30.48746153846154,
+              "duration": null
+            },
+            {
+              "target": 30.77592307692308,
+              "lateMs": 0,
+              "key": "F",
+              "voice": 0,
+              "beat": 53,
+              "time": 30.77592307692308,
+              "duration": 0.375
+            },
+            {
+              "target": 30.77592307692308,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 53,
+              "time": 30.77592307692308,
+              "duration": null
+            },
+            {
+              "target": 31.06438461538462,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 53.5,
+              "time": 31.06438461538462,
+              "duration": null
+            },
+            {
+              "target": 31.352846153846155,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 54,
+              "time": 31.352846153846155,
+              "duration": 0.6173076923076923
+            },
+            {
+              "target": 31.352846153846155,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 54,
+              "time": 31.352846153846155,
+              "duration": null
+            },
+            {
+              "target": 31.641307692307695,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 54.5,
+              "time": 31.641307692307695,
+              "duration": null
+            },
+            {
+              "target": 31.92976923076923,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 55,
+              "time": 31.92976923076923,
+              "duration": null
+            },
+            {
+              "target": 32.218230769230765,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 55.5,
+              "time": 32.218230769230765,
+              "duration": null
+            },
+            {
+              "target": 32.506692307692305,
+              "lateMs": 0,
+              "key": "D",
+              "voice": 0,
+              "beat": 56,
+              "time": 32.506692307692305,
+              "duration": 0.46153846153846156
+            },
+            {
+              "target": 32.506692307692305,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 56,
+              "time": 32.506692307692305,
+              "duration": null
+            },
+            {
+              "target": 32.795153846153845,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 56.5,
+              "time": 32.795153846153845,
+              "duration": null
+            },
+            {
+              "target": 33.083615384615385,
+              "lateMs": 0,
+              "key": "F",
+              "voice": 0,
+              "beat": 57,
+              "time": 33.083615384615385,
+              "duration": 0.34615384615384615
+            },
+            {
+              "target": 33.083615384615385,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 57,
+              "time": 33.083615384615385,
+              "duration": null
+            },
+            {
+              "target": 33.37207692307692,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 57.5,
+              "time": 33.37207692307692,
+              "duration": null
+            },
+            {
+              "target": 33.66053846153846,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 58,
+              "time": 33.66053846153846,
+              "duration": 0.46153846153846156
+            },
+            {
+              "target": 33.66053846153846,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 58,
+              "time": 33.66053846153846,
+              "duration": null
+            },
+            {
+              "target": 33.949,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 58.5,
+              "time": 33.949,
+              "duration": null
+            },
+            {
+              "target": 34.23746153846154,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 59,
+              "time": 34.23746153846154,
+              "duration": 0.5769230769230769
+            },
+            {
+              "target": 34.23746153846154,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 59,
+              "time": 34.23746153846154,
+              "duration": null
+            },
+            {
+              "target": 34.52592307692308,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 59.5,
+              "time": 34.52592307692308,
+              "duration": null
+            },
+            {
+              "target": 34.81438461538461,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 60,
+              "time": 34.81438461538461,
+              "duration": null
+            },
+            {
+              "target": 35.10284615384615,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 60.5,
+              "time": 35.10284615384615,
+              "duration": 0.3173076923076923
+            },
+            {
+              "target": 35.10284615384615,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 60.5,
+              "time": 35.10284615384615,
+              "duration": null
+            },
+            {
+              "target": 35.39130769230769,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 61,
+              "time": 35.39130769230769,
+              "duration": null
+            },
+            {
+              "target": 35.67976923076923,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 61.5,
+              "time": 35.67976923076923,
+              "duration": 0.34615384615384615
+            },
+            {
+              "target": 35.67976923076923,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 61.5,
+              "time": 35.67976923076923,
+              "duration": null
+            },
+            {
+              "target": 35.968230769230765,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 62,
+              "time": 35.968230769230765,
+              "duration": null
+            },
+            {
+              "target": 36.256692307692305,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 62.5,
+              "time": 36.256692307692305,
+              "duration": 0.40384615384615385
+            },
+            {
+              "target": 36.256692307692305,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 62.5,
+              "time": 36.256692307692305,
+              "duration": null
+            },
+            {
+              "target": 36.545153846153845,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 63,
+              "time": 36.545153846153845,
+              "duration": null
+            },
+            {
+              "target": 36.833615384615385,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 63.5,
+              "time": 36.833615384615385,
+              "duration": null
+            },
+            {
+              "target": 36.833615384615385,
+              "lateMs": 0,
+              "key": "Z",
+              "voice": 1,
+              "beat": 63.5,
+              "time": 36.833615384615385,
+              "duration": null
+            },
+            {
+              "target": 37.12207692307692,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 64,
+              "time": 37.12207692307692,
+              "duration": 0.41538461538461535
+            },
+            {
+              "target": 37.12207692307692,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 64,
+              "time": 37.12207692307692,
+              "duration": null
+            },
+            {
+              "target": 37.41053846153846,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 64.5,
+              "time": 37.41053846153846,
+              "duration": null
+            },
+            {
+              "target": 37.699,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 65,
+              "time": 37.699,
+              "duration": 0.20769230769230768
+            },
+            {
+              "target": 37.699,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 65,
+              "time": 37.699,
+              "duration": null
+            },
+            {
+              "target": 37.98746153846154,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 65.5,
+              "time": 37.98746153846154,
+              "duration": null
+            },
+            {
+              "target": 38.27592307692308,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 66,
+              "time": 38.27592307692308,
+              "duration": 0.3576923076923077
+            },
+            {
+              "target": 38.27592307692308,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 66,
+              "time": 38.27592307692308,
+              "duration": null
+            },
+            {
+              "target": 38.56438461538461,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 66.5,
+              "time": 38.56438461538461,
+              "duration": null
+            },
+            {
+              "target": 38.85284615384615,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 67,
+              "time": 38.85284615384615,
+              "duration": 0.3807692307692308
+            },
+            {
+              "target": 38.85284615384615,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 67,
+              "time": 38.85284615384615,
+              "duration": null
+            },
+            {
+              "target": 39.14130769230769,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 67.5,
+              "time": 39.14130769230769,
+              "duration": null
+            },
+            {
+              "target": 39.42976923076923,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 68,
+              "time": 39.42976923076923,
+              "duration": 0.40384615384615385
+            },
+            {
+              "target": 39.42976923076923,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 68,
+              "time": 39.42976923076923,
+              "duration": null
+            },
+            {
+              "target": 39.718230769230765,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 68.5,
+              "time": 39.718230769230765,
+              "duration": null
+            },
+            {
+              "target": 40.006692307692305,
+              "lateMs": 0,
+              "key": "F",
+              "voice": 0,
+              "beat": 69,
+              "time": 40.006692307692305,
+              "duration": 0.375
+            },
+            {
+              "target": 40.006692307692305,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 69,
+              "time": 40.006692307692305,
+              "duration": null
+            },
+            {
+              "target": 40.295153846153845,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 69.5,
+              "time": 40.295153846153845,
+              "duration": null
+            },
+            {
+              "target": 40.583615384615385,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 70,
+              "time": 40.583615384615385,
+              "duration": 0.6173076923076923
+            },
+            {
+              "target": 40.583615384615385,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 70,
+              "time": 40.583615384615385,
+              "duration": null
+            },
+            {
+              "target": 40.87207692307692,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 70.5,
+              "time": 40.87207692307692,
+              "duration": null
+            },
+            {
+              "target": 41.16053846153846,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 71,
+              "time": 41.16053846153846,
+              "duration": null
+            },
+            {
+              "target": 41.449,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 71.5,
+              "time": 41.449,
+              "duration": null
+            },
+            {
+              "target": 41.73746153846154,
+              "lateMs": 0,
+              "key": "D",
+              "voice": 0,
+              "beat": 72,
+              "time": 41.73746153846154,
+              "duration": 0.46153846153846156
+            },
+            {
+              "target": 41.73746153846154,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 72,
+              "time": 41.73746153846154,
+              "duration": null
+            },
+            {
+              "target": 42.02592307692308,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 72.5,
+              "time": 42.02592307692308,
+              "duration": null
+            },
+            {
+              "target": 42.31438461538461,
+              "lateMs": 0,
+              "key": "F",
+              "voice": 0,
+              "beat": 73,
+              "time": 42.31438461538461,
+              "duration": 0.34615384615384615
+            },
+            {
+              "target": 42.31438461538461,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 73,
+              "time": 42.31438461538461,
+              "duration": null
+            },
+            {
+              "target": 42.60284615384615,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 73.5,
+              "time": 42.60284615384615,
+              "duration": null
+            },
+            {
+              "target": 42.89130769230769,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 74,
+              "time": 42.89130769230769,
+              "duration": 0.46153846153846156
+            },
+            {
+              "target": 42.89130769230769,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 74,
+              "time": 42.89130769230769,
+              "duration": null
+            },
+            {
+              "target": 43.17976923076923,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 74.5,
+              "time": 43.17976923076923,
+              "duration": null
+            },
+            {
+              "target": 43.468230769230765,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 75,
+              "time": 43.468230769230765,
+              "duration": 0.5769230769230769
+            },
+            {
+              "target": 43.468230769230765,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 75,
+              "time": 43.468230769230765,
+              "duration": null
+            },
+            {
+              "target": 43.756692307692305,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 75.5,
+              "time": 43.756692307692305,
+              "duration": null
+            },
+            {
+              "target": 44.045153846153845,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 76,
+              "time": 44.045153846153845,
+              "duration": null
+            },
+            {
+              "target": 44.333615384615385,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 76.5,
+              "time": 44.333615384615385,
+              "duration": 0.3173076923076923
+            },
+            {
+              "target": 44.333615384615385,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 76.5,
+              "time": 44.333615384615385,
+              "duration": null
+            },
+            {
+              "target": 44.62207692307692,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 77,
+              "time": 44.62207692307692,
+              "duration": null
+            },
+            {
+              "target": 44.91053846153846,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 77.5,
+              "time": 44.91053846153846,
+              "duration": 0.34615384615384615
+            },
+            {
+              "target": 44.91053846153846,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 77.5,
+              "time": 44.91053846153846,
+              "duration": null
+            },
+            {
+              "target": 45.199,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 78,
+              "time": 45.199,
+              "duration": null
+            },
+            {
+              "target": 45.48746153846154,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 78.5,
+              "time": 45.48746153846154,
+              "duration": 0.40384615384615385
+            },
+            {
+              "target": 45.48746153846154,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 78.5,
+              "time": 45.48746153846154,
+              "duration": null
+            },
+            {
+              "target": 45.77592307692308,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 79,
+              "time": 45.77592307692308,
+              "duration": null
+            },
+            {
+              "target": 46.06438461538461,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 79.5,
+              "time": 46.06438461538461,
+              "duration": null
+            },
+            {
+              "target": 46.06438461538461,
+              "lateMs": 0,
+              "key": "Z",
+              "voice": 1,
+              "beat": 79.5,
+              "time": 46.06438461538461,
+              "duration": null
+            },
+            {
+              "target": 46.35284615384615,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 80,
+              "time": 46.35284615384615,
+              "duration": 0.3346153846153846
+            },
+            {
+              "target": 46.35284615384615,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 80,
+              "time": 46.35284615384615,
+              "duration": null
+            },
+            {
+              "target": 46.64130769230769,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 80.5,
+              "time": 46.64130769230769,
+              "duration": null
+            },
+            {
+              "target": 46.92976923076923,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 81,
+              "time": 46.92976923076923,
+              "duration": 0.34615384615384615
+            },
+            {
+              "target": 46.92976923076923,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 81,
+              "time": 46.92976923076923,
+              "duration": null
+            },
+            {
+              "target": 47.218230769230765,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 81.5,
+              "time": 47.218230769230765,
+              "duration": null
+            },
+            {
+              "target": 47.506692307692305,
+              "lateMs": 0,
+              "key": "K",
+              "voice": 0,
+              "beat": 82,
+              "time": 47.506692307692305,
+              "duration": 0.4326923076923077
+            },
+            {
+              "target": 47.506692307692305,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 82,
+              "time": 47.506692307692305,
+              "duration": null
+            },
+            {
+              "target": 47.795153846153845,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 82.5,
+              "time": 47.795153846153845,
+              "duration": null
+            },
+            {
+              "target": 48.083615384615385,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 83,
+              "time": 48.083615384615385,
+              "duration": 0.3115384615384616
+            },
+            {
+              "target": 48.083615384615385,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 83,
+              "time": 48.083615384615385,
+              "duration": null
+            },
+            {
+              "target": 48.37207692307692,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 83.5,
+              "time": 48.37207692307692,
+              "duration": null
+            },
+            {
+              "target": 48.66053846153846,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 84,
+              "time": 48.66053846153846,
+              "duration": 0.3230769230769231
+            },
+            {
+              "target": 48.66053846153846,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 84,
+              "time": 48.66053846153846,
+              "duration": null
+            },
+            {
+              "target": 48.949,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 84.5,
+              "time": 48.949,
+              "duration": null
+            },
+            {
+              "target": 49.23746153846154,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 85,
+              "time": 49.23746153846154,
+              "duration": 0.39230769230769236
+            },
+            {
+              "target": 49.23746153846154,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 85,
+              "time": 49.23746153846154,
+              "duration": null
+            },
+            {
+              "target": 49.52592307692308,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 85.5,
+              "time": 49.52592307692308,
+              "duration": null
+            },
+            {
+              "target": 49.81438461538461,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 86,
+              "time": 49.81438461538461,
+              "duration": 0.6057692307692307
+            },
+            {
+              "target": 49.81438461538461,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 86,
+              "time": 49.81438461538461,
+              "duration": null
+            },
+            {
+              "target": 50.10284615384615,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 86.5,
+              "time": 50.10284615384615,
+              "duration": null
+            },
+            {
+              "target": 50.39130769230769,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 87,
+              "time": 50.39130769230769,
+              "duration": null
+            },
+            {
+              "target": 50.67976923076923,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 87.5,
+              "time": 50.67976923076923,
+              "duration": null
+            },
+            {
+              "target": 50.968230769230765,
+              "lateMs": 0,
+              "key": "D",
+              "voice": 0,
+              "beat": 88,
+              "time": 50.968230769230765,
+              "duration": 0.46153846153846156
+            },
+            {
+              "target": 50.968230769230765,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 88,
+              "time": 50.968230769230765,
+              "duration": null
+            },
+            {
+              "target": 51.256692307692305,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 88.5,
+              "time": 51.256692307692305,
+              "duration": null
+            },
+            {
+              "target": 51.545153846153845,
+              "lateMs": 0,
+              "key": "F",
+              "voice": 0,
+              "beat": 89,
+              "time": 51.545153846153845,
+              "duration": 0.34615384615384615
+            },
+            {
+              "target": 51.545153846153845,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 89,
+              "time": 51.545153846153845,
+              "duration": null
+            },
+            {
+              "target": 51.833615384615385,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 89.5,
+              "time": 51.833615384615385,
+              "duration": null
+            },
+            {
+              "target": 52.12207692307692,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 90,
+              "time": 52.12207692307692,
+              "duration": 0.46153846153846156
+            },
+            {
+              "target": 52.12207692307692,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 90,
+              "time": 52.12207692307692,
+              "duration": null
+            },
+            {
+              "target": 52.41053846153846,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 90.5,
+              "time": 52.41053846153846,
+              "duration": null
+            },
+            {
+              "target": 52.699,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 91,
+              "time": 52.699,
+              "duration": 0.5769230769230769
+            },
+            {
+              "target": 52.699,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 91,
+              "time": 52.699,
+              "duration": null
+            },
+            {
+              "target": 52.98746153846154,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 91.5,
+              "time": 52.98746153846154,
+              "duration": null
+            },
+            {
+              "target": 53.27592307692308,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 92,
+              "time": 53.27592307692308,
+              "duration": null
+            },
+            {
+              "target": 53.56438461538461,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 92.5,
+              "time": 53.56438461538461,
+              "duration": 0.3173076923076923
+            },
+            {
+              "target": 53.56438461538461,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 92.5,
+              "time": 53.56438461538461,
+              "duration": null
+            },
+            {
+              "target": 53.85284615384615,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 93,
+              "time": 53.85284615384615,
+              "duration": null
+            },
+            {
+              "target": 54.14130769230769,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 93.5,
+              "time": 54.14130769230769,
+              "duration": 0.34615384615384615
+            },
+            {
+              "target": 54.14130769230769,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 93.5,
+              "time": 54.14130769230769,
+              "duration": null
+            },
+            {
+              "target": 54.42976923076923,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 94,
+              "time": 54.42976923076923,
+              "duration": null
+            },
+            {
+              "target": 54.718230769230765,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 94.5,
+              "time": 54.718230769230765,
+              "duration": 0.40384615384615385
+            },
+            {
+              "target": 54.718230769230765,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 94.5,
+              "time": 54.718230769230765,
+              "duration": null
+            },
+            {
+              "target": 55.006692307692305,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 95,
+              "time": 55.006692307692305,
+              "duration": null
+            },
+            {
+              "target": 55.295153846153845,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 95.5,
+              "time": 55.295153846153845,
+              "duration": null
+            },
+            {
+              "target": 55.295153846153845,
+              "lateMs": 0,
+              "key": "Z",
+              "voice": 1,
+              "beat": 95.5,
+              "time": 55.295153846153845,
+              "duration": null
+            },
+            {
+              "target": 55.583615384615385,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 96,
+              "time": 55.583615384615385,
+              "duration": 0.3346153846153846
+            },
+            {
+              "target": 55.583615384615385,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 96,
+              "time": 55.583615384615385,
+              "duration": null
+            },
+            {
+              "target": 55.87207692307692,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 96.5,
+              "time": 55.87207692307692,
+              "duration": null
+            },
+            {
+              "target": 56.16053846153846,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 97,
+              "time": 56.16053846153846,
+              "duration": 0.34615384615384615
+            },
+            {
+              "target": 56.16053846153846,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 97,
+              "time": 56.16053846153846,
+              "duration": null
+            },
+            {
+              "target": 56.449,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 97.5,
+              "time": 56.449,
+              "duration": null
+            },
+            {
+              "target": 56.73746153846154,
+              "lateMs": 0,
+              "key": "K",
+              "voice": 0,
+              "beat": 98,
+              "time": 56.73746153846154,
+              "duration": 0.4326923076923077
+            },
+            {
+              "target": 56.73746153846154,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 98,
+              "time": 56.73746153846154,
+              "duration": null
+            },
+            {
+              "target": 57.02592307692308,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 98.5,
+              "time": 57.02592307692308,
+              "duration": null
+            },
+            {
+              "target": 57.31438461538461,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 99,
+              "time": 57.31438461538461,
+              "duration": 0.3115384615384616
+            },
+            {
+              "target": 57.31438461538461,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 99,
+              "time": 57.31438461538461,
+              "duration": null
+            },
+            {
+              "target": 57.60284615384615,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 99.5,
+              "time": 57.60284615384615,
+              "duration": null
+            },
+            {
+              "target": 57.89130769230769,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 100,
+              "time": 57.89130769230769,
+              "duration": 0.3230769230769231
+            },
+            {
+              "target": 57.89130769230769,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 100,
+              "time": 57.89130769230769,
+              "duration": null
+            },
+            {
+              "target": 58.17976923076923,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 100.5,
+              "time": 58.17976923076923,
+              "duration": null
+            },
+            {
+              "target": 58.468230769230765,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 101,
+              "time": 58.468230769230765,
+              "duration": 0.39230769230769236
+            },
+            {
+              "target": 58.468230769230765,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 101,
+              "time": 58.468230769230765,
+              "duration": null
+            },
+            {
+              "target": 58.756692307692305,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 101.5,
+              "time": 58.756692307692305,
+              "duration": null
+            },
+            {
+              "target": 59.045153846153845,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 102,
+              "time": 59.045153846153845,
+              "duration": 0.6057692307692307
+            },
+            {
+              "target": 59.045153846153845,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 102,
+              "time": 59.045153846153845,
+              "duration": null
+            },
+            {
+              "target": 59.333615384615385,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 102.5,
+              "time": 59.333615384615385,
+              "duration": null
+            },
+            {
+              "target": 59.62207692307692,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 103,
+              "time": 59.62207692307692,
+              "duration": null
+            },
+            {
+              "target": 59.91053846153846,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 103.5,
+              "time": 59.91053846153846,
+              "duration": null
+            },
+            {
+              "target": 60.199,
+              "lateMs": 0,
+              "key": "D",
+              "voice": 0,
+              "beat": 104,
+              "time": 60.199,
+              "duration": 0.46153846153846156
+            },
+            {
+              "target": 60.199,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 104,
+              "time": 60.199,
+              "duration": null
+            },
+            {
+              "target": 60.48746153846154,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 104.5,
+              "time": 60.48746153846154,
+              "duration": null
+            },
+            {
+              "target": 60.77592307692308,
+              "lateMs": 0,
+              "key": "F",
+              "voice": 0,
+              "beat": 105,
+              "time": 60.77592307692308,
+              "duration": 0.34615384615384615
+            },
+            {
+              "target": 60.77592307692308,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 105,
+              "time": 60.77592307692308,
+              "duration": null
+            },
+            {
+              "target": 61.06438461538461,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 105.5,
+              "time": 61.06438461538461,
+              "duration": null
+            },
+            {
+              "target": 61.35284615384615,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 106,
+              "time": 61.35284615384615,
+              "duration": 0.46153846153846156
+            },
+            {
+              "target": 61.35284615384615,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 106,
+              "time": 61.35284615384615,
+              "duration": null
+            },
+            {
+              "target": 61.64130769230769,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 106.5,
+              "time": 61.64130769230769,
+              "duration": null
+            },
+            {
+              "target": 61.92976923076923,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 107,
+              "time": 61.92976923076923,
+              "duration": 0.5769230769230769
+            },
+            {
+              "target": 61.92976923076923,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 107,
+              "time": 61.92976923076923,
+              "duration": null
+            },
+            {
+              "target": 62.218230769230765,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 107.5,
+              "time": 62.218230769230765,
+              "duration": null
+            },
+            {
+              "target": 62.506692307692305,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 108,
+              "time": 62.506692307692305,
+              "duration": null
+            },
+            {
+              "target": 62.795153846153845,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 108.5,
+              "time": 62.795153846153845,
+              "duration": 0.3173076923076923
+            },
+            {
+              "target": 62.795153846153845,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 108.5,
+              "time": 62.795153846153845,
+              "duration": null
+            },
+            {
+              "target": 63.083615384615385,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 109,
+              "time": 63.083615384615385,
+              "duration": null
+            },
+            {
+              "target": 63.37207692307692,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 109.5,
+              "time": 63.37207692307692,
+              "duration": 0.34615384615384615
+            },
+            {
+              "target": 63.37207692307692,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 109.5,
+              "time": 63.37207692307692,
+              "duration": null
+            },
+            {
+              "target": 63.66053846153846,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 110,
+              "time": 63.66053846153846,
+              "duration": null
+            },
+            {
+              "target": 63.949,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 110.5,
+              "time": 63.949,
+              "duration": 0.40384615384615385
+            },
+            {
+              "target": 63.949,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 110.5,
+              "time": 63.949,
+              "duration": null
+            },
+            {
+              "target": 64.23746153846153,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 111,
+              "time": 64.23746153846153,
+              "duration": null
+            },
+            {
+              "target": 64.52592307692308,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 111.5,
+              "time": 64.52592307692308,
+              "duration": null
+            },
+            {
+              "target": 64.52592307692308,
+              "lateMs": 0,
+              "key": "Z",
+              "voice": 1,
+              "beat": 111.5,
+              "time": 64.52592307692308,
+              "duration": null
+            },
+            {
+              "target": 64.81438461538461,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 112,
+              "time": 64.81438461538461,
+              "duration": 0.23076923076923078
+            },
+            {
+              "target": 64.81438461538461,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 112,
+              "time": 64.81438461538461,
+              "duration": null
+            },
+            {
+              "target": 65.96823076923077,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 114,
+              "time": 65.96823076923077,
+              "duration": 0.1846153846153846
+            },
+            {
+              "target": 67.12207692307692,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 116,
+              "time": 67.12207692307692,
+              "duration": 0.3173076923076923
+            },
+            {
+              "target": 68.56438461538461,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 118.5,
+              "time": 68.56438461538461,
+              "duration": 0.14423076923076922
+            },
+            {
+              "target": 68.85284615384616,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 119,
+              "time": 68.85284615384616,
+              "duration": null
+            },
+            {
+              "target": 69.42976923076922,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 120,
+              "time": 69.42976923076922,
+              "duration": 0.23076923076923078
+            },
+            {
+              "target": 69.42976923076922,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 120,
+              "time": 69.42976923076922,
+              "duration": null
+            },
+            {
+              "target": 70.58361538461538,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 122,
+              "time": 70.58361538461538,
+              "duration": 0.1846153846153846
+            },
+            {
+              "target": 71.73746153846153,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 124,
+              "time": 71.73746153846153,
+              "duration": 0.3173076923076923
+            },
+            {
+              "target": 73.17976923076922,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 126.5,
+              "time": 73.17976923076922,
+              "duration": 0.14423076923076922
+            },
+            {
+              "target": 74.04515384615384,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 128,
+              "time": 74.04515384615384,
+              "duration": 0.23076923076923078
+            },
+            {
+              "target": 74.04515384615384,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 128,
+              "time": 74.04515384615384,
+              "duration": null
+            },
+            {
+              "target": 75.199,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 130,
+              "time": 75.199,
+              "duration": 0.1846153846153846
+            },
+            {
+              "target": 76.35284615384616,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 132,
+              "time": 76.35284615384616,
+              "duration": 0.3173076923076923
+            },
+            {
+              "target": 77.79515384615384,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 134.5,
+              "time": 77.79515384615384,
+              "duration": 0.14423076923076922
+            },
+            {
+              "target": 78.08361538461538,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 135,
+              "time": 78.08361538461538,
+              "duration": null
+            },
+            {
+              "target": 78.66053846153847,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 136,
+              "time": 78.66053846153847,
+              "duration": 0.23076923076923078
+            },
+            {
+              "target": 78.66053846153847,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 136,
+              "time": 78.66053846153847,
+              "duration": null
+            },
+            {
+              "target": 79.81438461538461,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 138,
+              "time": 79.81438461538461,
+              "duration": 0.1846153846153846
+            },
+            {
+              "target": 80.96823076923077,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 140,
+              "time": 80.96823076923077,
+              "duration": 0.3173076923076923
+            },
+            {
+              "target": 82.41053846153847,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 142.5,
+              "time": 82.41053846153847,
+              "duration": 0.14423076923076922
+            },
+            {
+              "target": 83.27592307692308,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 144,
+              "time": 83.27592307692308,
+              "duration": 0.41538461538461535
+            },
+            {
+              "target": 83.27592307692308,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 144,
+              "time": 83.27592307692308,
+              "duration": null
+            },
+            {
+              "target": 83.56438461538461,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 144.5,
+              "time": 83.56438461538461,
+              "duration": null
+            },
+            {
+              "target": 83.85284615384616,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 145,
+              "time": 83.85284615384616,
+              "duration": 0.20769230769230768
+            },
+            {
+              "target": 83.85284615384616,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 145,
+              "time": 83.85284615384616,
+              "duration": null
+            },
+            {
+              "target": 84.14130769230769,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 145.5,
+              "time": 84.14130769230769,
+              "duration": null
+            },
+            {
+              "target": 84.42976923076922,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 146,
+              "time": 84.42976923076922,
+              "duration": 0.3576923076923077
+            },
+            {
+              "target": 84.42976923076922,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 146,
+              "time": 84.42976923076922,
+              "duration": null
+            },
+            {
+              "target": 84.71823076923077,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 146.5,
+              "time": 84.71823076923077,
+              "duration": null
+            },
+            {
+              "target": 85.0066923076923,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 147,
+              "time": 85.0066923076923,
+              "duration": 0.3807692307692308
+            },
+            {
+              "target": 85.0066923076923,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 147,
+              "time": 85.0066923076923,
+              "duration": null
+            },
+            {
+              "target": 85.29515384615384,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 147.5,
+              "time": 85.29515384615384,
+              "duration": null
+            },
+            {
+              "target": 85.58361538461538,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 148,
+              "time": 85.58361538461538,
+              "duration": 0.40384615384615385
+            },
+            {
+              "target": 85.58361538461538,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 148,
+              "time": 85.58361538461538,
+              "duration": null
+            },
+            {
+              "target": 85.87207692307692,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 148.5,
+              "time": 85.87207692307692,
+              "duration": null
+            },
+            {
+              "target": 86.16053846153847,
+              "lateMs": 0,
+              "key": "F",
+              "voice": 0,
+              "beat": 149,
+              "time": 86.16053846153847,
+              "duration": 0.375
+            },
+            {
+              "target": 86.16053846153847,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 149,
+              "time": 86.16053846153847,
+              "duration": null
+            },
+            {
+              "target": 86.449,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 149.5,
+              "time": 86.449,
+              "duration": null
+            },
+            {
+              "target": 86.73746153846153,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 150,
+              "time": 86.73746153846153,
+              "duration": 0.6173076923076923
+            },
+            {
+              "target": 86.73746153846153,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 150,
+              "time": 86.73746153846153,
+              "duration": null
+            },
+            {
+              "target": 87.02592307692308,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 150.5,
+              "time": 87.02592307692308,
+              "duration": null
+            },
+            {
+              "target": 87.31438461538461,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 151,
+              "time": 87.31438461538461,
+              "duration": null
+            },
+            {
+              "target": 87.60284615384616,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 151.5,
+              "time": 87.60284615384616,
+              "duration": null
+            },
+            {
+              "target": 87.89130769230769,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 152,
+              "time": 87.89130769230769,
+              "duration": 0.3346153846153846
+            },
+            {
+              "target": 87.89130769230769,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 152,
+              "time": 87.89130769230769,
+              "duration": null
+            },
+            {
+              "target": 88.17976923076922,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 152.5,
+              "time": 88.17976923076922,
+              "duration": null
+            },
+            {
+              "target": 88.46823076923077,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 153,
+              "time": 88.46823076923077,
+              "duration": 0.34615384615384615
+            },
+            {
+              "target": 88.46823076923077,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 153,
+              "time": 88.46823076923077,
+              "duration": null
+            },
+            {
+              "target": 88.7566923076923,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 153.5,
+              "time": 88.7566923076923,
+              "duration": null
+            },
+            {
+              "target": 89.04515384615384,
+              "lateMs": 0,
+              "key": "K",
+              "voice": 0,
+              "beat": 154,
+              "time": 89.04515384615384,
+              "duration": 0.4326923076923077
+            },
+            {
+              "target": 89.04515384615384,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 154,
+              "time": 89.04515384615384,
+              "duration": null
+            },
+            {
+              "target": 89.33361538461538,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 154.5,
+              "time": 89.33361538461538,
+              "duration": null
+            },
+            {
+              "target": 89.62207692307692,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 155,
+              "time": 89.62207692307692,
+              "duration": 0.3115384615384616
+            },
+            {
+              "target": 89.62207692307692,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 155,
+              "time": 89.62207692307692,
+              "duration": null
+            },
+            {
+              "target": 89.91053846153847,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 155.5,
+              "time": 89.91053846153847,
+              "duration": null
+            },
+            {
+              "target": 90.199,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 156,
+              "time": 90.199,
+              "duration": 0.3230769230769231
+            },
+            {
+              "target": 90.199,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 156,
+              "time": 90.199,
+              "duration": null
+            },
+            {
+              "target": 90.48746153846153,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 156.5,
+              "time": 90.48746153846153,
+              "duration": null
+            },
+            {
+              "target": 90.77592307692308,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 157,
+              "time": 90.77592307692308,
+              "duration": 0.39230769230769236
+            },
+            {
+              "target": 90.77592307692308,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 157,
+              "time": 90.77592307692308,
+              "duration": null
+            },
+            {
+              "target": 91.06438461538461,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 157.5,
+              "time": 91.06438461538461,
+              "duration": null
+            },
+            {
+              "target": 91.35284615384616,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 158,
+              "time": 91.35284615384616,
+              "duration": 0.6057692307692307
+            },
+            {
+              "target": 91.35284615384616,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 158,
+              "time": 91.35284615384616,
+              "duration": null
+            },
+            {
+              "target": 91.64130769230769,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 158.5,
+              "time": 91.64130769230769,
+              "duration": null
+            },
+            {
+              "target": 91.92976923076922,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 159,
+              "time": 91.92976923076922,
+              "duration": null
+            },
+            {
+              "target": 92.21823076923077,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 159.5,
+              "time": 92.21823076923077,
+              "duration": null
+            },
+            {
+              "target": 92.21823076923077,
+              "lateMs": 0,
+              "key": "Z",
+              "voice": 1,
+              "beat": 159.5,
+              "time": 92.21823076923077,
+              "duration": null
+            },
+            {
+              "target": 92.5066923076923,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 160,
+              "time": 92.5066923076923,
+              "duration": 0.2769230769230769
+            },
+            {
+              "target": 92.5066923076923,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 160,
+              "time": 92.5066923076923,
+              "duration": null
+            },
+            {
+              "target": 92.79515384615384,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 160.5,
+              "time": 92.79515384615384,
+              "duration": null
+            },
+            {
+              "target": 92.93938461538461,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 160.75,
+              "time": 92.93938461538461,
+              "duration": 0.16153846153846155
+            },
+            {
+              "target": 93.08361538461538,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 161,
+              "time": 93.08361538461538,
+              "duration": null
+            },
+            {
+              "target": 93.37207692307692,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 161.5,
+              "time": 93.37207692307692,
+              "duration": 0.20769230769230768
+            },
+            {
+              "target": 93.37207692307692,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 161.5,
+              "time": 93.37207692307692,
+              "duration": null
+            },
+            {
+              "target": 93.66053846153847,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 162,
+              "time": 93.66053846153847,
+              "duration": null
+            },
+            {
+              "target": 93.80476923076922,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 162.25,
+              "time": 93.80476923076922,
+              "duration": 0.23076923076923078
+            },
+            {
+              "target": 93.949,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 162.5,
+              "time": 93.949,
+              "duration": null
+            },
+            {
+              "target": 94.23746153846153,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 163,
+              "time": 94.23746153846153,
+              "duration": 0.25961538461538464
+            },
+            {
+              "target": 94.23746153846153,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 163,
+              "time": 94.23746153846153,
+              "duration": null
+            },
+            {
+              "target": 94.52592307692308,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 163.5,
+              "time": 94.52592307692308,
+              "duration": null
+            },
+            {
+              "target": 94.81438461538461,
+              "lateMs": 0,
+              "key": "K",
+              "voice": 0,
+              "beat": 164,
+              "time": 94.81438461538461,
+              "duration": 0.3173076923076923
+            },
+            {
+              "target": 94.81438461538461,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 164,
+              "time": 94.81438461538461,
+              "duration": null
+            },
+            {
+              "target": 95.10284615384616,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 164.5,
+              "time": 95.10284615384616,
+              "duration": null
+            },
+            {
+              "target": 95.39130769230769,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 165,
+              "time": 95.39130769230769,
+              "duration": 0.20192307692307693
+            },
+            {
+              "target": 95.39130769230769,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 165,
+              "time": 95.39130769230769,
+              "duration": null
+            },
+            {
+              "target": 95.67976923076922,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 165.5,
+              "time": 95.67976923076922,
+              "duration": null
+            },
+            {
+              "target": 95.96823076923077,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 166,
+              "time": 95.96823076923077,
+              "duration": 0.6634615384615384
+            },
+            {
+              "target": 95.96823076923077,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 166,
+              "time": 95.96823076923077,
+              "duration": null
+            },
+            {
+              "target": 96.2566923076923,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 166.5,
+              "time": 96.2566923076923,
+              "duration": null
+            },
+            {
+              "target": 96.54515384615384,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 167,
+              "time": 96.54515384615384,
+              "duration": null
+            },
+            {
+              "target": 96.83361538461538,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 167.5,
+              "time": 96.83361538461538,
+              "duration": null
+            },
+            {
+              "target": 97.12207692307692,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 168,
+              "time": 97.12207692307692,
+              "duration": 0.41538461538461535
+            },
+            {
+              "target": 97.12207692307692,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 168,
+              "time": 97.12207692307692,
+              "duration": null
+            },
+            {
+              "target": 97.41053846153847,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 168.5,
+              "time": 97.41053846153847,
+              "duration": null
+            },
+            {
+              "target": 97.699,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 169,
+              "time": 97.699,
+              "duration": 0.20769230769230768
+            },
+            {
+              "target": 97.699,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 169,
+              "time": 97.699,
+              "duration": null
+            },
+            {
+              "target": 97.98746153846153,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 169.5,
+              "time": 97.98746153846153,
+              "duration": null
+            },
+            {
+              "target": 98.27592307692308,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 170,
+              "time": 98.27592307692308,
+              "duration": 0.3576923076923077
+            },
+            {
+              "target": 98.27592307692308,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 170,
+              "time": 98.27592307692308,
+              "duration": null
+            },
+            {
+              "target": 98.56438461538461,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 170.5,
+              "time": 98.56438461538461,
+              "duration": null
+            },
+            {
+              "target": 98.85284615384616,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 171,
+              "time": 98.85284615384616,
+              "duration": 0.3807692307692308
+            },
+            {
+              "target": 98.85284615384616,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 171,
+              "time": 98.85284615384616,
+              "duration": null
+            },
+            {
+              "target": 99.14130769230769,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 171.5,
+              "time": 99.14130769230769,
+              "duration": null
+            },
+            {
+              "target": 99.42976923076922,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 172,
+              "time": 99.42976923076922,
+              "duration": 0.40384615384615385
+            },
+            {
+              "target": 99.42976923076922,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 172,
+              "time": 99.42976923076922,
+              "duration": null
+            },
+            {
+              "target": 99.71823076923077,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 172.5,
+              "time": 99.71823076923077,
+              "duration": null
+            },
+            {
+              "target": 100.0066923076923,
+              "lateMs": 0,
+              "key": "F",
+              "voice": 0,
+              "beat": 173,
+              "time": 100.0066923076923,
+              "duration": 0.375
+            },
+            {
+              "target": 100.0066923076923,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 173,
+              "time": 100.0066923076923,
+              "duration": null
+            },
+            {
+              "target": 100.29515384615384,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 173.5,
+              "time": 100.29515384615384,
+              "duration": null
+            },
+            {
+              "target": 100.58361538461538,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 174,
+              "time": 100.58361538461538,
+              "duration": 0.6173076923076923
+            },
+            {
+              "target": 100.58361538461538,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 174,
+              "time": 100.58361538461538,
+              "duration": null
+            },
+            {
+              "target": 100.87207692307692,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 174.5,
+              "time": 100.87207692307692,
+              "duration": null
+            },
+            {
+              "target": 101.16053846153847,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 175,
+              "time": 101.16053846153847,
+              "duration": null
+            },
+            {
+              "target": 101.449,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 175.5,
+              "time": 101.449,
+              "duration": null
+            },
+            {
+              "target": 101.449,
+              "lateMs": 0,
+              "key": "Z",
+              "voice": 1,
+              "beat": 175.5,
+              "time": 101.449,
+              "duration": null
+            },
+            {
+              "target": 101.73746153846153,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 176,
+              "time": 101.73746153846153,
+              "duration": 0.3346153846153846
+            },
+            {
+              "target": 101.73746153846153,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 176,
+              "time": 101.73746153846153,
+              "duration": null
+            },
+            {
+              "target": 102.02592307692308,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 176.5,
+              "time": 102.02592307692308,
+              "duration": null
+            },
+            {
+              "target": 102.31438461538461,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 177,
+              "time": 102.31438461538461,
+              "duration": 0.34615384615384615
+            },
+            {
+              "target": 102.31438461538461,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 177,
+              "time": 102.31438461538461,
+              "duration": null
+            },
+            {
+              "target": 102.60284615384616,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 177.5,
+              "time": 102.60284615384616,
+              "duration": null
+            },
+            {
+              "target": 102.89130769230769,
+              "lateMs": 0,
+              "key": "K",
+              "voice": 0,
+              "beat": 178,
+              "time": 102.89130769230769,
+              "duration": 0.4326923076923077
+            },
+            {
+              "target": 102.89130769230769,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 178,
+              "time": 102.89130769230769,
+              "duration": null
+            },
+            {
+              "target": 103.17976923076922,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 178.5,
+              "time": 103.17976923076922,
+              "duration": null
+            },
+            {
+              "target": 103.46823076923077,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 179,
+              "time": 103.46823076923077,
+              "duration": 0.3115384615384616
+            },
+            {
+              "target": 103.46823076923077,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 179,
+              "time": 103.46823076923077,
+              "duration": null
+            },
+            {
+              "target": 103.7566923076923,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 179.5,
+              "time": 103.7566923076923,
+              "duration": null
+            },
+            {
+              "target": 104.04515384615384,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 180,
+              "time": 104.04515384615384,
+              "duration": 0.3230769230769231
+            },
+            {
+              "target": 104.04515384615384,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 180,
+              "time": 104.04515384615384,
+              "duration": null
+            },
+            {
+              "target": 104.33361538461538,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 180.5,
+              "time": 104.33361538461538,
+              "duration": null
+            },
+            {
+              "target": 104.62207692307692,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 181,
+              "time": 104.62207692307692,
+              "duration": 0.39230769230769236
+            },
+            {
+              "target": 104.62207692307692,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 181,
+              "time": 104.62207692307692,
+              "duration": null
+            },
+            {
+              "target": 104.91053846153847,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 181.5,
+              "time": 104.91053846153847,
+              "duration": null
+            },
+            {
+              "target": 105.199,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 182,
+              "time": 105.199,
+              "duration": 0.6057692307692307
+            },
+            {
+              "target": 105.199,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 182,
+              "time": 105.199,
+              "duration": null
+            },
+            {
+              "target": 105.48746153846153,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 182.5,
+              "time": 105.48746153846153,
+              "duration": null
+            },
+            {
+              "target": 105.77592307692308,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 183,
+              "time": 105.77592307692308,
+              "duration": null
+            },
+            {
+              "target": 106.06438461538461,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 183.5,
+              "time": 106.06438461538461,
+              "duration": null
+            },
+            {
+              "target": 106.35284615384616,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 184,
+              "time": 106.35284615384616,
+              "duration": 0.2769230769230769
+            },
+            {
+              "target": 106.35284615384616,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 184,
+              "time": 106.35284615384616,
+              "duration": null
+            },
+            {
+              "target": 106.64130769230769,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 184.5,
+              "time": 106.64130769230769,
+              "duration": null
+            },
+            {
+              "target": 106.78553846153847,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 184.75,
+              "time": 106.78553846153847,
+              "duration": 0.16153846153846155
+            },
+            {
+              "target": 106.92976923076922,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 185,
+              "time": 106.92976923076922,
+              "duration": null
+            },
+            {
+              "target": 107.21823076923077,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 185.5,
+              "time": 107.21823076923077,
+              "duration": 0.20769230769230768
+            },
+            {
+              "target": 107.21823076923077,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 185.5,
+              "time": 107.21823076923077,
+              "duration": null
+            },
+            {
+              "target": 107.5066923076923,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 186,
+              "time": 107.5066923076923,
+              "duration": null
+            },
+            {
+              "target": 107.65092307692308,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 186.25,
+              "time": 107.65092307692308,
+              "duration": 0.23076923076923078
+            },
+            {
+              "target": 107.79515384615384,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 186.5,
+              "time": 107.79515384615384,
+              "duration": null
+            },
+            {
+              "target": 108.08361538461538,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 187,
+              "time": 108.08361538461538,
+              "duration": 0.25961538461538464
+            },
+            {
+              "target": 108.08361538461538,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 187,
+              "time": 108.08361538461538,
+              "duration": null
+            },
+            {
+              "target": 108.37207692307692,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 187.5,
+              "time": 108.37207692307692,
+              "duration": null
+            },
+            {
+              "target": 108.66053846153847,
+              "lateMs": 0,
+              "key": "K",
+              "voice": 0,
+              "beat": 188,
+              "time": 108.66053846153847,
+              "duration": 0.3173076923076923
+            },
+            {
+              "target": 108.66053846153847,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 188,
+              "time": 108.66053846153847,
+              "duration": null
+            },
+            {
+              "target": 108.949,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 188.5,
+              "time": 108.949,
+              "duration": null
+            },
+            {
+              "target": 109.23746153846153,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 189,
+              "time": 109.23746153846153,
+              "duration": 0.20192307692307693
+            },
+            {
+              "target": 109.23746153846153,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 189,
+              "time": 109.23746153846153,
+              "duration": null
+            },
+            {
+              "target": 109.52592307692308,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 189.5,
+              "time": 109.52592307692308,
+              "duration": null
+            },
+            {
+              "target": 109.81438461538461,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 190,
+              "time": 109.81438461538461,
+              "duration": 0.6634615384615384
+            },
+            {
+              "target": 109.81438461538461,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 190,
+              "time": 109.81438461538461,
+              "duration": null
+            },
+            {
+              "target": 110.10284615384616,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 190.5,
+              "time": 110.10284615384616,
+              "duration": null
+            },
+            {
+              "target": 110.39130769230769,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 191,
+              "time": 110.39130769230769,
+              "duration": null
+            },
+            {
+              "target": 110.67976923076922,
+              "lateMs": 0,
+              "key": "V",
+              "voice": 1,
+              "beat": 191.5,
+              "time": 110.67976923076922,
+              "duration": null
+            },
+            {
+              "target": 110.67976923076922,
+              "lateMs": 0,
+              "key": "Z",
+              "voice": 1,
+              "beat": 191.5,
+              "time": 110.67976923076922,
+              "duration": null
+            },
+            {
+              "target": 110.96823076923077,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 192,
+              "time": 110.96823076923077,
+              "duration": 0.41538461538461535
+            },
+            {
+              "target": 110.96823076923077,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 192,
+              "time": 110.96823076923077,
+              "duration": null
+            },
+            {
+              "target": 111.54515384615384,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 193,
+              "time": 111.54515384615384,
+              "duration": 0.20769230769230768
+            },
+            {
+              "target": 112.12207692307692,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 194,
+              "time": 112.12207692307692,
+              "duration": 0.3576923076923077
+            },
+            {
+              "target": 112.12207692307692,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 194,
+              "time": 112.12207692307692,
+              "duration": null
+            },
+            {
+              "target": 112.699,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 195,
+              "time": 112.699,
+              "duration": 0.3807692307692308
+            },
+            {
+              "target": 113.27592307692308,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 196,
+              "time": 113.27592307692308,
+              "duration": 0.40384615384615385
+            },
+            {
+              "target": 113.27592307692308,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 196,
+              "time": 113.27592307692308,
+              "duration": null
+            },
+            {
+              "target": 113.85284615384616,
+              "lateMs": 0,
+              "key": "F",
+              "voice": 0,
+              "beat": 197,
+              "time": 113.85284615384616,
+              "duration": 0.375
+            },
+            {
+              "target": 114.42976923076922,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 198,
+              "time": 114.42976923076922,
+              "duration": 0.6173076923076923
+            },
+            {
+              "target": 114.42976923076922,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 198,
+              "time": 114.42976923076922,
+              "duration": null
+            },
+            {
+              "target": 115.58361538461538,
+              "lateMs": 0,
+              "key": "H",
+              "voice": 0,
+              "beat": 200,
+              "time": 115.58361538461538,
+              "duration": 0.49038461538461536
+            },
+            {
+              "target": 115.58361538461538,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 200,
+              "time": 115.58361538461538,
+              "duration": null
+            },
+            {
+              "target": 116.449,
+              "lateMs": 0,
+              "key": "J",
+              "voice": 0,
+              "beat": 201.5,
+              "time": 116.449,
+              "duration": 0.3173076923076923
+            },
+            {
+              "target": 116.73746153846153,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 202,
+              "time": 116.73746153846153,
+              "duration": null
+            },
+            {
+              "target": 117.31438461538461,
+              "lateMs": 0,
+              "key": "G",
+              "voice": 0,
+              "beat": 203,
+              "time": 117.31438461538461,
+              "duration": 0.6346153846153846
+            },
+            {
+              "target": 117.31438461538461,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 203,
+              "time": 117.31438461538461,
+              "duration": null
+            },
+            {
+              "target": 117.89130769230769,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 204,
+              "time": 117.89130769230769,
+              "duration": null
+            },
+            {
+              "target": 118.46823076923077,
+              "lateMs": 0,
+              "key": "F",
+              "voice": 0,
+              "beat": 205,
+              "time": 118.46823076923077,
+              "duration": 0.49038461538461536
+            },
+            {
+              "target": 119.04515384615384,
+              "lateMs": 0,
+              "key": "C",
+              "voice": 1,
+              "beat": 206,
+              "time": 119.04515384615384,
+              "duration": null
+            },
+            {
+              "target": 119.33361538461538,
+              "lateMs": 0,
+              "key": "A",
+              "voice": 0,
+              "beat": 206.5,
+              "time": 119.33361538461538,
+              "duration": 0.45000000000000007
+            },
+            {
+              "target": 119.62207692307692,
+              "lateMs": 0,
+              "key": "X",
+              "voice": 1,
+              "beat": 207,
+              "time": 119.62207692307692,
+              "duration": null
+            }
+          ],
+          "media": null
+        },
+        "native": {
+          "synth": [
+            {
+              "n": "C5",
+              "d": 0.41538461538461535,
+              "t": 0.199
+            },
+            {
+              "n": "C5",
+              "d": 0.20769230769230768,
+              "t": 0.7759230769230769
+            },
+            {
+              "n": "Eb5",
+              "d": 0.3576923076923077,
+              "t": 1.3528461538461538
+            },
+            {
+              "n": "Bb4",
+              "d": 0.3807692307692308,
+              "t": 1.929769230769231
+            },
+            {
+              "n": "C5",
+              "d": 0.40384615384615385,
+              "t": 2.5066923076923073
+            },
+            {
+              "n": "G4",
+              "d": 0.375,
+              "t": 3.0836153846153844
+            },
+            {
+              "n": "Bb4",
+              "d": 0.6173076923076923,
+              "t": 3.6605384615384615
+            },
+            {
+              "n": "C5",
+              "d": 0.41538461538461535,
+              "t": 4.814384615384615
+            },
+            {
+              "n": "C5",
+              "d": 0.20769230769230768,
+              "t": 5.391307692307692
+            },
+            {
+              "n": "Eb5",
+              "d": 0.3576923076923077,
+              "t": 5.968230769230769
+            },
+            {
+              "n": "Bb4",
+              "d": 0.3807692307692308,
+              "t": 6.545153846153846
+            },
+            {
+              "n": "C5",
+              "d": 0.40384615384615385,
+              "t": 7.122076923076923
+            },
+            {
+              "n": "G4",
+              "d": 0.375,
+              "t": 7.699
+            },
+            {
+              "n": "Bb4",
+              "d": 0.6173076923076923,
+              "t": 8.275923076923076
+            },
+            {
+              "n": "C5",
+              "d": 0.41538461538461535,
+              "t": 9.42976923076923
+            },
+            {
+              "n": "C5",
+              "d": 0.20769230769230768,
+              "t": 10.006692307692308
+            },
+            {
+              "n": "Eb5",
+              "d": 0.3576923076923077,
+              "t": 10.583615384615385
+            },
+            {
+              "n": "Bb4",
+              "d": 0.3807692307692308,
+              "t": 11.160538461538462
+            },
+            {
+              "n": "C5",
+              "d": 0.40384615384615385,
+              "t": 11.737461538461538
+            },
+            {
+              "n": "G4",
+              "d": 0.375,
+              "t": 12.314384615384615
+            },
+            {
+              "n": "Bb4",
+              "d": 0.6173076923076923,
+              "t": 12.891307692307691
+            },
+            {
+              "n": "C5",
+              "d": 0.41538461538461535,
+              "t": 14.045153846153847
+            },
+            {
+              "n": "C5",
+              "d": 0.20769230769230768,
+              "t": 14.622076923076923
+            },
+            {
+              "n": "Eb5",
+              "d": 0.3576923076923077,
+              "t": 15.199
+            },
+            {
+              "n": "Bb4",
+              "d": 0.3807692307692308,
+              "t": 15.775923076923076
+            },
+            {
+              "n": "C5",
+              "d": 0.40384615384615385,
+              "t": 16.352846153846155
+            },
+            {
+              "n": "G4",
+              "d": 0.375,
+              "t": 16.92976923076923
+            },
+            {
+              "n": "Bb4",
+              "d": 0.6173076923076923,
+              "t": 17.506692307692308
+            },
+            {
+              "n": "C5",
+              "d": 0.41538461538461535,
+              "t": 18.66053846153846
+            },
+            {
+              "n": "C5",
+              "d": 0.20769230769230768,
+              "t": 19.23746153846154
+            },
+            {
+              "n": "Eb5",
+              "d": 0.3576923076923077,
+              "t": 19.81438461538462
+            },
+            {
+              "n": "Bb4",
+              "d": 0.3807692307692308,
+              "t": 20.391307692307695
+            },
+            {
+              "n": "C5",
+              "d": 0.40384615384615385,
+              "t": 20.96823076923077
+            },
+            {
+              "n": "G4",
+              "d": 0.375,
+              "t": 21.54515384615385
+            },
+            {
+              "n": "Bb4",
+              "d": 0.6173076923076923,
+              "t": 22.122076923076925
+            },
+            {
+              "n": "F4",
+              "d": 0.46153846153846156,
+              "t": 23.27592307692308
+            },
+            {
+              "n": "G4",
+              "d": 0.34615384615384615,
+              "t": 23.852846153846155
+            },
+            {
+              "n": "Bb4",
+              "d": 0.46153846153846156,
+              "t": 24.42976923076923
+            },
+            {
+              "n": "C5",
+              "d": 0.5769230769230769,
+              "t": 25.006692307692308
+            },
+            {
+              "n": "Eb5",
+              "d": 0.3173076923076923,
+              "t": 25.872076923076925
+            },
+            {
+              "n": "C5",
+              "d": 0.34615384615384615,
+              "t": 26.449
+            },
+            {
+              "n": "Bb4",
+              "d": 0.40384615384615385,
+              "t": 27.02592307692308
+            },
+            {
+              "n": "C5",
+              "d": 0.41538461538461535,
+              "t": 27.891307692307695
+            },
+            {
+              "n": "C5",
+              "d": 0.20769230769230768,
+              "t": 28.46823076923077
+            },
+            {
+              "n": "Eb5",
+              "d": 0.3576923076923077,
+              "t": 29.04515384615385
+            },
+            {
+              "n": "Bb4",
+              "d": 0.3807692307692308,
+              "t": 29.622076923076925
+            },
+            {
+              "n": "C5",
+              "d": 0.40384615384615385,
+              "t": 30.199
+            },
+            {
+              "n": "G4",
+              "d": 0.375,
+              "t": 30.77592307692308
+            },
+            {
+              "n": "Bb4",
+              "d": 0.6173076923076923,
+              "t": 31.352846153846155
+            },
+            {
+              "n": "F4",
+              "d": 0.46153846153846156,
+              "t": 32.506692307692305
+            },
+            {
+              "n": "G4",
+              "d": 0.34615384615384615,
+              "t": 33.083615384615385
+            },
+            {
+              "n": "Bb4",
+              "d": 0.46153846153846156,
+              "t": 33.66053846153846
+            },
+            {
+              "n": "C5",
+              "d": 0.5769230769230769,
+              "t": 34.23746153846154
+            },
+            {
+              "n": "Eb5",
+              "d": 0.3173076923076923,
+              "t": 35.10284615384615
+            },
+            {
+              "n": "C5",
+              "d": 0.34615384615384615,
+              "t": 35.67976923076923
+            },
+            {
+              "n": "Bb4",
+              "d": 0.40384615384615385,
+              "t": 36.256692307692305
+            },
+            {
+              "n": "C5",
+              "d": 0.41538461538461535,
+              "t": 37.12207692307692
+            },
+            {
+              "n": "C5",
+              "d": 0.20769230769230768,
+              "t": 37.699
+            },
+            {
+              "n": "Eb5",
+              "d": 0.3576923076923077,
+              "t": 38.27592307692308
+            },
+            {
+              "n": "Bb4",
+              "d": 0.3807692307692308,
+              "t": 38.85284615384615
+            },
+            {
+              "n": "C5",
+              "d": 0.40384615384615385,
+              "t": 39.42976923076923
+            },
+            {
+              "n": "G4",
+              "d": 0.375,
+              "t": 40.006692307692305
+            },
+            {
+              "n": "Bb4",
+              "d": 0.6173076923076923,
+              "t": 40.583615384615385
+            },
+            {
+              "n": "F4",
+              "d": 0.46153846153846156,
+              "t": 41.73746153846154
+            },
+            {
+              "n": "G4",
+              "d": 0.34615384615384615,
+              "t": 42.31438461538461
+            },
+            {
+              "n": "Bb4",
+              "d": 0.46153846153846156,
+              "t": 42.89130769230769
+            },
+            {
+              "n": "C5",
+              "d": 0.5769230769230769,
+              "t": 43.468230769230765
+            },
+            {
+              "n": "Eb5",
+              "d": 0.3173076923076923,
+              "t": 44.333615384615385
+            },
+            {
+              "n": "C5",
+              "d": 0.34615384615384615,
+              "t": 44.91053846153846
+            },
+            {
+              "n": "Bb4",
+              "d": 0.40384615384615385,
+              "t": 45.48746153846154
+            },
+            {
+              "n": "C5",
+              "d": 0.3346153846153846,
+              "t": 46.35284615384615
+            },
+            {
+              "n": "Eb5",
+              "d": 0.34615384615384615,
+              "t": 46.92976923076923
+            },
+            {
+              "n": "F5",
+              "d": 0.4326923076923077,
+              "t": 47.506692307692305
+            },
+            {
+              "n": "Eb5",
+              "d": 0.3115384615384616,
+              "t": 48.083615384615385
+            },
+            {
+              "n": "C5",
+              "d": 0.3230769230769231,
+              "t": 48.66053846153846
+            },
+            {
+              "n": "Bb4",
+              "d": 0.39230769230769236,
+              "t": 49.23746153846154
+            },
+            {
+              "n": "C5",
+              "d": 0.6057692307692307,
+              "t": 49.81438461538461
+            },
+            {
+              "n": "F4",
+              "d": 0.46153846153846156,
+              "t": 50.968230769230765
+            },
+            {
+              "n": "G4",
+              "d": 0.34615384615384615,
+              "t": 51.545153846153845
+            },
+            {
+              "n": "Bb4",
+              "d": 0.46153846153846156,
+              "t": 52.12207692307692
+            },
+            {
+              "n": "C5",
+              "d": 0.5769230769230769,
+              "t": 52.699
+            },
+            {
+              "n": "Eb5",
+              "d": 0.3173076923076923,
+              "t": 53.56438461538461
+            },
+            {
+              "n": "C5",
+              "d": 0.34615384615384615,
+              "t": 54.14130769230769
+            },
+            {
+              "n": "Bb4",
+              "d": 0.40384615384615385,
+              "t": 54.718230769230765
+            },
+            {
+              "n": "C5",
+              "d": 0.3346153846153846,
+              "t": 55.583615384615385
+            },
+            {
+              "n": "Eb5",
+              "d": 0.34615384615384615,
+              "t": 56.16053846153846
+            },
+            {
+              "n": "F5",
+              "d": 0.4326923076923077,
+              "t": 56.73746153846154
+            },
+            {
+              "n": "Eb5",
+              "d": 0.3115384615384616,
+              "t": 57.31438461538461
+            },
+            {
+              "n": "C5",
+              "d": 0.3230769230769231,
+              "t": 57.89130769230769
+            },
+            {
+              "n": "Bb4",
+              "d": 0.39230769230769236,
+              "t": 58.468230769230765
+            },
+            {
+              "n": "C5",
+              "d": 0.6057692307692307,
+              "t": 59.045153846153845
+            },
+            {
+              "n": "F4",
+              "d": 0.46153846153846156,
+              "t": 60.199
+            },
+            {
+              "n": "G4",
+              "d": 0.34615384615384615,
+              "t": 60.77592307692308
+            },
+            {
+              "n": "Bb4",
+              "d": 0.46153846153846156,
+              "t": 61.35284615384615
+            },
+            {
+              "n": "C5",
+              "d": 0.5769230769230769,
+              "t": 61.92976923076923
+            },
+            {
+              "n": "Eb5",
+              "d": 0.3173076923076923,
+              "t": 62.795153846153845
+            },
+            {
+              "n": "C5",
+              "d": 0.34615384615384615,
+              "t": 63.37207692307692
+            },
+            {
+              "n": "Bb4",
+              "d": 0.40384615384615385,
+              "t": 63.949
+            },
+            {
+              "n": "C5",
+              "d": 0.23076923076923078,
+              "t": 64.81438461538461
+            },
+            {
+              "n": "Eb5",
+              "d": 0.1846153846153846,
+              "t": 65.96823076923077
+            },
+            {
+              "n": "Bb4",
+              "d": 0.3173076923076923,
+              "t": 67.12207692307692
+            },
+            {
+              "n": "C5",
+              "d": 0.14423076923076922,
+              "t": 68.56438461538461
+            },
+            {
+              "n": "C5",
+              "d": 0.23076923076923078,
+              "t": 69.42976923076922
+            },
+            {
+              "n": "Eb5",
+              "d": 0.1846153846153846,
+              "t": 70.58361538461538
+            },
+            {
+              "n": "Bb4",
+              "d": 0.3173076923076923,
+              "t": 71.73746153846153
+            },
+            {
+              "n": "C5",
+              "d": 0.14423076923076922,
+              "t": 73.17976923076922
+            },
+            {
+              "n": "C5",
+              "d": 0.23076923076923078,
+              "t": 74.04515384615384
+            },
+            {
+              "n": "Eb5",
+              "d": 0.1846153846153846,
+              "t": 75.199
+            },
+            {
+              "n": "Bb4",
+              "d": 0.3173076923076923,
+              "t": 76.35284615384616
+            },
+            {
+              "n": "C5",
+              "d": 0.14423076923076922,
+              "t": 77.79515384615384
+            },
+            {
+              "n": "C5",
+              "d": 0.23076923076923078,
+              "t": 78.66053846153847
+            },
+            {
+              "n": "Eb5",
+              "d": 0.1846153846153846,
+              "t": 79.81438461538461
+            },
+            {
+              "n": "Bb4",
+              "d": 0.3173076923076923,
+              "t": 80.96823076923077
+            },
+            {
+              "n": "C5",
+              "d": 0.14423076923076922,
+              "t": 82.41053846153847
+            },
+            {
+              "n": "C5",
+              "d": 0.41538461538461535,
+              "t": 83.27592307692308
+            },
+            {
+              "n": "C5",
+              "d": 0.20769230769230768,
+              "t": 83.85284615384616
+            },
+            {
+              "n": "Eb5",
+              "d": 0.3576923076923077,
+              "t": 84.42976923076922
+            },
+            {
+              "n": "Bb4",
+              "d": 0.3807692307692308,
+              "t": 85.0066923076923
+            },
+            {
+              "n": "C5",
+              "d": 0.40384615384615385,
+              "t": 85.58361538461538
+            },
+            {
+              "n": "G4",
+              "d": 0.375,
+              "t": 86.16053846153847
+            },
+            {
+              "n": "Bb4",
+              "d": 0.6173076923076923,
+              "t": 86.73746153846153
+            },
+            {
+              "n": "C5",
+              "d": 0.3346153846153846,
+              "t": 87.89130769230769
+            },
+            {
+              "n": "Eb5",
+              "d": 0.34615384615384615,
+              "t": 88.46823076923077
+            },
+            {
+              "n": "F5",
+              "d": 0.4326923076923077,
+              "t": 89.04515384615384
+            },
+            {
+              "n": "Eb5",
+              "d": 0.3115384615384616,
+              "t": 89.62207692307692
+            },
+            {
+              "n": "C5",
+              "d": 0.3230769230769231,
+              "t": 90.199
+            },
+            {
+              "n": "Bb4",
+              "d": 0.39230769230769236,
+              "t": 90.77592307692308
+            },
+            {
+              "n": "C5",
+              "d": 0.6057692307692307,
+              "t": 91.35284615384616
+            },
+            {
+              "n": "C5",
+              "d": 0.2769230769230769,
+              "t": 92.5066923076923
+            },
+            {
+              "n": "C5",
+              "d": 0.16153846153846155,
+              "t": 92.93938461538461
+            },
+            {
+              "n": "Eb5",
+              "d": 0.20769230769230768,
+              "t": 93.37207692307692
+            },
+            {
+              "n": "Bb4",
+              "d": 0.23076923076923078,
+              "t": 93.80476923076922
+            },
+            {
+              "n": "C5",
+              "d": 0.25961538461538464,
+              "t": 94.23746153846153
+            },
+            {
+              "n": "F5",
+              "d": 0.3173076923076923,
+              "t": 94.81438461538461
+            },
+            {
+              "n": "Eb5",
+              "d": 0.20192307692307693,
+              "t": 95.39130769230769
+            },
+            {
+              "n": "C5",
+              "d": 0.6634615384615384,
+              "t": 95.96823076923077
+            },
+            {
+              "n": "C5",
+              "d": 0.41538461538461535,
+              "t": 97.12207692307692
+            },
+            {
+              "n": "C5",
+              "d": 0.20769230769230768,
+              "t": 97.699
+            },
+            {
+              "n": "Eb5",
+              "d": 0.3576923076923077,
+              "t": 98.27592307692308
+            },
+            {
+              "n": "Bb4",
+              "d": 0.3807692307692308,
+              "t": 98.85284615384616
+            },
+            {
+              "n": "C5",
+              "d": 0.40384615384615385,
+              "t": 99.42976923076922
+            },
+            {
+              "n": "G4",
+              "d": 0.375,
+              "t": 100.0066923076923
+            },
+            {
+              "n": "Bb4",
+              "d": 0.6173076923076923,
+              "t": 100.58361538461538
+            },
+            {
+              "n": "C5",
+              "d": 0.3346153846153846,
+              "t": 101.73746153846153
+            },
+            {
+              "n": "Eb5",
+              "d": 0.34615384615384615,
+              "t": 102.31438461538461
+            },
+            {
+              "n": "F5",
+              "d": 0.4326923076923077,
+              "t": 102.89130769230769
+            },
+            {
+              "n": "Eb5",
+              "d": 0.3115384615384616,
+              "t": 103.46823076923077
+            },
+            {
+              "n": "C5",
+              "d": 0.3230769230769231,
+              "t": 104.04515384615384
+            },
+            {
+              "n": "Bb4",
+              "d": 0.39230769230769236,
+              "t": 104.62207692307692
+            },
+            {
+              "n": "C5",
+              "d": 0.6057692307692307,
+              "t": 105.199
+            },
+            {
+              "n": "C5",
+              "d": 0.2769230769230769,
+              "t": 106.35284615384616
+            },
+            {
+              "n": "C5",
+              "d": 0.16153846153846155,
+              "t": 106.78553846153847
+            },
+            {
+              "n": "Eb5",
+              "d": 0.20769230769230768,
+              "t": 107.21823076923077
+            },
+            {
+              "n": "Bb4",
+              "d": 0.23076923076923078,
+              "t": 107.65092307692308
+            },
+            {
+              "n": "C5",
+              "d": 0.25961538461538464,
+              "t": 108.08361538461538
+            },
+            {
+              "n": "F5",
+              "d": 0.3173076923076923,
+              "t": 108.66053846153847
+            },
+            {
+              "n": "Eb5",
+              "d": 0.20192307692307693,
+              "t": 109.23746153846153
+            },
+            {
+              "n": "C5",
+              "d": 0.6634615384615384,
+              "t": 109.81438461538461
+            },
+            {
+              "n": "C5",
+              "d": 0.41538461538461535,
+              "t": 110.96823076923077
+            },
+            {
+              "n": "C5",
+              "d": 0.20769230769230768,
+              "t": 111.54515384615384
+            },
+            {
+              "n": "Eb5",
+              "d": 0.3576923076923077,
+              "t": 112.12207692307692
+            },
+            {
+              "n": "Bb4",
+              "d": 0.3807692307692308,
+              "t": 112.699
+            },
+            {
+              "n": "C5",
+              "d": 0.40384615384615385,
+              "t": 113.27592307692308
+            },
+            {
+              "n": "G4",
+              "d": 0.375,
+              "t": 113.85284615384616
+            },
+            {
+              "n": "Bb4",
+              "d": 0.6173076923076923,
+              "t": 114.42976923076922
+            },
+            {
+              "n": "C5",
+              "d": 0.49038461538461536,
+              "t": 115.58361538461538
+            },
+            {
+              "n": "Eb5",
+              "d": 0.3173076923076923,
+              "t": 116.449
+            },
+            {
+              "n": "Bb4",
+              "d": 0.6346153846153846,
+              "t": 117.31438461538461
+            },
+            {
+              "n": "G4",
+              "d": 0.49038461538461536,
+              "t": 118.46823076923077
+            },
+            {
+              "n": "C4",
+              "d": 0.45000000000000007,
+              "t": 119.33361538461538
+            }
+          ],
+          "pads": [
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 0.199
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 1.3528461538461538
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 1.929769230769231
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 2.5066923076923073
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 3.6605384615384615
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 4.237461538461538
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 4.814384615384615
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 5.968230769230769
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 6.545153846153846
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 7.122076923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 8.275923076923076
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 8.852846153846153
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 9.42976923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 10.006692307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 10.583615384615385
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 11.160538461538462
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 11.737461538461538
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 12.314384615384615
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 12.891307692307691
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 13.46823076923077
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 14.045153846153847
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 14.622076923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 15.199
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 15.775923076923076
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 16.352846153846155
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 16.92976923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 17.506692307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 18.083615384615385
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 18.66053846153846
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 18.949
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 19.23746153846154
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 19.52592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 19.81438461538462
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 20.102846153846155
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 20.391307692307695
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 20.67976923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 20.96823076923077
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 21.256692307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 21.54515384615385
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 21.833615384615385
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 22.122076923076925
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 22.41053846153846
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 22.699
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 22.98746153846154
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 23.27592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 23.56438461538462
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 23.852846153846155
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 24.141307692307695
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 24.42976923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 24.71823076923077
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 25.006692307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 25.29515384615385
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 25.583615384615385
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 25.872076923076925
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 26.16053846153846
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 26.449
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 26.73746153846154
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 27.02592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 27.31438461538462
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 27.602846153846155
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 27.891307692307695
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 28.17976923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 28.46823076923077
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 28.756692307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 29.04515384615385
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 29.333615384615385
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 29.622076923076925
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 29.91053846153846
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 30.199
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 30.48746153846154
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 30.77592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 31.06438461538462
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 31.352846153846155
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 31.641307692307695
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 31.92976923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 32.218230769230765
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 32.506692307692305
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 32.795153846153845
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 33.083615384615385
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 33.37207692307692
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 33.66053846153846
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 33.949
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 34.23746153846154
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 34.52592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 34.81438461538461
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 35.10284615384615
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 35.39130769230769
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 35.67976923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 35.968230769230765
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 36.256692307692305
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 36.545153846153845
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 36.833615384615385
+            },
+            {
+              "n": "C4",
+              "d": 0.85,
+              "t": 36.833615384615385
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 37.12207692307692
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 37.41053846153846
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 37.699
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 37.98746153846154
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 38.27592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 38.56438461538461
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 38.85284615384615
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 39.14130769230769
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 39.42976923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 39.718230769230765
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 40.006692307692305
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 40.295153846153845
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 40.583615384615385
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 40.87207692307692
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 41.16053846153846
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 41.449
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 41.73746153846154
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 42.02592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 42.31438461538461
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 42.60284615384615
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 42.89130769230769
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 43.17976923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 43.468230769230765
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 43.756692307692305
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 44.045153846153845
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 44.333615384615385
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 44.62207692307692
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 44.91053846153846
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 45.199
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 45.48746153846154
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 45.77592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 46.06438461538461
+            },
+            {
+              "n": "C4",
+              "d": 0.85,
+              "t": 46.06438461538461
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 46.35284615384615
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 46.64130769230769
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 46.92976923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 47.218230769230765
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 47.506692307692305
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 47.795153846153845
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 48.083615384615385
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 48.37207692307692
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 48.66053846153846
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 48.949
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 49.23746153846154
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 49.52592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 49.81438461538461
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 50.10284615384615
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 50.39130769230769
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 50.67976923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 50.968230769230765
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 51.256692307692305
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 51.545153846153845
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 51.833615384615385
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 52.12207692307692
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 52.41053846153846
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 52.699
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 52.98746153846154
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 53.27592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 53.56438461538461
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 53.85284615384615
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 54.14130769230769
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 54.42976923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 54.718230769230765
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 55.006692307692305
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 55.295153846153845
+            },
+            {
+              "n": "C4",
+              "d": 0.85,
+              "t": 55.295153846153845
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 55.583615384615385
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 55.87207692307692
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 56.16053846153846
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 56.449
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 56.73746153846154
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 57.02592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 57.31438461538461
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 57.60284615384615
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 57.89130769230769
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 58.17976923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 58.468230769230765
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 58.756692307692305
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 59.045153846153845
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 59.333615384615385
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 59.62207692307692
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 59.91053846153846
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 60.199
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 60.48746153846154
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 60.77592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 61.06438461538461
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 61.35284615384615
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 61.64130769230769
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 61.92976923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 62.218230769230765
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 62.506692307692305
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 62.795153846153845
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 63.083615384615385
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 63.37207692307692
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 63.66053846153846
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 63.949
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 64.23746153846153
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 64.52592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.85,
+              "t": 64.52592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 64.81438461538461
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 68.85284615384616
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 69.42976923076922
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 74.04515384615384
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 78.08361538461538
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 78.66053846153847
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 83.27592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 83.56438461538461
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 83.85284615384616
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 84.14130769230769
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 84.42976923076922
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 84.71823076923077
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 85.0066923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 85.29515384615384
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 85.58361538461538
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 85.87207692307692
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 86.16053846153847
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 86.449
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 86.73746153846153
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 87.02592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 87.31438461538461
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 87.60284615384616
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 87.89130769230769
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 88.17976923076922
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 88.46823076923077
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 88.7566923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 89.04515384615384
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 89.33361538461538
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 89.62207692307692
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 89.91053846153847
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 90.199
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 90.48746153846153
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 90.77592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 91.06438461538461
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 91.35284615384616
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 91.64130769230769
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 91.92976923076922
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 92.21823076923077
+            },
+            {
+              "n": "C4",
+              "d": 0.85,
+              "t": 92.21823076923077
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 92.5066923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 92.79515384615384
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 93.08361538461538
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 93.37207692307692
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 93.66053846153847
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 93.949
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 94.23746153846153
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 94.52592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 94.81438461538461
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 95.10284615384616
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 95.39130769230769
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 95.67976923076922
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 95.96823076923077
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 96.2566923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 96.54515384615384
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 96.83361538461538
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 97.12207692307692
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 97.41053846153847
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 97.699
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 97.98746153846153
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 98.27592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 98.56438461538461
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 98.85284615384616
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 99.14130769230769
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 99.42976923076922
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 99.71823076923077
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 100.0066923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 100.29515384615384
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 100.58361538461538
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 100.87207692307692
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 101.16053846153847
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 101.449
+            },
+            {
+              "n": "C4",
+              "d": 0.85,
+              "t": 101.449
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 101.73746153846153
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 102.02592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 102.31438461538461
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 102.60284615384616
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 102.89130769230769
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 103.17976923076922
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 103.46823076923077
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 103.7566923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 104.04515384615384
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 104.33361538461538
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 104.62207692307692
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 104.91053846153847
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 105.199
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 105.48746153846153
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 105.77592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 106.06438461538461
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 106.35284615384616
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 106.64130769230769
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 106.92976923076922
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 107.21823076923077
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 107.5066923076923
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 107.79515384615384
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 108.08361538461538
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 108.37207692307692
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 108.66053846153847
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 108.949
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 109.23746153846153
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 109.52592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 109.81438461538461
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 110.10284615384616
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 110.39130769230769
+            },
+            {
+              "n": "C4",
+              "d": 0.45,
+              "t": 110.67976923076922
+            },
+            {
+              "n": "C4",
+              "d": 0.85,
+              "t": 110.67976923076922
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 110.96823076923077
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 112.12207692307692
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 113.27592307692308
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 114.42976923076922
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 115.58361538461538
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 116.73746153846153
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 117.31438461538461
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 117.89130769230769
+            },
+            {
+              "n": "C4",
+              "d": 0.12,
+              "t": 119.04515384615384
+            },
+            {
+              "n": "C4",
+              "d": 0.6,
+              "t": 119.62207692307692
+            }
+          ],
+          "inputs": []
+        },
+        "app": {
+          "bpm": 104,
+          "inputLocked": false,
+          "mode": "performance",
+          "audioTime": 120.272,
+          "transportStartAt": 0,
+          "running": false,
+          "starting": false,
+          "selected": 0,
+          "active": -1,
+          "grid": "off",
+          "lengthMode": "auto",
+          "signal": 0,
+          "tick": 0,
+          "held": 0,
+          "liveNotes": [],
+          "schedulerCount": 1,
+          "dropped": 0,
+          "audio": {
+            "disposed": false,
+            "loopSynths": 0,
+            "loopSamplers": 4,
+            "fixedNodes": 11
+          },
+          "limitNotice": "",
+          "audioReady": true,
+          "savedAvailable": false,
+          "storageOK": true,
+          "helpOpen": false,
+          "editPending": [
+            null,
+            null
+          ],
+          "editRevisions": [
+            0,
+            0
+          ],
+          "undoCounts": [
+            0,
+            0
+          ],
+          "tracks": [
+            {
+              "state": "empty",
+              "muted": false,
+              "bars": 1,
+              "origin": 0,
+              "events": [],
+              "take": null
+            },
+            {
+              "state": "empty",
+              "muted": false,
+              "bars": 1,
+              "origin": 0,
+              "events": [],
+              "take": null
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

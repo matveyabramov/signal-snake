@@ -1,0 +1,66 @@
+{
+  "checks": 21,
+  "results": [
+    "pad move and length change share original two-bar boundary",
+    "mute/unmute does not lose queued edit",
+    "actual old pad cycle finishes, then new lane/time plays",
+    "every edited pad event corresponds to exactly one real Tone Sampler trigger",
+    "one-bar melody plays with edited four-bar rhythm",
+    "four-bar live loop length change is queued",
+    "Stop keeps latest edited length and discards obsolete playback version",
+    "restart plays current edited pad rather than old CALL",
+    "next pad edit pending",
+    "Clear cancels queued edit and clears canonical events",
+    "no stale pad callback after Clear",
+    "recording invalidates in-flight drag; no stale gesture overwrites new take",
+    "overlapping same-pitch events occupy distinct editable blocks",
+    "crowded-row vertical drag keeps intended destination when row height changes",
+    "Undo history bounded to 50 score edits per track",
+    "repeated insert/delete does not invent duplicates",
+    "native audio nodes do not accumulate across repeated edits",
+    "editing creates no additional audio graph or Transport callbacks",
+    "roll scroll remains inside page at 390px width",
+    "no stuck manual keys after pointer and recording interactions",
+    "no runtime errors"
+  ],
+  "errors": [],
+  "pads": [
+    {
+      "event": {
+        "kind": "pad",
+        "value": 0,
+        "tick": 0,
+        "absoluteTick": 0,
+        "eventIndex": 0,
+        "cycle": 0
+      },
+      "time": 0.3613333333333333
+    },
+    {
+      "event": {
+        "kind": "pad",
+        "value": 2,
+        "tick": 768,
+        "absoluteTick": 768,
+        "eventIndex": 1,
+        "cycle": 0
+      },
+      "time": 2.861333333333329
+    },
+    {
+      "event": {
+        "kind": "pad",
+        "value": 3,
+        "tick": 192,
+        "absoluteTick": 1728,
+        "eventIndex": 0,
+        "cycle": 0
+      },
+      "time": 5.986333333333312
+    }
+  ],
+  "nativeNodes": {
+    "before": 134,
+    "after": 134
+  }
+}

@@ -1,0 +1,1058 @@
+[
+  {
+    "scenario": "A-first-loop",
+    "rawCount": 8,
+    "savedCount": 8,
+    "timelineCount": 8,
+    "scheduledCount": 8,
+    "bars": 2,
+    "maxCaptureErrorMs": 0.10000000149057442,
+    "maxPlaybackErrorMs": 0.10000000150123256,
+    "events": [
+      {
+        "kind": "note",
+        "value": "C4",
+        "tick": 2.9183999999999997,
+        "duration": 94.7712
+      },
+      {
+        "kind": "note",
+        "value": "C4",
+        "tick": 195.93215999908446,
+        "duration": 94.80192000045778
+      },
+      {
+        "kind": "note",
+        "value": "F4",
+        "tick": 386.08895999908447,
+        "duration": 93.51168000068662
+      },
+      {
+        "kind": "note",
+        "value": "G4",
+        "tick": 578.1196799995422,
+        "duration": 93.38879999999995
+      },
+      {
+        "kind": "note",
+        "value": "Bb4",
+        "tick": 770.0889599990844,
+        "duration": 93.020160000229
+      },
+      {
+        "kind": "note",
+        "value": "G4",
+        "tick": 962.2425599990844,
+        "duration": 93.0816000000001
+      },
+      {
+        "kind": "note",
+        "value": "F4",
+        "tick": 1154.0889599990844,
+        "duration": 92.95872000045779
+      },
+      {
+        "kind": "note",
+        "value": "C4",
+        "tick": 1345.9353599990843,
+        "duration": 93.20448000068677
+      }
+    ],
+    "physical": [
+      {
+        "code": "KeyA",
+        "note": "C4",
+        "on": 791,
+        "audioReady": true,
+        "liveOn": 0.005333333333333333,
+        "off": 1099.6000000014901,
+        "liveOff": 0.304
+      },
+      {
+        "code": "KeyA",
+        "note": "C4",
+        "on": 1419.300000000745,
+        "audioReady": true,
+        "liveOn": 0.624,
+        "off": 1728,
+        "liveOff": 0.9333333333333333
+      },
+      {
+        "code": "KeyD",
+        "note": "F4",
+        "on": 2038.3999999985099,
+        "audioReady": true,
+        "liveOn": 1.2426666666666666,
+        "off": 2342.800000000745,
+        "liveOff": 1.5466666666666666
+      },
+      {
+        "code": "KeyF",
+        "note": "G4",
+        "on": 2663.39999999851,
+        "audioReady": true,
+        "liveOn": 1.8666666666666667,
+        "off": 2967.5,
+        "liveOff": 2.1706666666666665
+      },
+      {
+        "code": "KeyG",
+        "note": "Bb4",
+        "on": 3288.300000000745,
+        "audioReady": true,
+        "liveOn": 2.496,
+        "off": 3591.199999999255,
+        "liveOff": 2.7946666666666666
+      },
+      {
+        "code": "KeyF",
+        "note": "G4",
+        "on": 3913.89999999851,
+        "audioReady": true,
+        "liveOn": 3.12,
+        "off": 4216.89999999851,
+        "liveOff": 3.424
+      },
+      {
+        "code": "KeyD",
+        "note": "F4",
+        "on": 4538.39999999851,
+        "audioReady": true,
+        "liveOn": 3.744,
+        "off": 4841,
+        "liveOff": 4.048
+      },
+      {
+        "code": "KeyA",
+        "note": "C4",
+        "on": 5162.800000000745,
+        "audioReady": true,
+        "liveOn": 4.368,
+        "off": 5466.300000000745,
+        "liveOff": 4.672
+      }
+    ],
+    "playback": [
+      {
+        "note": "C4",
+        "duration": 0.3085,
+        "time": 5.114833333333327,
+        "tick": 1538.918399999998,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "C4",
+        "duration": 0.3086000000014902,
+        "time": 5.743133333330351,
+        "tick": 1731.9321599990838,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "F4",
+        "duration": 0.3044000000022351,
+        "time": 6.362133333330336,
+        "tick": 1922.088959999079,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "G4",
+        "duration": 0.3039999999999998,
+        "time": 6.9872333333318295,
+        "tick": 2114.1196799995378,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "Bb4",
+        "duration": 0.3028000000007455,
+        "time": 7.612133333330339,
+        "tick": 2306.08895999908,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "G4",
+        "duration": 0.3030000000000003,
+        "time": 8.237633333330347,
+        "tick": 2498.2425599990825,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "F4",
+        "duration": 0.30260000000149023,
+        "time": 8.86213333333035,
+        "tick": 2690.0889599990833,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "C4",
+        "duration": 0.3034000000022356,
+        "time": 9.486633333330325,
+        "tick": 2881.9353599990754,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      }
+    ],
+    "audio": {
+      "sr": 48000,
+      "duration": 4.995833333333334,
+      "attackOffsets": [
+        0.05,
+        0.68,
+        1.3,
+        1.92,
+        2.5500000000000003,
+        3.17,
+        3.8000000000000003,
+        4.42
+      ],
+      "maxRelativeErrorMs": 2.8999999985099834
+    }
+  },
+  {
+    "scenario": "A-running",
+    "rawCount": 8,
+    "savedCount": 8,
+    "timelineCount": 8,
+    "scheduledCount": 8,
+    "bars": 2,
+    "maxCaptureErrorMs": 0.09999999776511004,
+    "maxPlaybackErrorMs": 0.09999999779264357,
+    "events": [
+      {
+        "kind": "note",
+        "value": "C4",
+        "tick": 1.2902399997711183,
+        "duration": 93.66528000068665
+      },
+      {
+        "kind": "note",
+        "value": "C4",
+        "tick": 193.2902399997711,
+        "duration": 93.38880000000003
+      },
+      {
+        "kind": "note",
+        "value": "F4",
+        "tick": 385.47456000022885,
+        "duration": 93.08159999999998
+      },
+      {
+        "kind": "note",
+        "value": "G4",
+        "tick": 577.5052799995423,
+        "duration": 93.29664000091543
+      },
+      {
+        "kind": "note",
+        "value": "Bb4",
+        "tick": 769.1980799995422,
+        "duration": 93.23520000000008
+      },
+      {
+        "kind": "note",
+        "value": "G4",
+        "tick": 961.4438399997711,
+        "duration": 93.45023999977127
+      },
+      {
+        "kind": "note",
+        "value": "F4",
+        "tick": 1153.7817600002288,
+        "duration": 93.14303999977119
+      },
+      {
+        "kind": "note",
+        "value": "C4",
+        "tick": 1345.4745600002286,
+        "duration": 93.29663999977151
+      }
+    ],
+    "physical": [
+      {
+        "code": "KeyA",
+        "note": "C4",
+        "on": 623.9000000022352,
+        "audioReady": true,
+        "liveOn": 0.4,
+        "off": 928.9000000022352,
+        "liveOff": 0.704
+      },
+      {
+        "code": "KeyA",
+        "note": "C4",
+        "on": 1249,
+        "audioReady": true,
+        "liveOn": 1.024,
+        "off": 1552.9000000022352,
+        "liveOff": 1.328
+      },
+      {
+        "code": "KeyD",
+        "note": "F4",
+        "on": 1874.6000000014901,
+        "audioReady": true,
+        "liveOn": 1.648,
+        "off": 2177.60000000149,
+        "liveOff": 1.952
+      },
+      {
+        "code": "KeyF",
+        "note": "G4",
+        "on": 2499.60000000149,
+        "audioReady": true,
+        "liveOn": 2.272,
+        "off": 2803.400000002235,
+        "liveOff": 2.576
+      },
+      {
+        "code": "KeyG",
+        "note": "Bb4",
+        "on": 3123.699999999255,
+        "audioReady": true,
+        "liveOn": 2.896,
+        "off": 3427.199999999255,
+        "liveOff": 3.2
+      },
+      {
+        "code": "KeyF",
+        "note": "G4",
+        "on": 3749.400000002235,
+        "audioReady": true,
+        "liveOn": 3.525333333333333,
+        "off": 4053.60000000149,
+        "liveOff": 3.8293333333333335
+      },
+      {
+        "code": "KeyD",
+        "note": "F4",
+        "on": 4375.5,
+        "audioReady": true,
+        "liveOn": 4.149333333333334,
+        "off": 4678.800000000745,
+        "liveOff": 4.453333333333333
+      },
+      {
+        "code": "KeyA",
+        "note": "C4",
+        "on": 4999.5,
+        "audioReady": true,
+        "liveOn": 4.773333333333333,
+        "off": 5303.300000000745,
+        "liveOff": 5.077333333333334
+      }
+    ],
+    "playback": [
+      {
+        "note": "C4",
+        "duration": 0.3049000000022352,
+        "time": 7.652199999999249,
+        "tick": 2305.2902399997693,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "C4",
+        "duration": 0.3040000000000001,
+        "time": 8.277199999999237,
+        "tick": 2497.290239999765,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "F4",
+        "duration": 0.30299999999999994,
+        "time": 8.902800000000711,
+        "tick": 2689.4745600002184,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "G4",
+        "duration": 0.3037000000029799,
+        "time": 9.527899999998485,
+        "tick": 2881.5052799995347,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "Bb4",
+        "duration": 0.30350000000000027,
+        "time": 10.151899999998502,
+        "tick": 3073.1980799995395,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "G4",
+        "duration": 0.30419999999925545,
+        "time": 10.777699999999255,
+        "tick": 3265.4438399997707,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "F4",
+        "duration": 0.3031999999992552,
+        "time": 11.403800000000702,
+        "tick": 3457.7817600002154,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "C4",
+        "duration": 0.30369999999925623,
+        "time": 12.027800000000724,
+        "tick": 3649.474560000222,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      }
+    ],
+    "audio": null
+  },
+  {
+    "scenario": "A-delayed-resume",
+    "rawCount": 8,
+    "savedCount": 8,
+    "timelineCount": 8,
+    "scheduledCount": 8,
+    "bars": 2,
+    "maxCaptureErrorMs": 0.09999999776533208,
+    "maxPlaybackErrorMs": 0.0999999977873145,
+    "events": [
+      {
+        "kind": "note",
+        "value": "C4",
+        "tick": 2.1504,
+        "duration": 93.66528000068664
+      },
+      {
+        "kind": "note",
+        "value": "C4",
+        "tick": 194.0582400009155,
+        "duration": 92.92800000000003
+      },
+      {
+        "kind": "note",
+        "value": "F4",
+        "tick": 385.6896,
+        "duration": 93.05088000068662
+      },
+      {
+        "kind": "note",
+        "value": "G4",
+        "tick": 578.1811200004577,
+        "duration": 93.32736000022896
+      },
+      {
+        "kind": "note",
+        "value": "Bb4",
+        "tick": 770.0889600002288,
+        "duration": 93.14303999977119
+      },
+      {
+        "kind": "note",
+        "value": "G4",
+        "tick": 962.0889600002288,
+        "duration": 93.23520000000008
+      },
+      {
+        "kind": "note",
+        "value": "F4",
+        "tick": 1154.2118400009156,
+        "duration": 92.71295999908443
+      },
+      {
+        "kind": "note",
+        "value": "C4",
+        "tick": 1346.304,
+        "duration": 93.38879999999972
+      }
+    ],
+    "physical": [
+      {
+        "code": "KeyA",
+        "note": "C4",
+        "on": 349.69999999925494,
+        "audioReady": true,
+        "liveOn": 0.064,
+        "off": 654.6999999992549,
+        "liveOff": 0.368
+      },
+      {
+        "code": "KeyA",
+        "note": "C4",
+        "on": 974.3999999985099,
+        "audioReady": true,
+        "liveOn": 0.688,
+        "off": 1277,
+        "liveOff": 0.992
+      },
+      {
+        "code": "KeyD",
+        "note": "F4",
+        "on": 1598.2999999970198,
+        "audioReady": true,
+        "liveOn": 1.312,
+        "off": 1901.199999999255,
+        "liveOff": 1.616
+      },
+      {
+        "code": "KeyF",
+        "note": "G4",
+        "on": 2224.89999999851,
+        "audioReady": true,
+        "liveOn": 1.9413333333333334,
+        "off": 2528.699999999255,
+        "liveOff": 2.24
+      },
+      {
+        "code": "KeyG",
+        "note": "Bb4",
+        "on": 2849.5,
+        "audioReady": true,
+        "liveOn": 2.5653333333333332,
+        "off": 3152.699999999255,
+        "liveOff": 2.864
+      },
+      {
+        "code": "KeyF",
+        "note": "G4",
+        "on": 3474.5,
+        "audioReady": true,
+        "liveOn": 3.1893333333333334,
+        "off": 3778.099999997765,
+        "liveOff": 3.493333333333333
+      },
+      {
+        "code": "KeyD",
+        "note": "F4",
+        "on": 4099.89999999851,
+        "audioReady": true,
+        "liveOn": 3.8133333333333335,
+        "off": 4401.79999999702,
+        "liveOff": 4.117333333333334
+      },
+      {
+        "code": "KeyA",
+        "note": "C4",
+        "on": 4725.29999999702,
+        "audioReady": true,
+        "liveOn": 4.437333333333333,
+        "off": 5029.29999999702,
+        "liveOff": 4.741333333333333
+      }
+    ],
+    "playback": [
+      {
+        "note": "C4",
+        "duration": 0.30490000000223516,
+        "time": 7.362999999999985,
+        "tick": 1538.1503999999954,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "C4",
+        "duration": 0.3025000000000001,
+        "time": 7.987700000002976,
+        "tick": 1730.0582400009139,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "F4",
+        "duration": 0.3029000000022351,
+        "time": 8.611499999999998,
+        "tick": 1921.6895999999992,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "G4",
+        "duration": 0.30380000000074536,
+        "time": 9.238100000001461,
+        "tick": 2114.1811200004486,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "Bb4",
+        "duration": 0.3031999999992552,
+        "time": 9.862800000000725,
+        "tick": 2306.0889600002224,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "G4",
+        "duration": 0.30350000000000027,
+        "time": 10.487800000000734,
+        "tick": 2498.088960000225,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "F4",
+        "duration": 0.3017999999970197,
+        "time": 11.11320000000298,
+        "tick": 2690.2118400009153,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "C4",
+        "duration": 0.3039999999999991,
+        "time": 11.738499999999963,
+        "tick": 2882.3039999999883,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      }
+    ],
+    "audio": null
+  },
+  {
+    "scenario": "A-expressive",
+    "rawCount": 8,
+    "savedCount": 8,
+    "timelineCount": 8,
+    "scheduledCount": 8,
+    "bars": 2,
+    "maxCaptureErrorMs": 0.10000000149013033,
+    "maxPlaybackErrorMs": 0.10000000151055843,
+    "events": [
+      {
+        "kind": "note",
+        "value": "C4",
+        "tick": 1.6588800006866453,
+        "duration": 93.54239999999999
+      },
+      {
+        "kind": "note",
+        "value": "C4",
+        "tick": 183.1526400009155,
+        "duration": 93.23519999999999
+      },
+      {
+        "kind": "note",
+        "value": "F4",
+        "tick": 402.46272000045775,
+        "duration": 93.35807999954227
+      },
+      {
+        "kind": "note",
+        "value": "G4",
+        "tick": 557.8444800006866,
+        "duration": 93.14303999977108
+      },
+      {
+        "kind": "note",
+        "value": "Bb4",
+        "tick": 772.8537600002289,
+        "duration": 93.08159999999998
+      },
+      {
+        "kind": "note",
+        "value": "G4",
+        "tick": 966.6355200004577,
+        "duration": 93.23520000000008
+      },
+      {
+        "kind": "note",
+        "value": "F4",
+        "tick": 1147.6992,
+        "duration": 93.17376000022887
+      },
+      {
+        "kind": "note",
+        "value": "C4",
+        "tick": 1353.8611200004577,
+        "duration": 93.02016000022877
+      }
+    ],
+    "physical": [
+      {
+        "code": "KeyA",
+        "note": "C4",
+        "on": 350.3999999985099,
+        "audioReady": true,
+        "liveOn": 0.05333333333333334,
+        "off": 655,
+        "liveOff": 0.35733333333333334
+      },
+      {
+        "code": "KeyA",
+        "note": "C4",
+        "on": 941.1999999992549,
+        "audioReady": true,
+        "liveOn": 0.6453333333333333,
+        "off": 1244.800000000745,
+        "liveOff": 0.944
+      },
+      {
+        "code": "KeyD",
+        "note": "F4",
+        "on": 1655.0999999977648,
+        "audioReady": true,
+        "liveOn": 1.3546666666666667,
+        "off": 1959.0999999977648,
+        "liveOff": 1.6586666666666667
+      },
+      {
+        "code": "KeyF",
+        "note": "G4",
+        "on": 2161,
+        "audioReady": true,
+        "liveOn": 1.8613333333333333,
+        "off": 2464.099999997765,
+        "liveOff": 2.1653333333333333
+      },
+      {
+        "code": "KeyG",
+        "note": "Bb4",
+        "on": 2860.89999999851,
+        "audioReady": true,
+        "liveOn": 2.56,
+        "off": 3163.89999999851,
+        "liveOff": 2.864
+      },
+      {
+        "code": "KeyF",
+        "note": "G4",
+        "on": 3491.599999997765,
+        "audioReady": true,
+        "liveOn": 3.1946666666666665,
+        "off": 3795.199999999255,
+        "liveOff": 3.498666666666667
+      },
+      {
+        "code": "KeyD",
+        "note": "F4",
+        "on": 4081.099999997765,
+        "audioReady": true,
+        "liveOn": 3.7813333333333334,
+        "off": 4384.300000000745,
+        "liveOff": 4.085333333333334
+      },
+      {
+        "code": "KeyA",
+        "note": "C4",
+        "on": 4752.199999999255,
+        "audioReady": true,
+        "liveOn": 4.453333333333333,
+        "off": 5054.89999999851,
+        "liveOff": 4.757333333333333
+      }
+    ],
+    "playback": [
+      {
+        "note": "C4",
+        "duration": 0.3045,
+        "time": 5.153400000002231,
+        "tick": 1537.658880000685,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "C4",
+        "duration": 0.3035,
+        "time": 5.744200000002978,
+        "tick": 1719.1526400009147,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "F4",
+        "duration": 0.30389999999851003,
+        "time": 6.458100000001476,
+        "tick": 1938.4627200004531,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "G4",
+        "duration": 0.30319999999925484,
+        "time": 6.963900000002224,
+        "tick": 2093.8444800006832,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "Bb4",
+        "duration": 0.30299999999999994,
+        "time": 7.663800000000737,
+        "tick": 2308.8537600002264,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "G4",
+        "duration": 0.30350000000000027,
+        "time": 8.294600000001486,
+        "tick": 2502.6355200004564,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "F4",
+        "duration": 0.30330000000074503,
+        "time": 8.884,
+        "tick": 2683.6992,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      },
+      {
+        "note": "C4",
+        "duration": 0.3028000000007447,
+        "time": 9.555100000001465,
+        "tick": 2889.86112000045,
+        "params": {
+          "oscillator": "square",
+          "attack": 0.006,
+          "decay": 0.14,
+          "sustain": 0.35,
+          "release": 0.09,
+          "volume": -21.999999999999996
+        },
+        "velocity": 0.72
+      }
+    ],
+    "audio": {
+      "sr": 48000,
+      "duration": 5,
+      "attackOffsets": [
+        0.04,
+        0.63,
+        1.35,
+        1.85,
+        2.5500000000000003,
+        3.18,
+        3.77,
+        4.44
+      ],
+      "maxRelativeErrorMs": 5.300000000745042
+    }
+  }
+]

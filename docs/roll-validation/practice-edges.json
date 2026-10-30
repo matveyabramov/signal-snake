@@ -1,0 +1,65 @@
+{
+  "checks": 21,
+  "results": [
+    "onboarding opens interactive practice directly",
+    "cannot skip failed/unperformed task with Next",
+    "exit during count-in cancels future audible clicks",
+    "exit retains only original scheduler and releases inputs",
+    "real captured PCM contains four audible count-in attacks",
+    "audible click spacing stays within 25 ms",
+    "unfinished physical gate is visible at exercise end",
+    "late real keyup updates long hold without awarding success",
+    "wrong saved phrase is not credited just because R finished",
+    "trainer leaves actual five-note recording untouched",
+    "control lesson does not invent missing second loop",
+    "timing tolerance control changes real evaluator setting",
+    "Space on a teaching button cannot accidentally advance lesson",
+    "1280x800: compact lesson and playable keys visible together",
+    "no horizontal overflow on laptop",
+    "no horizontal overflow at mobile width",
+    "native Web Audio nodes do not accumulate across repeated practice/cue disposal",
+    "no extra musical callbacks, active gates or loop voices after repetitions",
+    "reload starts in empty silent Performance, never a lesson",
+    "explicit Restore still restores original saved user score without playing",
+    "no runtime errors"
+  ],
+  "errors": [],
+  "measured": {
+    "attacks": [
+      0.18,
+      0.805,
+      1.43,
+      2.055
+    ],
+    "max": 0.004365082289822475,
+    "duration": 2.82
+  },
+  "layout": {
+    "panel": {
+      "x": 27,
+      "y": 163,
+      "width": 587.3125,
+      "height": 294,
+      "top": 163,
+      "right": 614.3125,
+      "bottom": 457,
+      "left": 27
+    },
+    "keys": {
+      "x": 27,
+      "y": 657,
+      "width": 677.125,
+      "height": 65,
+      "top": 657,
+      "right": 704.125,
+      "bottom": 722,
+      "left": 27
+    },
+    "width": 1280,
+    "scrollWidth": 1280
+  },
+  "nativeNodes": {
+    "before": 148,
+    "after": 146
+  }
+}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e7e9e2">
+  <title>RINGTONE MACHINE · NO ANSWER</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="assets/vendor/Tone.js" defer></script>
+  <script src="build-config.js" defer></script>
+  <script src="composition.js" defer></script>
+  <script src="loop-engine.js" defer></script>
+  <script src="audio.js" defer></script>
+  <script src="timeline.js" defer></script>
+  <script src="roll-core.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="song.js" defer></script>
+  <script src="piano-roll.js" defer></script>
+</head>
+<body>
+<main class="machine">
+  <header>
+    <div><p class="eyebrow">NO ANSWER v3.1 / PLAY. LEARN. PERFORM.</p><h1>RINGTONE <br>MACHINE<span class="dot">●</span></h1></div>
+    <div class="transport-panel">
+      <div class="transport-meta"><label>Темп <select id="bpm" title="Темп меняется только при остановленном транспорте"><option>60</option><option>72</option><option>80</option><option>92</option><option>96</option><option selected>104</option><option>120</option></select> BPM · 4/4</label><output id="clock">01 : 1</output></div>
+      <div class="transport-buttons"><button id="help" title="Короткая инструкция и карта клавиш · I">HOW TO PLAY <kbd>I</kbd></button><button id="start">▶ START <kbd>Space</kbd></button><button id="stop">■ STOP <kbd>Esc</kbd></button></div>
+      <p id="status" role="status">Нажми R — транспорт и запись включатся сами.</p>
+    </div>
+  </header>
+  <div class="mode-bar"><div class="mode-switch" role="group" aria-label="Режим инструмента"><button id="mode-practice" aria-pressed="false" title="Учиться на временных дорожках, сохранив своё исполнение">LEARN</button><button id="mode-performance" aria-pressed="true" title="Обычный инструмент: все партии создаёшь ты">Играть</button><button id="mode-song" aria-pressed="false">SONG / NO ANSWER</button><button id="mode-rehearse" aria-pressed="false">REHEARSE</button><button id="mode-guide" aria-pressed="false">LIVE GUIDE</button></div><div class="mode-switch" role="group" aria-label="Режим работы с нотами"><button id="work-perform" aria-pressed="true" title="Живая игра: сетка защищена от случайных изменений">PERFORM</button><button id="work-edit" aria-pressed="false" title="Исправить события мышью; живые клавиши и транспорт остаются доступны">EDIT</button></div><span id="practice-notice" role="status"></span></div>
+  <section id="practice-panel" class="practice-panel song-panel" aria-labelledby="song-title" hidden>
+    <div class="song-heading"><div><p class="eyebrow" id="song-mode-label">NO ANSWER · v3.1</p><h2 id="song-title">52 такта · 104 BPM · 2:00</h2></div><button id="song-exit" title="Вернуться к инструменту; прослушивание остановится">Выйти</button></div>
+    <p id="song-intro">Загружаем утверждённую партитуру…</p>
+    <nav id="song-scenes" aria-label="Семь сцен композиции"></nav>
+    <div id="song-controls"><label>Фраза <select id="song-phrase" aria-label="Музыкальная фраза"></select></label><label id="rehearse-tempo-wrap" hidden>Тренировка <select id="rehearse-bpm"><option>60</option><option>72</option><option>80</option><option>92</option><option selected>104</option></select> BPM</label></div>
+    <div id="song-story"><p id="scene-time"></p><p id="scene-purpose"></p><p id="scene-action"></p><p id="scene-wait"></p><p id="scene-signal"></p><div id="scene-phrases" class="song-actions"></div></div>
+    <div id="song-keys" aria-label="Клавиши текущей фразы"></div>
+    <p id="song-next-key" role="status"></p>
+    <div id="song-time-wrap"><div class="practice-time-labels"><span>Такт 1</span><output id="song-clock">2 такта</output><span>Такт 2</span></div><div id="song-timeline" aria-label="Эталон: верх; твои нажатия: низ"></div><p class="practice-small">Блок — когда нажать; его длина — как долго держать. Пустые места — паузы.</p></div>
+    <p id="song-feedback" role="status" aria-live="polite"></p><p id="song-stats"></p>
+    <div id="learn-controls" class="song-actions" hidden><button id="learn-start">Начать / повторить</button><button id="learn-next">Следующая фраза →</button><button id="rehearse-start">4 щелчка → играть</button><button id="rehearse-stop">Остановить упражнение</button><label id="metronome-wrap"><input type="checkbox" id="rehearse-metronome" checked> Метроном</label><label id="repeat-wrap"><input type="checkbox" id="rehearse-repeat"> Повторять с новым отсчётом</label></div>
+    <!-- DEV_PREVIEW_BEGIN -->
+    <section id="preview-panel" class="preview-panel" hidden aria-label="Локальное учебное прослушивание">
+      <strong>PREVIEW · только учебный пример</strong><p id="preview-explanation">REFERENCE ARRANGEMENT — MP3 с басом и гармонией. PLAYABLE — точные ноты для реальных Voice A и B. В LIVE GUIDE ритм упрощён до C/X; баса и дополнительных гармонических слоёв нет.</p>
+      <div class="song-actions"><label>Звук <select id="preview-source"><option value="instrument">PLAYABLE · реальные 2 голоса</option><option value="reference">REFERENCE ARRANGEMENT · MP3</option></select></label><label>Фрагмент <select id="preview-scope"><option value="full">Вся композиция · 2:00</option><option value="scene">Выбранная сцена</option><option value="phrase">Выбранная фраза</option></select></label></div>
+      <div class="song-actions"><button id="preview-play">▶ Listen</button><button id="preview-pause">Пауза</button><button id="preview-stop">Стоп</button><label><input id="preview-repeat" type="checkbox"> Повторять фрагмент</label><output id="preview-clock">0:00 / 2:00</output></div>
+      <p id="preview-keys">Сейчас: пауза · Следующая: H</p><p id="preview-status" role="status">Записи пользователя не меняются. Нажми Listen самостоятельно.</p>
+    </section>
+    <!-- DEV_PREVIEW_END -->
+    <div id="guide-controls" class="song-actions" hidden><button id="guide-begin">Начать NO ANSWER</button><button id="guide-prev">← Предыдущая сцена</button><button id="guide-next">Следующая сцена →</button><button id="guide-repeat">↑ Повторить сцену</button><button id="guide-step">Следующий шаг <kbd>Enter</kbd></button><button id="guide-stop">■ Завершить / стоп</button></div>
+    <p id="guide-next-action"></p><p id="guide-loops"></p><p id="song-isolation" class="practice-small"></p>
+  </section>
+  <section class="recorder" aria-labelledby="recorder-heading">
+    <div class="section-heading"><div><p class="eyebrow">LOOP RECORDER / YOUR LIVE PERFORMANCE</p><h2 id="recorder-heading">Сыграй. Нажми R ещё раз. Услышь повтор.</h2></div><div class="record-settings"><label>Длина <select id="length-mode" title="Auto подберёт 1, 2 или 4 такта по твоей фразе"><option value="auto">Auto · 1 / 2 / 4 bars</option><option value="1">1 такт</option><option value="2">2 такта</option><option value="4">4 такта</option></select></label><label>Сетка <select id="grid" title="OFF сохраняет твой ритм. 1/4, 1/8, 1/16 меняют только начала нот новой записи"><option value="off" selected>OFF · точно</option><option value="4n">1/4</option><option value="8n">1/8</option><option value="16n">1/16</option></select></label></div></div>
+    <div class="recorder-primary"><button id="record" class="record-button" title="R: начать запись, затем закончить её">● REC LOOP 1 <kbd>R</kbd></button><div><p id="next-action" role="status">Нажми R. Сыграй мелодию на A–L.</p><button id="cancel" title="Отменить только текущий дубль, сохранить прежний луп · T" disabled>Cancel recording <kbd>T</kbd></button></div></div>
+    <div id="lanes"></div>
+    <div class="recorder-bottom"><button id="clear" title="Очистить выбранный луп: нажми дважды · Backspace">Clear selected <kbd>⌫ ×2</kbd></button><span id="clear-hint">Два нажатия защищают фразу от случайного удаления.</span><span>R — запись / готово · T — отменить дубль</span></div>
+  </section>
+  <aside class="session-bar" aria-label="Локальная репетиция"><span id="session-status">Твои лупы сохраняются в этом браузере.</span><button id="restore" title="Восстановить сохранённые события без запуска музыки" disabled>Restore</button><button id="fresh" title="Начать с пустых дорожек; при наличии фраз потребуется второе нажатие">Start Fresh</button></aside>
+  <div class="voices">
+    <section aria-labelledby="voice-a-heading" class="voice voice-a">
+      <div class="section-heading"><div><p class="eyebrow">VOICE A / RINGTONE SYNTH</p><h2 id="voice-a-heading">Мелодия на девяти кнопках</h2></div><span class="badge">C MINOR<br>PENTATONIC</span></div>
+      <div id="keys" class="keys"></div>
+      <p class="small-note">A–L · Удерживай ноты и играй аккорды. Можно играть поверх лупов.</p>
+    </section>
+    <section aria-labelledby="voice-b-heading" class="voice voice-b">
+      <div class="section-heading"><div><p class="eyebrow">VOICE B / DIGITAL SIGNALS</p><h2 id="voice-b-heading">Ритм из сообщений</h2></div><span class="badge">LOCAL<br>ONE-SHOTS</span></div>
+      <div id="pads" class="pads"></div>
+      <p class="small-note">Z X C V · Каждое нажатие — один сигнал. Для записи выбери Loop 2.</p>
+    </section>
+  </div>
+  <section id="roll-panel" class="roll-panel" aria-labelledby="roll-heading">
+    <div class="roll-top"><div><p class="eyebrow">ТВОИ СОБЫТИЯ / CLICK · DRAG · LISTEN</p><h2 id="roll-heading">PIANO ROLL · Voice A</h2></div><div class="roll-tabs" role="group" aria-label="Голос редактора"><button id="roll-tab-a" aria-pressed="true">Voice A · Loop 1</button><button id="roll-tab-b" aria-pressed="false">Voice B · Loop 2</button></div><strong id="roll-count">0 NOTES</strong></div>
+    <div class="roll-tools"><button id="roll-mode" title="Включить правки мышью или вернуться к защищённому исполнению">✎ EDIT</button><button id="roll-play" title="Послушать оба лупа / остановить · Space">▶ Слушать <kbd>Space</kbd></button><label>Длина лупа <select id="roll-bars" title="Меняет длину сохранённого лупа; события за границей не удаляются"><option value="1">1 такт</option><option value="2">2 такта</option><option value="4">4 такта</option></select></label><label>Snap <select id="roll-snap" title="Привязка только новых правок мышью; записанные события не округляются"><option value="off">OFF · свободно</option><option value="4n">1/4</option><option value="8n" selected>1/8</option><option value="16n">1/16</option></select></label><label>Масштаб <select id="roll-zoom" title="Приблизь короткие и повторные ноты; прокрутка трекпадом"><option value="1">Fit · ×1</option><option value="2">×2</option><option value="4">×4</option><option value="8">×8</option></select></label><button id="roll-delete" title="Удалить выбранное событие · Delete / Backspace">Удалить <kbd>⌫</kbd></button><button id="roll-undo" title="Отменить последнюю правку этого лупа · ⌘Z / Ctrl+Z">Undo <kbd>⌘Z</kbd></button></div>
+    <p id="roll-status" role="status"></p>
+    <div id="roll-scroll" class="roll-scroll" tabindex="0" aria-label="Музыкальная сетка: прокрутка и масштаб для коротких нот"><div id="roll-sheet" class="roll-sheet"><div class="roll-corner">НОТА / КЛАВИША</div><div id="roll-ruler" class="roll-ruler"></div><div id="roll-labels" class="roll-labels"></div><div id="roll-surface" class="roll-surface" aria-label="События лупа"></div></div></div>
+    <p id="roll-reference-info" class="practice-small"></p><p id="roll-selection" class="roll-selection">Вертикаль — высота / вид сигнала. Горизонталь — время.</p>
+    <p class="practice-small">EDIT: пустая клетка — добавить · блок — выбрать и переместить · правый край ноты — удержание · ⌫ — удалить · ⌘Z — отменить. Пэды звучат один раз, без растягивания.</p>
+  </section>
+  <section class="signal-panel" aria-labelledby="signal-heading">
+    <div><p class="eyebrow">LIVE MACRO</p><h2 id="signal-heading">SIGNAL</h2><p>Чисто → потеря связи</p></div>
+    <div class="signal-control"><div class="signal-labels"><span>CLEAN</span><output id="signal-value">00%</output><span>UNSTABLE</span></div><input id="signal" type="range" min="0" max="100" value="0" step="1" aria-label="Интенсивность SIGNAL"><p class="small-note">[ / ] — изменить на 5% · Можно играть и менять эффект одной рукой.</p></div>
+  </section>
+  <footer><span>ТОЛЬКО ТВОЯ ИГРА. БЕЗ ГОТОВОЙ МЕЛОДИИ.</span><span><kbd>1</kbd> / <kbd>2</kbd> выбор · <kbd>Q</kbd> / <kbd>W</kbd> mute · <kbd>M</kbd> mute выбранного · <kbd>Space</kbd> транспорт</span></footer>
+</main>
+<dialog id="help-dialog" aria-labelledby="help-title">
+  <div class="help-heading"><p class="eyebrow">HOW TO PLAY / НИКАКОЙ ПОДГОТОВКИ</p><button id="help-close" aria-label="Закрыть инструкцию" title="Закрыть инструкцию">✕</button></div>
+  <h2 id="help-title">Твоя первая фраза — за три шага</h2>
+  <ol class="quick-steps"><li><strong>PRESS R</strong><span>Запись начнётся сразу. START нажимать не нужно.</span></li><li><strong>PLAY NOTES</strong><span>A–L — мелодия. Для ритма выбери Loop 2 и играй Z X C V.</span></li><li><strong>PRESS R AGAIN</strong><span>Фраза сохранится сразу. Повтор начнётся с ближайшего такта.</span></li></ol>
+  <p class="help-note">После первого лупа выделится пустой Loop 2. Нажми R, сыграй ритм и снова нажми R. Затем играй поверх обоих лупов.</p>
+  <details id="help-details"><summary>Все клавиши и действия</summary><div class="help-grid"><dl><dt>A S D F G H J K L</dt><dd>Девять сочетающихся нот; удерживай или играй аккорды.</dd><dt>Z X C V</dt><dd>CALL, PING, CLICK, NOISE.</dd><dt>1 / 2</dt><dd>Выбрать мелодический или ритмический луп.</dd><dt>R</dt><dd>Начать / закончить запись. Для замены выбери заполненный луп и нажми R.</dd><dt>T</dt><dd>Отменить дубль; прежняя фраза останется.</dd></dl><dl><dt>Q / W</dt><dd>Убрать / вернуть первый или второй слой; ручная игра остаётся доступна.</dd><dt>[ / ]</dt><dd>Изменить SIGNAL: чистый звук → потеря связи.</dd><dt>Space / Esc</dt><dd>Транспорт старт / стоп. Esc всегда останавливает звук.</dd><dt>⌫ ×2</dt><dd>Очистить выбранный луп двумя нажатиями.</dd><dt>I</dt><dd>Открыть эту инструкцию снова.</dd></dl></div><p class="help-note">OFF сохраняет твой ритм без округления. Auto выбирает 1, 2 или 4 такта (~2.31 / 4.62 / 9.23 секунды при 104 BPM). Можно выбрать длину заранее. QUEUED означает: фраза уже готова, повтор ждёт ближайшего такта. Пока он ждёт, можно записывать второй слой.</p><p class="help-note">Restore возвращает твою сохранённую репетицию без запуска звука. Space запускает её. Start Fresh открывает пустые дорожки. Сохранение работает только в этом браузере.</p></details>
+  <div class="help-actions"><button id="help-record" class="record-button">● НАЧАТЬ ЗАПИСЬ <kbd>R</kbd></button><button id="help-song" title="Семь сцен, музыкальные фразы и учебное прослушивание">SONG / Партитура NO ANSWER</button><button id="help-practice" title="Интерактивные уроки: инструмент следит за твоими действиями">Учиться пошагово</button><button id="help-done">Понятно, закрыть</button></div>
+</dialog>
+</body>
+</html>

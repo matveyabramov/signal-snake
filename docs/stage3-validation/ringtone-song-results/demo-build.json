@@ -1,0 +1,42 @@
+{
+  "checks": 15,
+  "results": [
+    "build manifest explicitly excludes automatic preview",
+    "no preview player, audio references, MIDI player, tests or docs shipped",
+    "preview import loader physically removed",
+    "listening UI physically removed from HTML",
+    "demo exposes no preview controller",
+    "Songbook still works without preview module",
+    "empty Guided Performance creates no automatic notes, media or loops",
+    "seven manual scene transitions never play score",
+    "Previous and Repeat controls work in demo",
+    "final build still records real human note",
+    "runtime requests no hidden preview code or reference audio",
+    "preview module cannot be fetched from demo",
+    "reference MP3 cannot be fetched from demo",
+    "demo stops cleanly with one scheduler",
+    "no demo runtime errors"
+  ],
+  "requests": [
+    "http://127.0.0.1:8769/",
+    "http://127.0.0.1:8769/style.css",
+    "http://127.0.0.1:8769/assets/vendor/Tone.js",
+    "http://127.0.0.1:8769/build-config.js",
+    "http://127.0.0.1:8769/composition.js",
+    "http://127.0.0.1:8769/loop-engine.js",
+    "http://127.0.0.1:8769/audio.js",
+    "http://127.0.0.1:8769/timeline.js",
+    "http://127.0.0.1:8769/roll-core.js",
+    "http://127.0.0.1:8769/app.js",
+    "http://127.0.0.1:8769/song.js",
+    "http://127.0.0.1:8769/piano-roll.js",
+    "http://127.0.0.1:8769/assets/fonts/ibm-plex-mono-400.ttf",
+    "blob:http://127.0.0.1:8769/15a79776-e4a5-4612-a6ab-a2170ed40167",
+    "http://127.0.0.1:8769/assets/composition/NO_ANSWER_v3_1_score.json",
+    "http://127.0.0.1:8769/assets/audio/call.wav",
+    "http://127.0.0.1:8769/assets/audio/ping.wav",
+    "http://127.0.0.1:8769/assets/audio/click.wav",
+    "http://127.0.0.1:8769/assets/audio/noise.wav"
+  ],
+  "errors": []
+}

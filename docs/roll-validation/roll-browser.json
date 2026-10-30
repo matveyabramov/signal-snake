@@ -1,0 +1,164 @@
+{
+  "checks": 61,
+  "results": [
+    "empty start has no generated music",
+    "high pitches above low pitches",
+    "nine labeled note/key rows",
+    "PERFORM prevents accidental insertion",
+    "local EDIT button enables editing without scrolling to header",
+    "empty-grid click writes canonical note",
+    "existing note click selects without duplicate",
+    "snapped no-op adds no history or false queue message",
+    "mouse drag changes time and pitch without gate change",
+    "right-edge drag changes duration",
+    "Command-Z restores previous edit",
+    "Backspace deletes selected event instead of clearing loop",
+    "Undo restores deleted note",
+    "Snap selection never quantizes existing recording",
+    "OFF insertion is not silently snapped",
+    "explicit quarter snap",
+    "explicit sixteenth snap",
+    "near-boundary note preserves real full gate",
+    "carried tail visible at beginning of loop",
+    "shortening refuses to silently drop out-of-range onsets",
+    "length restriction explained",
+    "safe loop length change to two bars",
+    "Undo also restores loop length",
+    "shortest edited gate is positive 20 ms",
+    "short same-pitch repeated notes remain three distinct events",
+    "simultaneous notes remain separate pitches",
+    "100% of saved events rendered as separate note blocks",
+    "time zoom creates usable trackpad scroll area",
+    "real physical key highlights its pitch row",
+    "Pad Roll has four labeled lanes",
+    "pad trigger moves in time and between pads",
+    "one-shot pads do not offer misleading duration stretching",
+    "pad event deletion",
+    "pad Undo",
+    "reload never autoplays edited score",
+    "Restore preserves every edited note, gate and loop length",
+    "local Listen button controls real Transport",
+    "live edit changes store immediately and queues to next loop boundary",
+    "queued edit clearly shown",
+    "multiple pending edits share one safe boundary",
+    "Undo during playback restores prior pending edit",
+    "old current cycle then updated next cycle, no intermediate attack or duplicate",
+    "actual scheduled pitches use canonical edit at boundary",
+    "real Tone synth receives exactly four attacks across two cycles",
+    "real output PCM contains four attacks over old/new cycles",
+    "audible edited onset intervals match canonical playback within 30 ms",
+    "local Pause button stops real Transport",
+    "Stop flushes pending version safely",
+    "restart retains a single Transport scheduler",
+    "recording track rejects mouse edits",
+    "other track can be edited while recording",
+    "Finish automatically fits and shows every actually recorded note, despite next track selection",
+    "EDIT remains available inside Practice",
+    "practice uses actual temporary event store for editing",
+    "real Learn Keys lesson still passes in EDIT",
+    "exit Practice restores original edited Performance",
+    "practice edits never overwrite Performance localStorage",
+    "return to PERFORM locks grid again",
+    "stopped edited loops leave real audio output silent",
+    "no stuck physical gates and no duplicate callbacks",
+    "no browser runtime errors: "
+  ],
+  "errors": [],
+  "playback": [
+    {
+      "index": 0,
+      "event": {
+        "kind": "note",
+        "value": "C4",
+        "tick": 0,
+        "duration": 96,
+        "absoluteTick": 0,
+        "eventIndex": 0,
+        "cycle": 0
+      },
+      "time": 0.388
+    },
+    {
+      "index": 0,
+      "event": {
+        "kind": "note",
+        "value": "G4",
+        "tick": 384,
+        "duration": 96,
+        "absoluteTick": 384,
+        "eventIndex": 1,
+        "cycle": 0
+      },
+      "time": 1.6379999999999983
+    },
+    {
+      "index": 0,
+      "event": {
+        "kind": "note",
+        "value": "C4",
+        "tick": 0,
+        "duration": 96,
+        "absoluteTick": 768,
+        "eventIndex": 0,
+        "cycle": 0
+      },
+      "time": 2.887999999999995
+    },
+    {
+      "index": 0,
+      "event": {
+        "kind": "note",
+        "value": "G4",
+        "tick": 480,
+        "duration": 96,
+        "absoluteTick": 1248,
+        "eventIndex": 1,
+        "cycle": 0
+      },
+      "time": 4.45049999999999
+    }
+  ],
+  "audio": [
+    {
+      "n": "C4",
+      "d": 0.3125,
+      "t": 0.388
+    },
+    {
+      "n": "G4",
+      "d": 0.3125,
+      "t": 1.6379999999999983
+    },
+    {
+      "n": "C4",
+      "d": 0.3125,
+      "t": 2.887999999999995
+    },
+    {
+      "n": "G4",
+      "d": 0.3125,
+      "t": 4.45049999999999
+    },
+    {
+      "n": "C4",
+      "d": 0.3125,
+      "t": 5.3879999999999955
+    }
+  ],
+  "pcm": {
+    "attacks": [
+      0.045,
+      1.295,
+      2.545,
+      4.11
+    ],
+    "sr": 48000,
+    "duration": 5
+  },
+  "audioErrorsMs": [
+    0,
+    0,
+    0,
+    2.500000000000391
+  ]
+}

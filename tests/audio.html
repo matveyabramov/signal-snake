@@ -1,0 +1,66 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><base href="../"><title>RINGTONE MACHINE · Real Tone.js checks</title><link rel="icon" href="data:,"><script src="assets/vendor/Tone.js"></script><script src="audio.js"></script></head><body><h1>Production audio graph · Tone.js 15.1.22</h1><button id="run">Run audio checks</button><pre id="results">Click to render real audio offline. These synthetic test inputs are isolated from the instrument.</pre><script>
+'use strict';
+const out=document.querySelector('#results');
+function rms(a,from=0,to=a.length){let sum=0;for(let i=from;i<to;i++)sum+=a[i]*a[i];return Math.sqrt(sum/(to-from));}
+let count=0;
+function check(ok,name){if(!ok)throw new Error(name);count++;out.textContent+=`PASS ${name}\n`;}
+async function run(){
+ document.querySelector('#run').disabled=true;out.textContent='';count=0;
+ const buffers=await RingtoneAudio.loadBuffers();
+ async function render(play,signal=0,duration=1.6){
+  let graph;
+  try{
+   const buffer=await Tone.Offline(()=>{graph=RingtoneAudio.createGraph(buffers);graph.signal(signal,.001);play(graph);},duration,1,44100);
+   return buffer.get().getChannelData(0).slice();
+  }finally{graph?.dispose();}
+ }
+ try{
+  const hashes=new Set();
+  for(let index=0;index<4;index++){
+   const data=await render(g=>g.playPad(index,.05));
+   check(rms(data)>.0001,`${['CALL','PING','CLICK','NOISE'][index]} is audible from its local WAV`);
+   let hash=2166136261;for(const x of data)hash=Math.imul(hash^Math.round(x*32767),16777619)>>>0;hashes.add(hash);
+  }
+  check(hashes.size===4,'all four signals have different waveforms');
+  const poly=await render(g=>g.liveA.triggerAttackRelease(['C4','Eb4','F4','G4','Bb4','C5','Eb5','F5','G5'],.5,.05,.72));
+  check(rms(poly)>.001,'all nine live notes render through the PolySynth');
+  check(rms(poly,44100)<.00001,'live synth release leaves no stuck note');
+  const mix=await render(g=>{g.liveA.triggerAttackRelease(['C4','G4'],.6,.05,.72);g.playPad(0,.08);g.playPad(3,.15);});
+  check(rms(mix)>.001,'both independent voices render together');
+  const pad=await render(g=>g.playPad(0,.05));
+  const padWithoutA=await render(g=>{g.busA.gain.value=0;g.playPad(0,.05);});
+  check(Math.abs(rms(pad)-rms(padWithoutA))<1e-7,'Voice A bus cannot silence Voice B');
+  const note=await render(g=>g.liveA.triggerAttackRelease('C4',.5,.05,.72));
+  const noteWithoutB=await render(g=>{g.busB.gain.value=0;g.liveA.triggerAttackRelease('C4',.5,.05,.72);});
+  check(Math.abs(rms(note)-rms(noteWithoutB))<1e-7,'Voice B bus cannot silence Voice A');
+  const independent=await render(g=>{g.liveA.triggerAttackRelease('C4',.9,.05,.72);g.playLoopNote('C4',.12,.1);});
+  check(rms(independent,22050,33075)>.001,'loop note-off cannot cut a held live note of the same pitch');
+  const overlap=await render(g=>{g.playLoopNote('C4',.2,.05);g.playLoopNote('C4',.8,.15);});
+  check(rms(overlap,22050,33075)>.001,'overlapping recorded notes of the same pitch have separate envelopes');
+  check(rms(overlap,52920)<.00001,'overlapping loop notes release completely');
+  const muted=await render(g=>{g.loopA.gain.value=0;g.loopB.gain.value=0;g.playLoopNote('C4',.3,.05);g.playPad(0,.05,true);});
+  check(rms(muted)<1e-8,'both loop gates mute their own playback completely');
+  const stillLive=await render(g=>{g.loopA.gain.value=0;g.loopB.gain.value=0;g.liveA.triggerAttackRelease('C4',.3,.05,.72);g.playPad(1,.1);});
+  check(rms(stillLive)>.001,'manual voices remain playable while recorded layers are muted');
+  const clean=await render(g=>g.liveA.triggerAttackRelease(['C4','Eb4','G4'],.7,.1,.72));
+  const dirty=await render(g=>g.liveA.triggerAttackRelease(['C4','Eb4','G4'],.7,.1,.72),1);
+  let diff=0;for(let i=0;i<clean.length;i++)diff+=(clean[i]-dirty[i])**2;
+  check(Math.sqrt(diff/clean.length)>.002,'SIGNAL changes the actual audio waveform');
+  check(rms(dirty)<rms(clean)*2,'maximum SIGNAL does not create excessive level gain');
+  const stress=await render(g=>{
+   const chord=['C4','Eb4','F4','G4','Bb4','C5','Eb5','F5','G5'];
+   g.liveA.triggerAttackRelease(chord,1,.05,.9);
+   for(const note of chord)g.playLoopNote(note,1,.05);
+   for(let t=.05;t<1;t+=.08)for(let p=0;p<4;p++)g.playPad(p,t,true);
+  },1,2.5);
+  const peak=stress.reduce((m,x)=>Math.max(m,Math.abs(x)),0);
+  check(stress.every(Number.isFinite)&&peak<.9,`dense two-voice mix stays finite and below full scale (peak ${peak.toFixed(4)})`);
+  check(rms(stress,88200)<.00001,'dense mix decays to silence, with no feedback accumulation');
+  let graph;await Tone.Offline(()=>{graph=RingtoneAudio.createGraph(buffers);for(let i=0;i<1000;i++)graph.playLoopNote('C4',.5,.1);check(graph.diagnostics().loopSynths===32,'recorded note allocation is bounded at 32 synths');},1,1,44100);
+  graph.dispose();graph.dispose();check(graph.diagnostics().disposed&&graph.diagnostics().loopSamplers===0&&graph.diagnostics().loopSynths===0,'idempotent disposal releases loop resources');
+  out.textContent+=`\n${count} real-audio checks passed.\n`;document.body.dataset.result='pass';
+ }catch(error){out.textContent+=`FAIL ${error.stack}`;document.body.dataset.result='fail';console.error(error);}
+ finally{buffers.forEach(b=>b.dispose());}
+}
+document.querySelector('#run').onclick=run;
+</script></body></html>
