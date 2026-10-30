@@ -81,6 +81,7 @@
       return index;
     }
     down(voice, value, token, tick) {
+      if (![0, 1].includes(voice) || (voice === 1 && (!Number.isInteger(value) || value < 0 || value > 2))) return false;
       const take = this.tracks[voice].take;
       if (!take || tick < take.start || tick >= take.limit || take.held.has(token)) return false;
       if (take.raw.length >= MAX_EVENTS) { this.dropped++; return false; }
@@ -100,7 +101,7 @@
       const track = this.tracks[index];
       if (track.muted || track.take || tick < track.origin) return [];
       const phase = (tick - track.origin) % (track.bars * BAR);
-      return track.events.filter(event => event.tick === phase);
+      return track.events.filter(event => event.tick === phase && (index === 0 || event.value < 3));
     }
     // Half-open windows cover EVERY onset, including fractional OFF timestamps.
     // Each returned occurrence has one event index and one cycle identity.
@@ -112,6 +113,7 @@
       const last = Math.floor((to - track.origin) / length);
       for (let cycle = first; cycle <= last; cycle++) {
         track.events.forEach((event, eventIndex) => {
+          if (index === 1 && (!Number.isInteger(event.value) || event.value < 0 || event.value > 2)) return;
           const absoluteTick = track.origin + cycle * length + event.tick;
           if (absoluteTick >= from - 1e-7 && absoluteTick < to - 1e-7) found.push({ ...event, absoluteTick, eventIndex, cycle });
         });
@@ -154,7 +156,7 @@
           }
           if (event.kind !== 'pad' || !Number.isInteger(event.value) || event.value < 0 || event.value > 3) throw Error('Invalid pad');
           return { kind: 'pad', value: event.value, tick: event.tick };
-        }).sort((a, b) => a.tick - b.tick);
+        }).filter(event => index === 0 || event.value !== 3).sort((a, b) => a.tick - b.tick);
         return { events, bars: track.bars, muted: track.muted };
       });
       return { version: 4, bpm: data.version === 4 ? data.bpm : 96, grid: data.grid, lengthMode: data.lengthMode, selected: data.selected, signal: data.signal,
@@ -163,7 +165,7 @@
   }
   function restoreSession(recorder, session) {
     recorder.stop(); recorder.bpm = session.bpm ?? 96; recorder.grid = session.grid; recorder.lengthMode = session.lengthMode; recorder.selected = session.selected;
-    recorder.tracks = session.tracks.map((track, voice) => ({ ...track, voice, origin: 0, take: null, events: track.events.map(event => ({ ...event })) }));
+    recorder.tracks = session.tracks.map((track, voice) => ({ ...track, voice, origin: 0, take: null, events: track.events.filter(event => voice === 0 || event.value < 3).map(event => ({ ...event })) }));
   }
   return { Recorder, quantize, phraseBars, nextBar, serialize, parseSession, restoreSession, STORAGE_KEY, PPQ, BAR, LENGTH, GRIDS, NOTES, MAX_EVENTS, QUEUE_MARGIN };
 });

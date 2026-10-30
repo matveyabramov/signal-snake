@@ -16,16 +16,16 @@ async function run(){
  }
  try{
   const hashes=new Set();
-  for(let index=0;index<4;index++){
+  for(let index=0;index<3;index++){
    const data=await render(g=>g.playPad(index,.05));
-   check(rms(data)>.0001,`${['CALL','PING','CLICK','NOISE'][index]} is audible from its local WAV`);
+   check(rms(data)>.0001,`${['CALL','PING','CLICK'][index]} is audible from its local WAV`);
    let hash=2166136261;for(const x of data)hash=Math.imul(hash^Math.round(x*32767),16777619)>>>0;hashes.add(hash);
   }
-  check(hashes.size===4,'all four signals have different waveforms');
+  check(hashes.size===3,'all three signals have different waveforms');
   const poly=await render(g=>g.liveA.triggerAttackRelease(['C4','Eb4','F4','G4','Bb4','C5','Eb5','F5','G5'],.5,.05,.72));
   check(rms(poly)>.001,'all nine live notes render through the PolySynth');
   check(rms(poly,44100)<.00001,'live synth release leaves no stuck note');
-  const mix=await render(g=>{g.liveA.triggerAttackRelease(['C4','G4'],.6,.05,.72);g.playPad(0,.08);g.playPad(3,.15);});
+  const mix=await render(g=>{g.liveA.triggerAttackRelease(['C4','G4'],.6,.05,.72);g.playPad(0,.08);g.playPad(2,.15);});
   check(rms(mix)>.001,'both independent voices render together');
   const pad=await render(g=>g.playPad(0,.05));
   const padWithoutA=await render(g=>{g.busA.gain.value=0;g.playPad(0,.05);});
@@ -51,7 +51,7 @@ async function run(){
    const chord=['C4','Eb4','F4','G4','Bb4','C5','Eb5','F5','G5'];
    g.liveA.triggerAttackRelease(chord,1,.05,.9);
    for(const note of chord)g.playLoopNote(note,1,.05);
-   for(let t=.05;t<1;t+=.08)for(let p=0;p<4;p++)g.playPad(p,t,true);
+   for(let t=.05;t<1;t+=.08)for(let p=0;p<3;p++)g.playPad(p,t,true);
   },1,2.5);
   const peak=stress.reduce((m,x)=>Math.max(m,Math.abs(x)),0);
   check(stress.every(Number.isFinite)&&peak<.9,`dense two-voice mix stays finite and below full scale (peak ${peak.toFixed(4)})`);

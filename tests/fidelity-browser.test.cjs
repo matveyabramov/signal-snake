@@ -11,7 +11,7 @@ const base=process.env.PROTOTYPE_URL||'http://127.0.0.1:8767',out=process.env.RE
  async function open(delay=0){const p=await browser.newPage({viewport:{width:1280,height:800}});const errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto(base+'/?diagnostics=1');await p.click('#help-done');await p.waitForFunction(()=>!Ringtone.snapshot().helpOpen&&Ringtone.snapshot().audioReady);await p.selectOption('#bpm','96');
  await p.evaluate(delay=>{
   window.probe={input:[],live:[],play:[],params:{manual:[],loop:[]},starts:[],finishes:[],pads:[]};
-  const names={KeyA:'C4',KeyS:'Eb4',KeyD:'F4',KeyF:'G4',KeyG:'Bb4',KeyH:'C5',KeyJ:'Eb5',KeyK:'F5',KeyL:'G5',KeyZ:0,KeyX:1,KeyC:2,KeyV:3},held=new Map();
+  const names={KeyA:'C4',KeyS:'Eb4',KeyD:'F4',KeyF:'G4',KeyG:'Bb4',KeyH:'C5',KeyJ:'Eb5',KeyK:'F5',KeyL:'G5',KeyZ:0,KeyX:1,KeyC:2},held=new Map();
   document.addEventListener('keydown',e=>{if(e.repeat)return;if(e.code==='KeyR'){if(Ringtone.snapshot().active===-1)probe.starts.push(performance.now());else probe.finishes.push(performance.now());}if(e.code in names&&!held.has(e.code)){const item={code:e.code,note:names[e.code],on:performance.now(),audioReady:Tone.getContext().state==='running'};probe.input.push(item);held.set(e.code,item);}},true);
   document.addEventListener('keyup',e=>{if(held.has(e.code)){held.get(e.code).off=performance.now();held.delete(e.code);}},true);
   let loopDepth=0;
@@ -92,7 +92,7 @@ const base=process.env.PROTOTYPE_URL||'http://127.0.0.1:8767',out=process.env.RE
   // D/E: both voices, different lengths, pads, mute/restart/re-record/restore.
   {
    const{p,errors}=await open();await p.keyboard.press('r');await hit(p,'a',150);await p.keyboard.press('r');let s=await snap(p);check(s.selected===1&&s.active===-1,'D: next empty layer selected without automatic recording');
-   await p.selectOption('#length-mode','2');await p.keyboard.press('r');await phrase(p,['z','x','c','v'],[0,400,900,1400],80);await p.keyboard.press('r');s=await snap(p);check(s.tracks[0].bars===1&&s.tracks[1].bars===2&&s.tracks[1].events.length===4,'D: pads record independently beside a different-length melody');await visual(p,1,4);
+   await p.selectOption('#length-mode','2');await p.keyboard.press('r');await phrase(p,['z','x','c','z'],[0,400,900,1400],80);await p.keyboard.press('r');s=await snap(p);check(s.tracks[0].bars===1&&s.tracks[1].bars===2&&s.tracks[1].events.length===4,'D: pads record independently beside a different-length melody');await visual(p,1,4);
    await waitTick(p,s.tracks[1].origin+2*768-15);const pads=await p.evaluate(()=>probe.pads);check(pads.filter(e=>e.tick<s.tracks[1].origin+2*768-1e-5).length===8,'D/E: four manual pads plus exactly four first-cycle pad events');
    await p.keyboard.press('q');await p.keyboard.press('w');check((await snap(p)).tracks.every(t=>t.muted),'D: both layers mute independently');await p.keyboard.press('q');await p.keyboard.press('w');
    await p.keyboard.press('Escape');await p.keyboard.press('Space');await p.waitForTimeout(110);check((await snap(p)).tracks.every(t=>t.state==='playing'),'D: Stop/Restart starts both saved loops together');

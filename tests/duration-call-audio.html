@@ -50,8 +50,8 @@ async function run(){
    const callLoops=await render(g=>{for(const t of [.1,2.6,5.1])g.playPad(0,t,true);},signal,6.3);
    check(attacks(callLoops)===3,`three recorded CALL events render exactly three attacks with SIGNAL ${signal}`);
   }
-  for(let pad=1;pad<4;pad++){
-   const data=await render(g=>g.playPad(pad,.1));check(rms(data)>.0001&&rms(data,44100)<.00001,`${['CALL','PING','CLICK','NOISE'][pad]} remains audible and releases normally`);
+  for(let pad=1;pad<3;pad++){
+   const data=await render(g=>g.playPad(pad,.1));check(rms(data)>.0001&&rms(data,44100)<.00001,`${['CALL','PING','CLICK'][pad]} remains audible and releases normally`);
   }
   out.textContent+=`\n${count} targeted real-audio checks passed\n`+JSON.stringify(measurements,null,2);document.body.dataset.result='pass';
  }catch(e){out.textContent+='FAIL '+e.stack;document.body.dataset.result='fail';console.error(e);}finally{buffers.forEach(b=>b.dispose());old?.dispose();}

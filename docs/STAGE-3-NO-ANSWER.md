@@ -1,5 +1,7 @@
 # Stage 3 — сохранённая рабочая база NO ANSWER v3.1
 
+Исторический отчёт Stage 3. В SIGNAL SNAKE Stage 02 NOISE удалён, PLAYABLE Preview работает по очищенной партитуре, а MP3 Reference сохранён только как архив. См. [актуальный отчёт](SIGNAL-SNAKE-STAGE-02.md).
+
 Работа остановлена по просьбе пользователя перед переходом к SIGNAL SNAKE. Новые функции и дополнительные проверки не продолжаются.
 
 Реализованы: импорт исходного v3.1 JSON (52 такта, 104 BPM), Songbook семи сцен, локальный MP3 Reference и Tone.js Playable Preview, свободный Learn, Rehearse 60/72/80/92/104 BPM, ручной Live Guide, прозрачный reference overlay Piano Roll. Музыка не импортируется в рабочие лупы. Live Guide не переключает сцены и не исполняет партии автоматически.

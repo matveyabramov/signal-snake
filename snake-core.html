@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SIGNAL SNAKE · Stage 01</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="snake-core.css">
+  <script src="assets/vendor/Tone.js" defer></script>
+  <script src="audio.js" defer></script>
+  <script src="snake-engine.js" defer></script>
+  <script src="snake.js" defer></script>
+</head>
+<body>
+<main>
+  <header><p>STAGE 01 · FUNCTIONAL CORE</p><h1>SIGNAL SNAKE</h1><p>104 BPM · 8 четвертных долей · 2 такта</p></header>
+  <div class="controls">
+    <button id="connect" type="button">CONNECT</button>
+    <button id="disconnect" type="button" disabled>DISCONNECT</button>
+    <output id="step" aria-label="Текущий шаг">STEP — / 8</output>
+  </div>
+  <p id="status" role="status">Звук выключен. CONNECT запускает мелодию.</p>
+  <div class="controls" role="group" aria-label="Редактируемый голос">
+    <button id="melody" type="button" aria-pressed="true">MELODY</button>
+    <button id="rhythm" type="button" aria-pressed="false">RHYTHM</button>
+  </div>
+  <h2 id="grid-title">VOICE A · MELODY</h2>
+  <div id="grid" aria-labelledby="grid-title"></div>
+  <p id="grid-help">Одна нота в столбце. Клик — поставить или заменить; повторный клик — пауза.</p>
+  <p>Правки звучат при следующем прохождении шага. Переключение сетки сохраняет оба голоса.</p>
+  <div class="controls"><button id="mute" type="button" aria-pressed="false">MUTE RHYTHM</button></div>
+  <label class="signal" for="signal">ПОМЕХИ <output id="signal-value">0%</output>
+    <input id="signal" type="range" min="0" max="100" step="1" value="0">
+  </label>
+  <p>Чисто → потеря связи. Эффект действует на оба голоса.</p>
+  <footer><a href="index.html">Вернуться к инструменту Stage 3 →</a><p>Переход останавливает звук. Escape — DISCONNECT.</p></footer>
+</main>
+</body>
+</html>

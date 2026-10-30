@@ -11,11 +11,15 @@ out.mkdir(parents=True)
 files=['index.html','style.css','app.js','loop-engine.js','audio.js','timeline.js','roll-core.js','piano-roll.js','composition.js','song.js']
 for name in files:
  text=(root/name).read_text()
- if name=='index.html':text=re.sub(r'<!-- DEV_PREVIEW_BEGIN -->.*?<!-- DEV_PREVIEW_END -->','',text,flags=re.S)
+ if name=='index.html':
+  text=re.sub(r'<!-- DEV_PREVIEW_BEGIN -->.*?<!-- DEV_PREVIEW_END -->','',text,flags=re.S)
+  text=re.sub(r'^[ \t]*<!-- SIGNAL_SNAKE_LINK_BEGIN -->.*?<!-- SIGNAL_SNAKE_LINK_END -->\n?','',text,flags=re.S|re.M)
  if name=='song.js':text=re.sub(r'/\* DEV_PREVIEW_BEGIN \*/.*?/\* DEV_PREVIEW_END \*/','',text,flags=re.S)
  (out/name).write_text(text)
 (out/'build-config.js').write_text("window.RingtoneBuild=Object.freeze({preview:false,final:true});\n")
-for folder in ['audio','fonts','vendor']:shutil.copytree(root/'assets'/folder,out/'assets'/folder)
+for folder in ['audio','vendor']:shutil.copytree(root/'assets'/folder,out/'assets'/folder)
+fonts=out/'assets/fonts';fonts.mkdir()
+for name in ['ibm-plex-mono-400.ttf','IBM-Plex-Mono-LICENSE.txt']:shutil.copy2(root/'assets/fonts'/name,fonts/name)
 p=out/'assets/composition';p.mkdir(parents=True)
 shutil.copy2(root/'assets/composition/NO_ANSWER_v3_1_score.json',p/'NO_ANSWER_v3_1_score.json')
 assert not list(out.rglob('*.mp3')) and not (out/'preview.js').exists() and not (out/'tests').exists()

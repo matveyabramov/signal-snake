@@ -5,8 +5,8 @@
   const diagnosticMode = new URLSearchParams(location.search).has('diagnostics');
   const recorder = new Recorder({ diagnostics: diagnosticMode });
   const keyCodes = 'ASDFGHJKL'.split('').map(letter => `Key${letter}`);
-  const padCodes = ['KeyZ', 'KeyX', 'KeyC', 'KeyV'];
-  const padNames = ['CALL', 'PING', 'CLICK', 'NOISE'];
+  const padCodes = ['KeyZ', 'KeyX', 'KeyC'];
+  const padNames = ['CALL', 'PING', 'CLICK'];
   const $ = id => document.getElementById(id);
   const held = new Map(), liveCounts = new Map(), flashes = new Map();
   let graph = null, buffers = null, loading = null, bufferTask = null, scheduler = null;
@@ -259,7 +259,7 @@
     if (result.empty) { notify('Пустой дубль не сохранён. Прежний луп на месте. Нажми R и сыграй хотя бы одну ноту.'); return; }
     writable = true; saveNow(); clearConfirm = null;
     notify(`Loop ${result.index + 1} готов: ${result.bars} ${result.bars === 1 ? 'такт' : 'такта'}. ` +
-      (result.selected !== result.index ? `Выбран пустой Loop ${result.selected + 1} — нажми R и играй ${result.selected === 0 ? 'A–L' : 'Z X C V'}.` : 'Можно импровизировать или выбрать слой для перезаписи.') +
+      (result.selected !== result.index ? `Выбран пустой Loop ${result.selected + 1} — нажми R и играй ${result.selected === 0 ? 'A–L' : 'Z X C'}.` : 'Можно импровизировать или выбрать слой для перезаписи.') +
       (result.closedHeld ? ' Удержанная нота записана до FINISH/лимита; живой звук — до отпускания.' : '') +
       (result.carries ? ' Хвост ноты сохранён через границу лупа.' : ''));
   }
@@ -359,8 +359,8 @@
     $('cancel').disabled = active === -1; $('clear').disabled = active !== -1;
     $('status').textContent = errorMessage || (active !== -1 ? (!graph || Tone.getContext().state !== 'running' ? 'Включаем звук. Все нажатия уже записываются; звук доступен после готовности.' : 'RECORDING — запись началась. Нажми R ещё раз, когда фраза готова.') : running ? `${recorder.bpm} BPM · играй поверх лупов. Space — пауза, Esc — стоп.` : 'R — сразу записать. Space — запустить готовые лупы.');
     $('status').classList.toggle('error', !!errorMessage);
-    const instruction = active !== -1 ? `RECORDING LOOP ${active + 1} — играй ${active === 0 ? 'A S D F G H J K L' : 'Z X C V'}. R — закончить сейчас.` :
-      recorder.tracks[recorder.selected].events.length ? `Выбран Loop ${recorder.selected + 1}. R — заменить фразу; Q / W — убрать или вернуть слой.` : `Выбран пустой Loop ${recorder.selected + 1}. R — запись, затем играй ${recorder.selected === 0 ? 'A–L' : 'Z X C V'}.`;
+    const instruction = active !== -1 ? `RECORDING LOOP ${active + 1} — играй ${active === 0 ? 'A S D F G H J K L' : 'Z X C'}. R — закончить сейчас.` :
+      recorder.tracks[recorder.selected].events.length ? `Выбран Loop ${recorder.selected + 1}. R — заменить фразу; Q / W — убрать или вернуть слой.` : `Выбран пустой Loop ${recorder.selected + 1}. R — запись, затем играй ${recorder.selected === 0 ? 'A–L' : 'Z X C'}.`;
     const hint = limitNotice || (performance.now() < messageUntil && active === -1 ? message : instruction);
     if ($('next-action').textContent !== hint) $('next-action').textContent = hint;
     $('record').disabled = inputLocked;
@@ -417,7 +417,7 @@
   });
   for (let index = 0; index < 2; index++) {
     const lane = document.createElement('div'); lane.className = 'lane';
-    lane.innerHTML = `<button class="lane-select" title="Выбрать Loop ${index + 1} · ${index + 1}" aria-label="Выбрать Loop ${index + 1}"><strong>LOOP ${index + 1} <kbd>${index + 1}</kbd></strong><small>${index === 0 ? 'МЕЛОДИЯ · A–L' : 'РИТМ · Z X C V'}</small><span class="length"></span></button><div class="timeline" role="img"></div><div class="lane-state"></div><button class="mute" title="Убрать / вернуть Loop ${index + 1} · ${index === 0 ? 'Q' : 'W'}" aria-label="Mute Loop ${index + 1}">MUTE</button>`;
+    lane.innerHTML = `<button class="lane-select" title="Выбрать Loop ${index + 1} · ${index + 1}" aria-label="Выбрать Loop ${index + 1}"><strong>LOOP ${index + 1} <kbd>${index + 1}</kbd></strong><small>${index === 0 ? 'МЕЛОДИЯ · A–L' : 'РИТМ · Z X C'}</small><span class="length"></span></button><div class="timeline" role="img"></div><div class="lane-state"></div><button class="mute" title="Убрать / вернуть Loop ${index + 1} · ${index === 0 ? 'Q' : 'W'}" aria-label="Mute Loop ${index + 1}">MUTE</button>`;
     lane.querySelector('.lane-select').addEventListener('click', () => select(index)); lane.querySelector('.mute').addEventListener('click', () => mute(index)); $('lanes').append(lane);
   }
   $('start').title = 'Запустить готовые лупы · Space. Для записи достаточно R.'; $('stop').title = 'Остановить звук и отменить незаконченный дубль · Esc';

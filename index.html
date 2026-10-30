@@ -20,6 +20,9 @@
 </head>
 <body>
 <main class="machine">
+  <!-- SIGNAL_SNAKE_LINK_BEGIN -->
+  <p><a href="snake.html">Открыть SIGNAL SNAKE · Stage 02 →</a></p>
+  <!-- SIGNAL_SNAKE_LINK_END -->
   <header>
     <div><p class="eyebrow">NO ANSWER v3.1 / PLAY. LEARN. PERFORM.</p><h1>RINGTONE <br>MACHINE<span class="dot">●</span></h1></div>
     <div class="transport-panel">
@@ -42,8 +45,8 @@
     <div id="learn-controls" class="song-actions" hidden><button id="learn-start">Начать / повторить</button><button id="learn-next">Следующая фраза →</button><button id="rehearse-start">4 щелчка → играть</button><button id="rehearse-stop">Остановить упражнение</button><label id="metronome-wrap"><input type="checkbox" id="rehearse-metronome" checked> Метроном</label><label id="repeat-wrap"><input type="checkbox" id="rehearse-repeat"> Повторять с новым отсчётом</label></div>
     <!-- DEV_PREVIEW_BEGIN -->
     <section id="preview-panel" class="preview-panel" hidden aria-label="Локальное учебное прослушивание">
-      <strong>PREVIEW · только учебный пример</strong><p id="preview-explanation">REFERENCE ARRANGEMENT — MP3 с басом и гармонией. PLAYABLE — точные ноты для реальных Voice A и B. В LIVE GUIDE ритм упрощён до C/X; баса и дополнительных гармонических слоёв нет.</p>
-      <div class="song-actions"><label>Звук <select id="preview-source"><option value="instrument">PLAYABLE · реальные 2 голоса</option><option value="reference">REFERENCE ARRANGEMENT · MP3</option></select></label><label>Фрагмент <select id="preview-scope"><option value="full">Вся композиция · 2:00</option><option value="scene">Выбранная сцена</option><option value="phrase">Выбранная фраза</option></select></label></div>
+      <strong>PREVIEW · только учебный пример</strong><p id="preview-explanation">PLAYABLE — точные ноты очищенной партитуры для реальных Voice A и трёх сигналов Voice B. Исторические MP3 сохранены как архив. В LIVE GUIDE ритм упрощён до C/X; баса и дополнительных гармонических слоёв нет.</p>
+      <div class="song-actions"><label>Звук <select id="preview-source"><option value="instrument">PLAYABLE · реальные 2 голоса</option></select></label><label>Фрагмент <select id="preview-scope"><option value="full">Вся композиция · 2:00</option><option value="scene">Выбранная сцена</option><option value="phrase">Выбранная фраза</option></select></label></div>
       <div class="song-actions"><button id="preview-play">▶ Listen</button><button id="preview-pause">Пауза</button><button id="preview-stop">Стоп</button><label><input id="preview-repeat" type="checkbox"> Повторять фрагмент</label><output id="preview-clock">0:00 / 2:00</output></div>
       <p id="preview-keys">Сейчас: пауза · Следующая: H</p><p id="preview-status" role="status">Записи пользователя не меняются. Нажми Listen самостоятельно.</p>
     </section>
@@ -67,7 +70,7 @@
     <section aria-labelledby="voice-b-heading" class="voice voice-b">
       <div class="section-heading"><div><p class="eyebrow">VOICE B / DIGITAL SIGNALS</p><h2 id="voice-b-heading">Ритм из сообщений</h2></div><span class="badge">LOCAL<br>ONE-SHOTS</span></div>
       <div id="pads" class="pads"></div>
-      <p class="small-note">Z X C V · Каждое нажатие — один сигнал. Для записи выбери Loop 2.</p>
+      <p class="small-note">Z X C · Каждое нажатие — один сигнал. Для записи выбери Loop 2.</p>
     </section>
   </div>
   <section id="roll-panel" class="roll-panel" aria-labelledby="roll-heading">
@@ -87,9 +90,9 @@
 <dialog id="help-dialog" aria-labelledby="help-title">
   <div class="help-heading"><p class="eyebrow">HOW TO PLAY / НИКАКОЙ ПОДГОТОВКИ</p><button id="help-close" aria-label="Закрыть инструкцию" title="Закрыть инструкцию">✕</button></div>
   <h2 id="help-title">Твоя первая фраза — за три шага</h2>
-  <ol class="quick-steps"><li><strong>PRESS R</strong><span>Запись начнётся сразу. START нажимать не нужно.</span></li><li><strong>PLAY NOTES</strong><span>A–L — мелодия. Для ритма выбери Loop 2 и играй Z X C V.</span></li><li><strong>PRESS R AGAIN</strong><span>Фраза сохранится сразу. Повтор начнётся с ближайшего такта.</span></li></ol>
+  <ol class="quick-steps"><li><strong>PRESS R</strong><span>Запись начнётся сразу. START нажимать не нужно.</span></li><li><strong>PLAY NOTES</strong><span>A–L — мелодия. Для ритма выбери Loop 2 и играй Z X C.</span></li><li><strong>PRESS R AGAIN</strong><span>Фраза сохранится сразу. Повтор начнётся с ближайшего такта.</span></li></ol>
   <p class="help-note">После первого лупа выделится пустой Loop 2. Нажми R, сыграй ритм и снова нажми R. Затем играй поверх обоих лупов.</p>
-  <details id="help-details"><summary>Все клавиши и действия</summary><div class="help-grid"><dl><dt>A S D F G H J K L</dt><dd>Девять сочетающихся нот; удерживай или играй аккорды.</dd><dt>Z X C V</dt><dd>CALL, PING, CLICK, NOISE.</dd><dt>1 / 2</dt><dd>Выбрать мелодический или ритмический луп.</dd><dt>R</dt><dd>Начать / закончить запись. Для замены выбери заполненный луп и нажми R.</dd><dt>T</dt><dd>Отменить дубль; прежняя фраза останется.</dd></dl><dl><dt>Q / W</dt><dd>Убрать / вернуть первый или второй слой; ручная игра остаётся доступна.</dd><dt>[ / ]</dt><dd>Изменить SIGNAL: чистый звук → потеря связи.</dd><dt>Space / Esc</dt><dd>Транспорт старт / стоп. Esc всегда останавливает звук.</dd><dt>⌫ ×2</dt><dd>Очистить выбранный луп двумя нажатиями.</dd><dt>I</dt><dd>Открыть эту инструкцию снова.</dd></dl></div><p class="help-note">OFF сохраняет твой ритм без округления. Auto выбирает 1, 2 или 4 такта (~2.31 / 4.62 / 9.23 секунды при 104 BPM). Можно выбрать длину заранее. QUEUED означает: фраза уже готова, повтор ждёт ближайшего такта. Пока он ждёт, можно записывать второй слой.</p><p class="help-note">Restore возвращает твою сохранённую репетицию без запуска звука. Space запускает её. Start Fresh открывает пустые дорожки. Сохранение работает только в этом браузере.</p></details>
+  <details id="help-details"><summary>Все клавиши и действия</summary><div class="help-grid"><dl><dt>A S D F G H J K L</dt><dd>Девять сочетающихся нот; удерживай или играй аккорды.</dd><dt>Z X C</dt><dd>CALL, PING, CLICK.</dd><dt>1 / 2</dt><dd>Выбрать мелодический или ритмический луп.</dd><dt>R</dt><dd>Начать / закончить запись. Для замены выбери заполненный луп и нажми R.</dd><dt>T</dt><dd>Отменить дубль; прежняя фраза останется.</dd></dl><dl><dt>Q / W</dt><dd>Убрать / вернуть первый или второй слой; ручная игра остаётся доступна.</dd><dt>[ / ]</dt><dd>Изменить SIGNAL: чистый звук → потеря связи.</dd><dt>Space / Esc</dt><dd>Транспорт старт / стоп. Esc всегда останавливает звук.</dd><dt>⌫ ×2</dt><dd>Очистить выбранный луп двумя нажатиями.</dd><dt>I</dt><dd>Открыть эту инструкцию снова.</dd></dl></div><p class="help-note">OFF сохраняет твой ритм без округления. Auto выбирает 1, 2 или 4 такта (~2.31 / 4.62 / 9.23 секунды при 104 BPM). Можно выбрать длину заранее. QUEUED означает: фраза уже готова, повтор ждёт ближайшего такта. Пока он ждёт, можно записывать второй слой.</p><p class="help-note">Restore возвращает твою сохранённую репетицию без запуска звука. Space запускает её. Start Fresh открывает пустые дорожки. Сохранение работает только в этом браузере.</p></details>
   <div class="help-actions"><button id="help-record" class="record-button">● НАЧАТЬ ЗАПИСЬ <kbd>R</kbd></button><button id="help-song" title="Семь сцен, музыкальные фразы и учебное прослушивание">SONG / Партитура NO ANSWER</button><button id="help-practice" title="Интерактивные уроки: инструмент следит за твоими действиями">Учиться пошагово</button><button id="help-done">Понятно, закрыть</button></div>
 </dialog>
 </body>

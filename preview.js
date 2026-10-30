@@ -16,6 +16,9 @@ export function createPreview({app,data,onPosition=()=>{},onState=()=>{}}){
   }
  }
  async function play(options={}){
+  // The archived rendered arrangement cannot be filtered into three voices.
+  // Keep its file as source history, but only the cleaned score is playable.
+  if(options.source==='reference'){stop();onState({state:'blocked',reason:'Историческая MP3-аранжировка сохранена как архив. Для прослушивания используй PLAYABLE.'});return;}
   const continuing=state==='paused'&&!options.fragment;
   const oldPosition=continuing?position:0;
   if(!continuing){stop();fragment=options.fragment||RingtoneComposition.fragment(data);source=options.source||'instrument';bpm=source==='reference'?104:(options.bpm||104);repeat=!!options.repeat;scheduled=[];}

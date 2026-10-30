@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   function render(timeline, events, length, voice, notes, bpm = 104) {
-    const rows = voice === 0 ? [...notes].reverse() : [0, 1, 2, 3];
+    const rows = voice === 0 ? [...notes].reverse() : [0, 1, 2];
     let y = 3;
     const nodes = [];
     for (const value of rows) {

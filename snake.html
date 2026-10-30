@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SIGNAL SNAKE · NO ANSWER</title><link rel="icon" href="data:,">
+  <link rel="preload" href="assets/fonts/pixel-ultima-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ibm-plex-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="snake.css">
+  <script src="assets/vendor/Tone.js" defer></script><script src="audio.js" defer></script>
+  <script src="snake-engine.js" defer></script><script src="snake-story.js" defer></script>
+  <script src="snake.js" defer></script><script src="snake-ui.js" defer></script>
+</head>
+<body>
+<main class="stage">
+<div class="cockpit-viewport"><div class="cockpit">
+  <div class="background" aria-hidden="true"><div class="wash"></div><img class="halo" src="assets/nokia/background-contained-halo.svg" alt=""><img class="glow" src="assets/nokia/background-glow-right.svg" alt=""><div id="stars"></div></div>
+  <section class="phone-space" aria-label="SIGNAL SNAKE — музыкальный инструмент">
+    <div class="phone">
+      <div class="shell-blue" aria-hidden="true"></div><div class="shell-bevel" aria-hidden="true"></div><div class="shell-face" aria-hidden="true"></div><div class="shell-shine" aria-hidden="true"></div>
+      <div class="speaker" aria-hidden="true"></div><div class="phone-brand" aria-hidden="true">RINGTONE</div>
+      <div class="lcd-shadow" aria-hidden="true"></div>
+      <section class="lcd-bezel" aria-label="LCD — музыкальная сетка">
+        <div class="lcd-gasket"><div class="lcd">
+          <h1>SIGNAL SNAKE</h1><div class="lcd-icons" role="img" aria-label="Связь: 5 из 5"><i></i><i></i><i></i><i></i><i></i><b aria-hidden="true"></b></div>
+          <div class="lcd-meta"><span>104 BPM</span><span id="lcd-scene">SCENE 01 / 07</span></div>
+          <div id="grid" aria-labelledby="grid-title" aria-describedby="grid-help"></div>
+          <div class="lcd-voice"><h2 id="grid-title">МЕЛОДИЯ</h2><button id="mute" class="lcd-mute" type="button" data-compact="true" aria-pressed="false" aria-label="Заглушить ритм" title="Заглушить ритм" hidden><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z"/><path class="sound-wave" d="M16 8q5 4 0 8"/><path class="sound-off" d="m16 9 6 6m0-6-6 6"/></svg></button><span id="lcd-next">ЦИКЛ 1 / 2</span></div>
+          <div class="lcd-bottom"><span id="lcd-status">■ READY TO CONNECT</span><output id="step" aria-label="Текущий шаг">— / 8</output></div>
+        </div></div>
+      </section>
+      <button id="melody" class="physical voice-button" type="button" aria-pressed="true"><img src="assets/nokia/melody-editable-note.svg" alt=""><span>МЕЛОДИЯ</span></button>
+      <div class="dpad"><div class="dpad-inner"></div>
+        <button class="arrow up" type="button" data-pitch="1" aria-label="Повысить высоту на ступень"><img src="assets/nokia/d-pad-arrow-up.svg" alt=""></button>
+        <button class="arrow down" type="button" data-pitch="-1" aria-label="Понизить высоту на ступень"><img src="assets/nokia/d-pad-arrow-down.svg" alt=""></button>
+        <button class="arrow left" type="button" data-scene="-1" aria-label="Предыдущая сцена"><img src="assets/nokia/d-pad-arrow-left.svg" alt=""></button>
+        <button class="arrow right" type="button" data-scene="1" aria-label="Следующая сцена"><img src="assets/nokia/d-pad-arrow-right.svg" alt=""></button>
+        <button id="ping" type="button" aria-label="OK — отправить один PING">OK</button>
+      </div>
+      <button id="rhythm" class="physical voice-button" type="button" aria-pressed="false"><span class="beat-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>РИТМ</span></button>
+      <button id="connect" data-idle-label="СОЕДИНИТЬ" data-starting-label="СОЕДИНЕНИЕ…" class="physical call" type="button">СОЕДИНИТЬ</button>
+      <button id="signal-focus" class="physical signal-button" type="button" aria-label="Изменить помехи" aria-controls="signal" title="Изменить помехи: 0 → 25 → 50 → 75 → 100 → 0%"><span class="strength" aria-hidden="true"><i></i><i></i><i></i><i></i></span>СИГНАЛ</button>
+      <button id="disconnect" class="physical end" type="button" disabled>ЗАВЕРШИТЬ</button>
+      <div class="keypad" aria-hidden="true"><span>1</span><span>2 abc</span><span>3 def</span><span>4 ghi</span><span>5 jkl</span><span>6 mno</span><span>7 pqrs</span><span>8 tuv</span><span>9 wxyz</span><span>*</span><span>0 +</span><span>#</span></div>
+    </div>
+    <p id="grid-help" class="sr-only">Одна нота в столбце. Повторный клик удаляет её.</p><p id="status" class="sr-only" role="status">Звук выключен. CONNECT запускает мелодию.</p>
+  </section>
+  <section class="story-side" aria-label="NO ANSWER — руководство исполнителя">
+    <header class="hero"><h2>NO ANSWER</h2><span class="hero-pixels" aria-hidden="true"></span></header>
+    <section class="story-panel" aria-labelledby="story-title">
+      <div class="panel-heading"><h2 id="story-title">ИСТОРИЯ &nbsp; / &nbsp; 7 СИГНАЛОВ</h2><output id="scene-number">01 / 07</output></div>
+      <nav id="story-scenes" aria-label="Выбор музыкальной сцены"></nav>
+      <div class="story-progress"><div id="story-progress" role="progressbar" aria-label="Положение в истории" aria-valuemin="1" aria-valuemax="7" aria-valuenow="1"></div></div>
+    </section>
+    <section class="live-panel" aria-labelledby="live-title">
+      <div class="live-heading"><h2 id="live-title">УПРАВЛЕНИЕ</h2><output id="live-state" data-active="false" aria-label="LIVE — воспроизведение остановлено"><span class="live-dot" aria-hidden="true">●</span> LIVE</output></div>
+      <div class="live-guide"><span id="guide-scene">SCENE 01</span><p id="guide-current">SIGNAL SEARCH</p><p id="guide-next">NEXT: CONNECT</p></div>
+      <div class="slider-row"><label for="pitch">ВЫСОТА</label><span>−2</span><input id="pitch" list="pitch-steps" type="range" min="-2" max="2" step="1" value="0" aria-label="ВЫСОТА — ступени до-минорной пентатоники"><output id="pitch-value" for="pitch">0</output><datalist id="pitch-steps"><option value="-2" label="−2"><option value="-1" label="−1"><option value="0" label="0"><option value="1" label="+1"><option value="2" label="+2"></datalist></div>
+      <div class="slider-row"><label for="signal">ПОМЕХИ</label><span>ЧИСТО</span><input id="signal" type="range" min="0" max="100" step="1" value="0" aria-valuetext="0% — чистый звук"><output id="signal-value" for="signal">0%</output></div>
+    </section>
+  </section>
+
+</div></div>
+</main>
+</body></html>

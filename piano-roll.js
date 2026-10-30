@@ -1,7 +1,7 @@
 'use strict';
 (() => {
  const app=Ringtone,C=RingtoneRollCore,$=id=>document.getElementById(id);
- const letters='ASDFGHJKL'.split(''),padNames=['CALL','PING','CLICK','NOISE'],padKeys=['Z','X','C','V'];
+ const letters='ASDFGHJKL'.split(''),padNames=['CALL','PING','CLICK'],padKeys=['Z','X','C'];
  let editing=false,voice=0,selected=-1,snap='8n',zoom=1,signature='',rows=[],width=600,gesture=null,message='',held=new Map(),raf=0,last=0;
  let reference=window.RingtoneSong?.reference()||null;
  const viewBars=t=>Math.max(t.bars,reference?.voice===voice?reference.bars:0);
@@ -24,7 +24,7 @@
  function undo(){if(!editing||track().take)return;cancelGesture();const s=app.snapshot(),r=app.undoEdit(voice,s.editRevisions[voice]);selected=-1;message=r.ok?'Предыдущее редактирование восстановлено.':r.reason;signature='';render();}
  function valueAt(y){return rows.find(r=>y>=r.top&&y<r.top+r.height)?.value;}
  function paintGrid(data){
-  const values=voice===0?[...C.NOTES].reverse():[0,1,2,3],length=viewBars(data)*C.BAR,loopLength=data.bars*C.BAR;
+  const values=voice===0?[...C.NOTES].reverse():[0,1,2],length=viewBars(data)*C.BAR,loopLength=data.bars*C.BAR;
   width=Math.max(240,viewport.clientWidth-100)*zoom;sheet.style.setProperty('--roll-width',width+'px');
   const labels=$('roll-labels'),ruler=$('roll-ruler');labels.replaceChildren();ruler.replaceChildren();surface.replaceChildren();rows=[];
   // Colliding hit areas get separate tiers, even if their true gates are only 1 ms.

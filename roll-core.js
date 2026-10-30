@@ -8,7 +8,7 @@
   if(!data||![1,2,4].includes(data.bars)||!Array.isArray(data.events)||data.events.length>512)return 'Допустимы 1, 2 или 4 такта и не более 512 событий.';
   for(const e of data.events){
    if(!Number.isFinite(e.tick)||e.tick<0||e.tick>=data.bars*BAR)return 'В выбранную длину не помещаются начала всех нот. Сначала перенеси или удали события за её пределами.';
-   if(voice===0?(e.kind!=='note'||!NOTES.includes(e.value)||!Number.isFinite(e.duration)||e.duration<=0||e.duration>MAX_LENGTH):(e.kind!=='pad'||!Number.isInteger(e.value)||e.value<0||e.value>3))return 'Недопустимое музыкальное событие.';
+   if(voice===0?(e.kind!=='note'||!NOTES.includes(e.value)||!Number.isFinite(e.duration)||e.duration<=0||e.duration>MAX_LENGTH):(e.kind!=='pad'||!Number.isInteger(e.value)||e.value<0||e.value>2))return 'Недопустимое музыкальное событие.';
   }
   return '';
  }
@@ -23,7 +23,7 @@
    out.duration=Math.max(MIN_GATE,Math.min(MAX_LENGTH,(grid?Math.round(end/grid)*grid:end)-e.tick));
   }else{
    if(horizontal)out.tick=onset(e.tick+dx,length,snap);
-   const values=e.kind==='note'?NOTES:[3,2,1,0],i=values.indexOf(e.value);
+   const values=e.kind==='note'?NOTES:[2,1,0],i=values.indexOf(e.value);
    out.value=values[Math.max(0,Math.min(values.length-1,i-dy))];
   }
   return out;

@@ -1,0 +1,1400 @@
+{
+  "version": 5,
+  "title": "NO ANSWER",
+  "bpm": 104,
+  "steps": 8,
+  "note_rows": [
+    "Eb5",
+    "C5",
+    "Bb4",
+    "G4"
+  ],
+  "scale": [
+    "C",
+    "Eb",
+    "F",
+    "G",
+    "Bb"
+  ],
+  "rhythm_sources": [
+    "CALL",
+    "PING",
+    "CLICK"
+  ],
+  "total_bars": 52,
+  "recommended_cycles": 26,
+  "duration_seconds": 120,
+  "rhythm_commit": "next_full_cycle",
+  "scene_transition": "manual_request_next_cycle",
+  "scenes": [
+    {
+      "id": "search",
+      "number": 1,
+      "name_ru": "ПОИСК",
+      "name_en": "SIGNAL SEARCH",
+      "phase": "EXPOSITION",
+      "recommended_cycles": 2,
+      "bars": [
+        1,
+        4
+      ],
+      "start_seconds": 0.0,
+      "duration_seconds": 9.23076923076923,
+      "initial_state": {
+        "melody": [
+          1,
+          null,
+          null,
+          2,
+          null,
+          null,
+          3,
+          null
+        ],
+        "rhythm": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "pitch": 0,
+        "signal": 0,
+        "muted": false
+      },
+      "target_state": {
+        "rhythm": [
+          [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ]
+      },
+      "cycle_actions": [
+        {
+          "cycle": 1,
+          "actions": [
+            {
+              "type": "rhythm",
+              "source": "CALL",
+              "column": 1
+            }
+          ]
+        },
+        {
+          "cycle": 2,
+          "actions": [
+            {
+              "type": "scene_next"
+            }
+          ]
+        }
+      ],
+      "musical_goal": "Первый короткий вызов в тишине.",
+      "rhythm_addition_order": [
+        {
+          "during_cycle": 1,
+          "source": "CALL",
+          "column": 1,
+          "enabled": true,
+          "active_from_cycle": 2
+        }
+      ],
+      "pitch_recommendation": [
+        {
+          "cycle": 1,
+          "value": 0
+        }
+      ],
+      "interference_recommendation": [
+        {
+          "cycle": 1,
+          "percent": 0
+        }
+      ],
+      "manual_ping_recommended": false,
+      "rhythm_change_sequence": [
+        {
+          "during_cycle": 1,
+          "source": "CALL",
+          "column": 1,
+          "enabled": true,
+          "active_from_cycle": 2
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "number": 2,
+      "name_ru": "КОНТАКТ",
+      "name_en": "FIRST CONTACT",
+      "phase": "FIRST TURN",
+      "recommended_cycles": 3,
+      "bars": [
+        5,
+        10
+      ],
+      "start_seconds": 9.23076923076923,
+      "duration_seconds": 13.846153846153847,
+      "initial_state": {
+        "melody": [
+          1,
+          1,
+          0,
+          2,
+          1,
+          null,
+          2,
+          null
+        ],
+        "rhythm": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "pitch": 0,
+        "signal": 0,
+        "muted": false
+      },
+      "target_state": {
+        "rhythm": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            true,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false
+          ]
+        ]
+      },
+      "cycle_actions": [
+        {
+          "cycle": 1,
+          "actions": [
+            {
+              "type": "rhythm",
+              "source": "CLICK",
+              "column": 1
+            },
+            {
+              "type": "rhythm",
+              "source": "CLICK",
+              "column": 5
+            }
+          ]
+        },
+        {
+          "cycle": 2,
+          "actions": [
+            {
+              "type": "rhythm",
+              "source": "PING",
+              "column": 3
+            }
+          ]
+        },
+        {
+          "cycle": 3,
+          "actions": [
+            {
+              "type": "pitch",
+              "value": 1
+            },
+            {
+              "type": "scene_next"
+            }
+          ]
+        }
+      ],
+      "musical_goal": "Мотив обретает уверенность; ответ ещё не приходит.",
+      "rhythm_addition_order": [
+        {
+          "during_cycle": 1,
+          "source": "CLICK",
+          "column": 1,
+          "enabled": true,
+          "active_from_cycle": 2
+        },
+        {
+          "during_cycle": 1,
+          "source": "CLICK",
+          "column": 5,
+          "enabled": true,
+          "active_from_cycle": 2
+        },
+        {
+          "during_cycle": 2,
+          "source": "PING",
+          "column": 3,
+          "enabled": true,
+          "active_from_cycle": 3
+        }
+      ],
+      "pitch_recommendation": [
+        {
+          "cycle": 3,
+          "value": 1
+        }
+      ],
+      "interference_recommendation": [
+        {
+          "cycle": 1,
+          "percent": 0
+        }
+      ],
+      "manual_ping_recommended": false,
+      "rhythm_change_sequence": [
+        {
+          "during_cycle": 1,
+          "source": "CLICK",
+          "column": 1,
+          "enabled": true,
+          "active_from_cycle": 2
+        },
+        {
+          "during_cycle": 1,
+          "source": "CLICK",
+          "column": 5,
+          "enabled": true,
+          "active_from_cycle": 2
+        },
+        {
+          "during_cycle": 2,
+          "source": "PING",
+          "column": 3,
+          "enabled": true,
+          "active_from_cycle": 3
+        }
+      ]
+    },
+    {
+      "id": "rhythm",
+      "number": 3,
+      "name_ru": "РИТМ",
+      "name_en": "RHYTHM ON",
+      "phase": "DEVELOPMENT",
+      "recommended_cycles": 6,
+      "bars": [
+        11,
+        22
+      ],
+      "start_seconds": 23.076923076923077,
+      "duration_seconds": 27.692307692307693,
+      "initial_state": {
+        "melody": [
+          1,
+          1,
+          0,
+          2,
+          1,
+          3,
+          2,
+          null
+        ],
+        "rhythm": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "pitch": 0,
+        "signal": 0,
+        "muted": false
+      },
+      "target_state": {
+        "rhythm": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            true,
+            false,
+            false,
+            false,
+            true,
+            false,
+            true,
+            false
+          ]
+        ]
+      },
+      "cycle_actions": [
+        {
+          "cycle": 1,
+          "actions": [
+            {
+              "type": "rhythm",
+              "source": "CLICK",
+              "column": 1
+            },
+            {
+              "type": "rhythm",
+              "source": "CLICK",
+              "column": 5
+            }
+          ]
+        },
+        {
+          "cycle": 2,
+          "actions": [
+            {
+              "type": "rhythm",
+              "source": "PING",
+              "column": 3
+            }
+          ]
+        },
+        {
+          "cycle": 3,
+          "actions": [
+            {
+              "type": "rhythm",
+              "source": "CLICK",
+              "column": 7
+            }
+          ]
+        },
+        {
+          "cycle": 4,
+          "actions": [
+            {
+              "type": "melody",
+              "row": 3,
+              "column": 8
+            }
+          ]
+        },
+        {
+          "cycle": 5,
+          "actions": [
+            {
+              "type": "pitch",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "cycle": 6,
+          "actions": [
+            {
+              "type": "pitch",
+              "value": 0
+            },
+            {
+              "type": "scene_next"
+            }
+          ]
+        }
+      ],
+      "musical_goal": "Узнаваемый хук и ритм, который ты собрал сам.",
+      "rhythm_addition_order": [
+        {
+          "during_cycle": 1,
+          "source": "CLICK",
+          "column": 1,
+          "enabled": true,
+          "active_from_cycle": 2
+        },
+        {
+          "during_cycle": 1,
+          "source": "CLICK",
+          "column": 5,
+          "enabled": true,
+          "active_from_cycle": 2
+        },
+        {
+          "during_cycle": 2,
+          "source": "PING",
+          "column": 3,
+          "enabled": true,
+          "active_from_cycle": 3
+        },
+        {
+          "during_cycle": 3,
+          "source": "CLICK",
+          "column": 7,
+          "enabled": true,
+          "active_from_cycle": 4
+        }
+      ],
+      "pitch_recommendation": [
+        {
+          "cycle": 5,
+          "value": 1
+        },
+        {
+          "cycle": 6,
+          "value": 0
+        }
+      ],
+      "interference_recommendation": [
+        {
+          "cycle": 1,
+          "percent": 0
+        }
+      ],
+      "manual_ping_recommended": false,
+      "rhythm_change_sequence": [
+        {
+          "during_cycle": 1,
+          "source": "CLICK",
+          "column": 1,
+          "enabled": true,
+          "active_from_cycle": 2
+        },
+        {
+          "during_cycle": 1,
+          "source": "CLICK",
+          "column": 5,
+          "enabled": true,
+          "active_from_cycle": 2
+        },
+        {
+          "during_cycle": 2,
+          "source": "PING",
+          "column": 3,
+          "enabled": true,
+          "active_from_cycle": 3
+        },
+        {
+          "during_cycle": 3,
+          "source": "CLICK",
+          "column": 7,
+          "enabled": true,
+          "active_from_cycle": 4
+        }
+      ]
+    },
+    {
+      "id": "interference",
+      "number": 4,
+      "name_ru": "ПОМЕХИ",
+      "name_en": "INTERFERENCE",
+      "phase": "MIDPOINT",
+      "recommended_cycles": 4,
+      "bars": [
+        23,
+        30
+      ],
+      "start_seconds": 50.76923076923077,
+      "duration_seconds": 18.46153846153846,
+      "initial_state": {
+        "melody": [
+          1,
+          null,
+          0,
+          1,
+          2,
+          0,
+          3,
+          null
+        ],
+        "rhythm": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "pitch": 0,
+        "signal": 0,
+        "muted": false
+      },
+      "target_state": {
+        "rhythm": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          [
+            true,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false
+          ]
+        ]
+      },
+      "cycle_actions": [
+        {
+          "cycle": 1,
+          "actions": [
+            {
+              "type": "rhythm",
+              "source": "CLICK",
+              "column": 1
+            },
+            {
+              "type": "rhythm",
+              "source": "CLICK",
+              "column": 5
+            }
+          ]
+        },
+        {
+          "cycle": 2,
+          "actions": [
+            {
+              "type": "rhythm",
+              "source": "PING",
+              "column": 7
+            }
+          ]
+        },
+        {
+          "cycle": 3,
+          "actions": [
+            {
+              "type": "signal",
+              "value": 40
+            }
+          ]
+        },
+        {
+          "cycle": 4,
+          "actions": [
+            {
+              "type": "signal",
+              "value": 60
+            },
+            {
+              "type": "scene_next"
+            }
+          ]
+        }
+      ],
+      "musical_goal": "Повтор становится напряжённее, связь теряет ясность.",
+      "rhythm_addition_order": [
+        {
+          "during_cycle": 1,
+          "source": "CLICK",
+          "column": 1,
+          "enabled": true,
+          "active_from_cycle": 2
+        },
+        {
+          "during_cycle": 1,
+          "source": "CLICK",
+          "column": 5,
+          "enabled": true,
+          "active_from_cycle": 2
+        },
+        {
+          "during_cycle": 2,
+          "source": "PING",
+          "column": 7,
+          "enabled": true,
+          "active_from_cycle": 3
+        }
+      ],
+      "pitch_recommendation": [
+        {
+          "cycle": 1,
+          "value": 0
+        }
+      ],
+      "interference_recommendation": [
+        {
+          "cycle": 3,
+          "percent": 40
+        },
+        {
+          "cycle": 4,
+          "percent": 60
+        }
+      ],
+      "manual_ping_recommended": false,
+      "rhythm_change_sequence": [
+        {
+          "during_cycle": 1,
+          "source": "CLICK",
+          "column": 1,
+          "enabled": true,
+          "active_from_cycle": 2
+        },
+        {
+          "during_cycle": 1,
+          "source": "CLICK",
+          "column": 5,
+          "enabled": true,
+          "active_from_cycle": 2
+        },
+        {
+          "during_cycle": 2,
+          "source": "PING",
+          "column": 7,
+          "enabled": true,
+          "active_from_cycle": 3
+        }
+      ]
+    },
+    {
+      "id": "loss",
+      "number": 5,
+      "name_ru": "ПОТЕРЯ",
+      "name_en": "SIGNAL LOST",
+      "phase": "BREAK",
+      "recommended_cycles": 4,
+      "bars": [
+        31,
+        38
+      ],
+      "start_seconds": 69.23076923076923,
+      "duration_seconds": 18.46153846153846,
+      "initial_state": {
+        "melody": [
+          1,
+          null,
+          null,
+          null,
+          0,
+          null,
+          2,
+          null
+        ],
+        "rhythm": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "pitch": 0,
+        "signal": 0,
+        "muted": false
+      },
+      "target_state": {
+        "rhythm": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false
+          ]
+        ]
+      },
+      "cycle_actions": [
+        {
+          "cycle": 1,
+          "actions": [
+            {
+              "type": "signal",
+              "value": 85
+            }
+          ]
+        },
+        {
+          "cycle": 2,
+          "actions": [
+            {
+              "type": "rhythm",
+              "source": "CLICK",
+              "column": 5
+            }
+          ]
+        },
+        {
+          "cycle": 3,
+          "actions": [
+            {
+              "type": "signal",
+              "value": 100
+            }
+          ]
+        },
+        {
+          "cycle": 4,
+          "actions": [
+            {
+              "type": "scene_next"
+            }
+          ]
+        }
+      ],
+      "musical_goal": "Воздух и паузы; мотив различим сквозь сильные помехи.",
+      "rhythm_addition_order": [
+        {
+          "during_cycle": 2,
+          "source": "CLICK",
+          "column": 5,
+          "enabled": true,
+          "active_from_cycle": 3
+        }
+      ],
+      "pitch_recommendation": [
+        {
+          "cycle": 1,
+          "value": 0
+        }
+      ],
+      "interference_recommendation": [
+        {
+          "cycle": 1,
+          "percent": 85
+        },
+        {
+          "cycle": 3,
+          "percent": 100
+        }
+      ],
+      "manual_ping_recommended": false,
+      "rhythm_change_sequence": [
+        {
+          "during_cycle": 2,
+          "source": "CLICK",
+          "column": 5,
+          "enabled": true,
+          "active_from_cycle": 3
+        }
+      ]
+    },
+    {
+      "id": "reconnect",
+      "number": 6,
+      "name_ru": "ПОВТОР",
+      "name_en": "RECONNECT",
+      "phase": "CLIMAX",
+      "recommended_cycles": 4,
+      "bars": [
+        39,
+        46
+      ],
+      "start_seconds": 87.6923076923077,
+      "duration_seconds": 18.46153846153846,
+      "initial_state": {
+        "melody": [
+          1,
+          1,
+          0,
+          2,
+          1,
+          0,
+          2,
+          3
+        ],
+        "rhythm": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "pitch": 0,
+        "signal": 0,
+        "muted": false
+      },
+      "target_state": {
+        "rhythm": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            true,
+            false,
+            true,
+            false,
+            true,
+            false,
+            true,
+            false
+          ]
+        ]
+      },
+      "cycle_actions": [
+        {
+          "cycle": 1,
+          "actions": [
+            {
+              "type": "rhythm",
+              "source": "CLICK",
+              "column": 1
+            },
+            {
+              "type": "rhythm",
+              "source": "CLICK",
+              "column": 5
+            }
+          ]
+        },
+        {
+          "cycle": 2,
+          "actions": [
+            {
+              "type": "rhythm",
+              "source": "CLICK",
+              "column": 3
+            },
+            {
+              "type": "rhythm",
+              "source": "CLICK",
+              "column": 7
+            }
+          ]
+        },
+        {
+          "cycle": 3,
+          "actions": [
+            {
+              "type": "rhythm",
+              "source": "PING",
+              "column": 4
+            },
+            {
+              "type": "pitch",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "cycle": 4,
+          "actions": [
+            {
+              "type": "ping"
+            },
+            {
+              "type": "scene_next"
+            }
+          ]
+        }
+      ],
+      "musical_goal": "Чистое возвращение хука и самая плотная ручная фактура.",
+      "rhythm_addition_order": [
+        {
+          "during_cycle": 1,
+          "source": "CLICK",
+          "column": 1,
+          "enabled": true,
+          "active_from_cycle": 2
+        },
+        {
+          "during_cycle": 1,
+          "source": "CLICK",
+          "column": 5,
+          "enabled": true,
+          "active_from_cycle": 2
+        },
+        {
+          "during_cycle": 2,
+          "source": "CLICK",
+          "column": 3,
+          "enabled": true,
+          "active_from_cycle": 3
+        },
+        {
+          "during_cycle": 2,
+          "source": "CLICK",
+          "column": 7,
+          "enabled": true,
+          "active_from_cycle": 3
+        },
+        {
+          "during_cycle": 3,
+          "source": "PING",
+          "column": 4,
+          "enabled": true,
+          "active_from_cycle": 4
+        }
+      ],
+      "pitch_recommendation": [
+        {
+          "cycle": 3,
+          "value": 1
+        }
+      ],
+      "interference_recommendation": [
+        {
+          "cycle": 1,
+          "percent": 0
+        }
+      ],
+      "manual_ping_recommended": true,
+      "rhythm_change_sequence": [
+        {
+          "during_cycle": 1,
+          "source": "CLICK",
+          "column": 1,
+          "enabled": true,
+          "active_from_cycle": 2
+        },
+        {
+          "during_cycle": 1,
+          "source": "CLICK",
+          "column": 5,
+          "enabled": true,
+          "active_from_cycle": 2
+        },
+        {
+          "during_cycle": 2,
+          "source": "CLICK",
+          "column": 3,
+          "enabled": true,
+          "active_from_cycle": 3
+        },
+        {
+          "during_cycle": 2,
+          "source": "CLICK",
+          "column": 7,
+          "enabled": true,
+          "active_from_cycle": 3
+        },
+        {
+          "during_cycle": 3,
+          "source": "PING",
+          "column": 4,
+          "enabled": true,
+          "active_from_cycle": 4
+        }
+      ]
+    },
+    {
+      "id": "farewell",
+      "number": 7,
+      "name_ru": "ПРОЩАНИЕ",
+      "name_en": "FINAL CALL",
+      "phase": "RESOLUTION",
+      "recommended_cycles": 3,
+      "bars": [
+        47,
+        52
+      ],
+      "start_seconds": 106.15384615384616,
+      "duration_seconds": 13.846153846153847,
+      "initial_state": {
+        "melody": [
+          1,
+          0,
+          2,
+          3,
+          null,
+          1,
+          null,
+          null
+        ],
+        "rhythm": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "pitch": 0,
+        "signal": 0,
+        "muted": false
+      },
+      "target_state": {
+        "rhythm": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ]
+      },
+      "cycle_actions": [
+        {
+          "cycle": 1,
+          "actions": [
+            {
+              "type": "rhythm",
+              "source": "CLICK",
+              "column": 1
+            }
+          ]
+        },
+        {
+          "cycle": 2,
+          "actions": [
+            {
+              "type": "rhythm",
+              "source": "CLICK",
+              "column": 1
+            },
+            {
+              "type": "melody",
+              "row": 0,
+              "column": 2
+            }
+          ]
+        },
+        {
+          "cycle": 3,
+          "actions": [
+            {
+              "type": "end_call",
+              "at_step": 8
+            }
+          ]
+        }
+      ],
+      "musical_goal": "Короткая каденция к C5, пауза и осознанный END CALL.",
+      "rhythm_addition_order": [
+        {
+          "during_cycle": 1,
+          "source": "CLICK",
+          "column": 1,
+          "enabled": true,
+          "active_from_cycle": 2
+        }
+      ],
+      "pitch_recommendation": [
+        {
+          "cycle": 1,
+          "value": 0
+        }
+      ],
+      "interference_recommendation": [
+        {
+          "cycle": 1,
+          "percent": 0
+        }
+      ],
+      "manual_ping_recommended": false,
+      "rhythm_change_sequence": [
+        {
+          "during_cycle": 1,
+          "source": "CLICK",
+          "column": 1,
+          "enabled": true,
+          "active_from_cycle": 2
+        },
+        {
+          "during_cycle": 2,
+          "source": "CLICK",
+          "column": 1,
+          "enabled": false,
+          "active_from_cycle": 3
+        }
+      ]
+    }
+  ],
+  "notes": "NOISE удалён на утверждённом Stage 02. Используются три существующие дорожки; новый звук не добавляется. Целевой ритм — карта ручных действий, а не источник автоплея."
+}

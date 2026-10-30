@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+node_modules/
+.env*
+/presentation/
+/test-results/
+/playwright-report/
+/.playwright-mcp/
+*.log
+*.tmp
+*~
+/dist/
+__pycache__/
+*.pyc

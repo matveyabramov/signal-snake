@@ -27,7 +27,7 @@ const assert=require('node:assert/strict'),{chromium}=require(process.env.PLAYWR
  await cycleBatch();const initial=await cycleBatch();const after=await cycleBatch();
  console.log('NATIVE AUDIO NODES',JSON.stringify({before:initial,after,delta:after-initial}));
  check(after<=initial+12,'native Web Audio node count does not accumulate across 35 Stop/Restart cycles after GC');
- check(await p.evaluate(()=>Ringtone.snapshot().audio.fixedNodes===11&&Ringtone.snapshot().audio.loopSynths===0&&Ringtone.snapshot().audio.loopSamplers===4&&Ringtone.snapshot().schedulerCount===1),'fixed graph, sampler bank and callback counts stay bounded');
+ check(await p.evaluate(()=>Ringtone.snapshot().audio.fixedNodes===11&&Ringtone.snapshot().audio.loopSynths===0&&Ringtone.snapshot().audio.loopSamplers===3&&Ringtone.snapshot().schedulerCount===1),'fixed graph, sampler bank and callback counts stay bounded');
  await p.evaluate(()=>Ringtone.dispose());await p.keyboard.press('Escape');await p.evaluate(()=>window.dispatchEvent(new Event('blur')));
  check(await p.evaluate(()=>Ringtone.snapshot().audio.disposed&&Ringtone.snapshot().audio.loopSamplers===0&&Ringtone.snapshot().schedulerCount===0),'late focus/stop events cannot recreate disposed audio nodes');console.log(`${passed} boundary/resource checks passed`);
  }finally{await b.close();}})().catch(e=>{console.error(e);process.exit(1)});

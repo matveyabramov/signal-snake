@@ -6,16 +6,16 @@
  function freeze(value){if(value&&typeof value==='object'){Object.values(value).forEach(freeze);Object.freeze(value);}return value;}
  function normalize(raw){
   if(raw.title!=='NO ANSWER'||raw.version!=='v3.1-clean-ending'||raw.bars!==52||raw.tempo_bpm!==104||raw.duration_sec!==120||raw.narrative_scenes.length!==7)throw Error('Требуется актуальная партитура v3.1: 52 такта, 104 BPM, 7 сцен.');
-  const mapping=raw.instrument_mapping.voice_A,pads=raw.instrument_mapping.voice_B,padKeys=Object.keys(pads);
+  const mapping=raw.instrument_mapping.voice_A,pads={Z:'CALL',X:'PING',C:'CLICK'},padKeys=Object.keys(pads);
   function a(e,beat=e.beat){const map=mapping[e.key];if(!map||map.midi!==e.midi)throw Error('Неверная привязка клавиши '+e.key);return{voice:0,kind:'note',key:e.key,value:map.note,midi:e.midi,beat,duration:e.duration_beats,tick:beat*PPQ,durationTicks:e.duration_beats*PPQ,phrase:e.phrase||null,scene:e.scene||null};}
-  function b(e,beat=e.beat){if(pads[e.key]!==e.pad)throw Error('Неверный пэд');return{voice:1,kind:'pad',key:e.key,value:padKeys.indexOf(e.key),pad:e.pad,beat,tick:beat*PPQ};}
+  function b(e,beat=e.beat){if(e.key==='V'&&e.pad==='NOISE')return null;if(pads[e.key]!==e.pad)throw Error('Неверный пэд');return{voice:1,kind:'pad',key:e.key,value:padKeys.indexOf(e.key),pad:e.pad,beat,tick:beat*PPQ};}
   const phrases=Object.fromEntries(Object.entries(raw.phrases).map(([id,notes])=>[id,{id,voice:0,bars:2,beats:8,events:notes.map(e=>a(e,e.beat_in_phrase))}]));
   if(Object.keys(phrases).length!==6||phrases.LAST_CALL)throw Error('В актуальной версии ровно шесть мелодических фраз.');
-  const events=[...raw.voice_A_live_reference.map(e=>a(e)),...raw.voice_B_live_reference.map(e=>b(e))].sort((a,b)=>a.beat-b.beat||a.voice-b.voice);
+  const events=[...raw.voice_A_live_reference.map(e=>a(e)),...raw.voice_B_live_reference.map(e=>b(e)).filter(Boolean)].sort((a,b)=>a.beat-b.beat||a.voice-b.voice);
   if(events.some(e=>e.beat<0||e.beat>=208||e.phrase==='LAST_CALL'||e.beat+(e.duration||0)>208))throw Error('Событие за границей 52 тактов.');
   // The first two-bar steady rhythm at TURN_1, directly from the same JSON.
   const turn=raw.narrative_scenes[1].begin_bar*4;
-  phrases.RHYTHM={id:'RHYTHM',voice:1,bars:2,beats:8,events:raw.voice_B_live_reference.filter(e=>e.beat>=turn&&e.beat<turn+8).map(e=>b(e,e.beat-turn))};
+  phrases.RHYTHM={id:'RHYTHM',voice:1,bars:2,beats:8,events:raw.voice_B_live_reference.filter(e=>e.beat>=turn&&e.beat<turn+8).map(e=>b(e,e.beat-turn)).filter(Boolean)};
   const instructions=[
    {phrases:['MAIN_HOOK'],signal:'Чистый звук: SIGNAL 0–10%.',steps:[{phrase:'MAIN_HOOK',text:'Сразу сыграй главный рингтон один раз. Тишина перед началом не нужна.',wait:'2 такта · около 4.6 с'},{phrase:'MAIN_HOOK',text:'1 → R → сыграй тот же рингтон → отпусти последнюю ноту → R. Это твой Loop 1.',wait:'Ещё 2 такта; повтор встанет на ближайший такт.'}]},
    {phrases:['RHYTHM'],signal:'Оставь SIGNAL низким.',steps:[{phrase:'RHYTHM',text:'2 → R → сыграй ритм C/X на протяжении двух тактов → R. MAIN_HOOK уже повторяется.',wait:'Нажатия пэдов короткие. Можно спокойно повторить дубль.'},{phrase:'MAIN_HOOK',text:'Послушай два собственных слоя. Ничего больше не записывай.',wait:'Дай двум слоям прозвучать ещё 2 такта.'}]},

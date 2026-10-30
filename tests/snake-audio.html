@@ -1,0 +1,51 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><base href="../"><link rel="icon" href="data:,"><title>SIGNAL SNAKE audio checks</title><script src="assets/vendor/Tone.js"></script><script src="audio.js"></script></head><body>
+<button id="run">Run targeted audio checks</button><pre id="results"></pre><script>
+'use strict';
+const out = document.querySelector('#results');
+const rms = (a, from = 0, to = a.length) => Math.sqrt(a.slice(from, to).reduce((sum, x) => sum + x*x, 0) / (to-from));
+function check(ok, name) { if (!ok) throw Error(name); out.textContent += 'PASS ' + name + '\n'; }
+document.querySelector('#run').onclick = async () => {
+  let buffers;
+  try {
+    buffers = await RingtoneAudio.loadBuffers();
+    async function render(play, signal = 0) {
+      let graph;
+      try {
+        const result = await Tone.Offline(() => { graph = RingtoneAudio.createGraph(buffers); graph.signal(signal, .001); play(graph); }, 1.4, 1, 44100);
+        return result.get().getChannelData(0).slice();
+      } finally { graph?.dispose(); }
+    }
+    for (const note of ['G4', 'Bb4', 'C5', 'Eb5']) {
+      const data = await render(g => g.scheduleLoopNote(note, 60/104*.72, .05));
+      const frequency = Tone.Frequency(note).toFrequency();
+      const amplitude = hz => {
+        let re = 0, im = 0;
+        for (let i = 4410; i < 11025; i++) { re += data[i]*Math.cos(2*Math.PI*hz*i/44100); im += data[i]*Math.sin(2*Math.PI*hz*i/44100); }
+        return Math.hypot(re, im);
+      };
+      check(rms(data) > .0001 && amplitude(frequency) > 8*Math.max(amplitude(frequency-30), amplitude(frequency+30)), note + ': audible at correct fundamental frequency');
+      check(rms(data, 44100) < .00001, note + ': finite gate releases to silence');
+    }
+    const cancelled = await render(g => { g.scheduleLoopNote('C5', .3, .2).cancel(); for (let i=0;i<3;i++) g.schedulePad(i,.2).cancel(); });
+    check(rms(cancelled) < 1e-8, 'cancellation removes future synth and all three sample attacks from actual PCM');
+    const replaced = await render(g => { g.scheduleLoopNote('C5', .3, .2).cancel(); g.scheduleLoopNote('G4', .3, .2); });
+    const reference = await render(g => g.playLoopNote('G4', .3, .2));
+    check(Math.sqrt(replaced.reduce((sum,x,i)=>sum+(x-reference[i])**2,0)/replaced.length) < 1e-7, 'replacement PCM equals exactly one new attack, with no old note');
+    for (let i=0; i<3; i++) {
+      const data = await render(g => g.schedulePad(i,.1));
+      check(rms(data) > .0001 && rms(data, 48510) < .00001, ['CALL','PING','CLICK'][i] + ': cancellable one-shot sounds and releases (RMS '+rms(data)+', tail '+rms(data,48510)+')');
+    }
+    const mix = await render(g => { g.scheduleLoopNote('C5', .3,.1); for(let i=0;i<3;i++) g.schedulePad(i,.1); });
+    check(rms(mix) > .001 && rms(mix,48510) < .00001, 'simultaneous melody + three rhythm sounds decay to silence');
+    const muted = await render(g => { g.loopB.gain.value=0; g.scheduleLoopNote('C5', .3,.1); g.schedulePad(0,.1); });
+    const melody = await render(g => g.scheduleLoopNote('C5', .3,.1));
+    check(Math.sqrt(muted.reduce((sum,x,i)=>sum+(x-melody[i])**2,0)/muted.length) < 1e-7, 'rhythm mute preserves melody waveform');
+    const dirty = await render(g => g.scheduleLoopNote('C5',.3,.1),1);
+    check(Math.sqrt(dirty.reduce((sum,x,i)=>sum+(x-melody[i])**2,0)/dirty.length) > .001, 'SIGNAL changes real output');
+    const stopped = await render(g => { g.scheduleLoopNote('C5',.3,.2); g.schedulePad(0,.2); g.silence(); });
+    check(rms(stopped) < 1e-8, 'DISCONNECT cleanup removes pending attacks and prevents stuck audio');
+    document.body.dataset.result = 'pass';
+  } catch(error) { out.textContent += 'FAIL ' + error.stack; document.body.dataset.result = 'fail'; }
+  finally { buffers?.forEach(buffer => buffer.dispose()); }
+};
+</script></body></html>

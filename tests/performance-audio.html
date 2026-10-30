@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><base href="../"><link rel="icon" href="data:,"><script src="assets/vendor/Tone.js"></script><script src="audio.js"></script></head><body><button id="run">Measure performance audio</button><pre id="results"></pre><script>
+'use strict';const out=document.querySelector('#results');
+const rms=(a,from=0,to=a.length)=>{let sum=0;for(let i=from;i<to;i++)sum+=a[i]*a[i];return Math.sqrt(sum/(to-from));};
+function check(ok,text){if(!ok)throw Error(text);out.textContent+='PASS '+text+'\n';}
+document.querySelector('#run').onclick=async()=>{let buffers;try{buffers=await RingtoneAudio.loadBuffers();async function render(play,signal=0){let graph;try{const result=await Tone.Offline(()=>{graph=RingtoneAudio.createGraph(buffers,undefined,{performance:true,stereo:true});graph.signal(signal,.01);play(graph);},1.8,2,44100);return[...Array(2)].map((_,i)=>result.get().getChannelData(i).slice());}finally{graph?.dispose();}}
+const play=g=>{g.playLoopNote('C5',.45,.1);g.schedulePad(0,.2);g.schedulePad(1,.7);g.schedulePad(2,1);};
+const clean=await render(play),dirty=await render(play,1);const peak=data=>Math.max(...data.map(a=>a.reduce((m,x)=>Math.max(m,Math.abs(x)),0)));
+check(peak(clean)<.85&&peak(dirty)<.85,'clean and maximum interference stay below full scale');check(rms(dirty[0])>.0005,'100% interference retains musical output');check(rms(dirty[0])<rms(clean[0])*1.5,'maximum interference is level-compensated rather than a volume jump');
+let diff=0,spread=0;for(let i=0;i<clean[0].length;i++){diff+=(clean[0][i]-dirty[0][i])**2;spread+=(clean[0][i]-clean[1][i])**2;}check(Math.sqrt(diff/clean[0].length)>.001,'interference changes actual PCM');check(Math.sqrt(spread/clean[0].length)>.0001,'independent voice panning survives the shared effects in stereo PCM');
+check(rms(clean[0],66150)<1e-5&&rms(dirty[0],66150)<1e-5,'both clean and degraded mix release to silence');
+const reset=await render(g=>{g.schedulePad(0,.1);g.resetAt(.3);});check(rms(reset[0],22050)<1e-5,'scene boundary releases old CALL tail without waiting for full sample');
+const stop=await render(g=>{g.scheduleLoopNote('C5',.4,.5);g.schedulePad(1,.5);g.silence();});check(rms(stop[0])<1e-8,'END CALL cancels notes and samples already in lookahead');
+out.textContent+='METRICS '+JSON.stringify({cleanPeak:peak(clean),interferencePeak:peak(dirty),cleanRMS:rms(clean[0]),interferenceRMS:rms(dirty[0]),stereoDifferenceRMS:Math.sqrt(spread/clean[0].length)});document.body.dataset.result='pass';
+}catch(e){out.textContent+='FAIL '+e.stack;document.body.dataset.result='fail';}finally{buffers?.forEach(b=>b.dispose());}};
+</script></body></html>
